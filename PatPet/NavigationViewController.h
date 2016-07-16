@@ -12,5 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *activateLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnPreference;
+@property (weak, nonatomic) IBOutlet UIButton *btnSetting;
 
 @end

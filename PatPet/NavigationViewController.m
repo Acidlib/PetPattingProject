@@ -9,6 +9,7 @@
 #import "NavigationViewController.h"
 #import "SWRevealViewController.h"
 #import "PetColor.h"
+#import "YLCircle.h"
 
 @interface NavigationViewController ()
 

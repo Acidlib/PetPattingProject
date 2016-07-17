@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PetColor.h"
 
 @interface CustomCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *myImage;
 @property (weak, nonatomic) IBOutlet UILabel *myDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *colorLabel;
 
 @end

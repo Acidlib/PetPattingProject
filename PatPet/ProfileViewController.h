@@ -15,6 +15,8 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *age;
 @property (nonatomic, strong) NSString *distance;
+@property (weak, nonatomic) IBOutlet UIView *gradientView;
 @property (weak, nonatomic) IBOutlet UILabel *indication;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @end

@@ -59,6 +59,22 @@
     _myAge.textColor = [PetColor lemonDarkColor];
     _myDistance.textColor = [PetColor lemonDarkColor];
 
+    // navigation bar hidden
+    self.navigationController.navigationBar.hidden = YES;
+
+    /*
+     // gradientView
+    [UIView animateWithDuration: 1.0
+                     animations: ^{
+                         // gradient View
+                         // toggle:
+                         CAGradientLayer *gradient = [CAGradientLayer layer];
+                         gradient.frame = _gradientView.bounds;
+                         gradient.colors = [NSArray arrayWithObjects:(id)[[PetColor darkColor]CGColor], (id)[[UIColor clearColor] CGColor], nil];
+                         [_gradientView.layer insertSublayer:gradient below:_backButton.layer];
+                         _gradientView.alpha = _gradientView.alpha == 1.0 ? 0.0 : 1.0;
+                     }];*/
+
     // backPressed
     UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(zap:)];
     self.navigationItem.leftBarButtonItem = left;
@@ -85,8 +101,13 @@
 {
     CGPoint location = [recognizer locationInView:[recognizer.view superview]];
 
-    //Do stuff here...
 }
+
+- (IBAction)backPressed:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
 
 - (void) playMySoundLikeRightNowReally {
     AudioServicesPlaySystemSound(audioEffect);

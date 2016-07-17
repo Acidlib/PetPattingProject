@@ -7,8 +7,9 @@
 //
 
 #import "FavoriteViewController.h"
-#import "FavCell.h"
 #import "ProfileFavViewController.h"
+#import "FavCell.h"
+#import "PetColor.h"
 
 @interface FavoriteViewController ()<UITextFieldDelegate>
 {
@@ -27,7 +28,17 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupUIAttribute];
+    [self setupCollectionView];
+}
 
+- (void)setupUIAttribute
+{
+    //
+}
+
+- (void)setupCollectionView
+{
     // Fav Collection View
     [[self FavCollectionView]setDataSource:self];
     [[self FavCollectionView]setDelegate:self];
@@ -35,7 +46,6 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
     arrayOfFavOnlineStatus = [[NSArray alloc]initWithObjects:@"offline.png",@"online.png",@"online.png",@"offline.png",@"online.png",@"offline.png",@"offline.png",@"online.png",@"online.png",@"online.png",@"online.png",@"offline.png",@"offline.png",@"online.png",@"offline.png",@"online.png",@"offline.png",@"offline.png",@"offline.png",@"offline.png",@"offline.png",@"offline.png",@"online.png",@"offline.png",@"online.png",@"offline.png",@"online.png",nil];
 
     arrayOfFavProfileName = [[NSArray alloc]initWithObjects:@"E d d i e",@"C h a r l i e",@"E l l i e",@"A n g e l",                  @"L i l i",@"P u p p y",@"R e g g i e",@"P u p u", @"D o t d o t",@"D u m p l i n g",@"L u L u",@"M a o b a o", @"M e i z a i",@"L u L u",@"M a o b a o", @"M e i z a i",@"T o r o",@"C a r a",@"P o p p y",@"Z a r a",@"K e i t a",@"A m o",@"C o n n i e",@"N i c o l e",@"A l b a",@"F a n n y",@"A n g e l",nil];
-
 }
 
 #pragma mark - collectionViewDelegate
@@ -55,8 +65,8 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
 
     FavCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
 
-    [[cell favProfileName]setText:[arrayOfFavProfileName objectAtIndexedSubscript:indexPath.item]];
-
+    cell.favProfileName.backgroundColor = [PetColor darkColor];
+    cell.favProfileName.text = [arrayOfFavProfileName objectAtIndexedSubscript:indexPath.item];
     cell.favProfilePic.image = [UIImage imageNamed:[arrayOfFavProfilePic objectAtIndex:indexPath.item]];
     cell.favOnlineStatus.image = [UIImage imageNamed:[arrayOfFavOnlineStatus objectAtIndex:indexPath.item]];
 
@@ -68,7 +78,7 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
 #pragma mark Show detail Profile
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showProfile"])
+    if ([segue.identifier isEqualToString:@"showProfile2"])
     {
         NSIndexPath *selectedIndexPath = [self.FavCollectionView indexPathsForSelectedItems][0];
         UIImage *myImage = [UIImage imageNamed:[arrayOfFavProfilePic objectAtIndex:selectedIndexPath.item]];

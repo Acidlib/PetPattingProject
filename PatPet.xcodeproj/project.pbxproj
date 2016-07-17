@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6D0BCA1E1D3A52420072D86B /* icn_preference.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0BCA1C1D3A52420072D86B /* icn_preference.png */; };
-		6D0BCA221D3A54E30072D86B /* icn_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0BCA211D3A54E30072D86B /* icn_setting.png */; };
 		6D0BCA301D3A58DA0072D86B /* YLColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */; };
 		6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA321D3A59370072D86B /* YLCircle.m */; };
+		6D0BCA351D3A70C60072D86B /* icn_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0BCA341D3A70C60072D86B /* icn_setting.png */; };
 		6D1D896E1C429E40001B9983 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D896D1C429E40001B9983 /* SWRevealViewController.m */; };
 		6D1D89711C42A369001B9983 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D89701C42A369001B9983 /* NavigationViewController.m */; };
 		6D1D89741C42AD9B001B9983 /* Prof_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D89731C42AD9B001B9983 /* Prof_1@3x.png */; };
@@ -161,11 +161,11 @@
 
 /* Begin PBXFileReference section */
 		6D0BCA1C1D3A52420072D86B /* icn_preference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_preference.png; sourceTree = "<group>"; };
-		6D0BCA211D3A54E30072D86B /* icn_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_setting.png; sourceTree = "<group>"; };
 		6D0BCA2E1D3A58DA0072D86B /* YLColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLColorButton.h; path = YLViews/YLColorButton.h; sourceTree = "<group>"; };
 		6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLColorButton.m; path = YLViews/YLColorButton.m; sourceTree = "<group>"; };
 		6D0BCA311D3A59370072D86B /* YLCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLCircle.h; path = YLViews/YLCircle.h; sourceTree = "<group>"; };
 		6D0BCA321D3A59370072D86B /* YLCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLCircle.m; path = YLViews/YLCircle.m; sourceTree = "<group>"; };
+		6D0BCA341D3A70C60072D86B /* icn_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_setting.png; sourceTree = "<group>"; };
 		6D1D896C1C429E40001B9983 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		6D1D896D1C429E40001B9983 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6D1D896F1C42A369001B9983 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
@@ -376,6 +376,7 @@
 		6D1D89721C42A84E001B9983 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6D0BCA341D3A70C60072D86B /* icn_setting.png */,
 				6D7BF2A71C548B4F00BE7F4A /* search2.png */,
 				6D7BF2A11C54883B00BE7F4A /* search.png */,
 				6D7BF2A31C54890000BE7F4A /* searchLens.png */,
@@ -394,7 +395,6 @@
 				6D6AB87D1C4FFD30005F3CD7 /* sasa3.png */,
 				6D6AB8771C4E8FBE005F3CD7 /* offline.png */,
 				6D6AB8781C4E8FBE005F3CD7 /* online.png */,
-				6D0BCA211D3A54E30072D86B /* icn_setting.png */,
 				6D6AB86B1C4E8931005F3CD7 /* p25.png */,
 				6D6AB86C1C4E8931005F3CD7 /* p26.png */,
 				6D6AB86D1C4E8931005F3CD7 /* p27.png */,
@@ -785,7 +785,7 @@
 				6DCB0A011C46BE74003FBE23 /* 1_search_af.png in Resources */,
 				6D9C42461C4901E7007C05A2 /* Prof_c10.png in Resources */,
 				6D6AB8711C4E8931005F3CD7 /* p25.png in Resources */,
-				6D0BCA221D3A54E30072D86B /* icn_setting.png in Resources */,
+				6D0BCA351D3A70C60072D86B /* icn_setting.png in Resources */,
 				6D7BF2A81C548B4F00BE7F4A /* search2.png in Resources */,
 				6D1D89741C42AD9B001B9983 /* Prof_1@3x.png in Resources */,
 				6DCB09FD1C46BE74003FBE23 /* 1_list_af3.png in Resources */,

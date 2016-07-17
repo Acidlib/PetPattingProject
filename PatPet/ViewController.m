@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SWRevealViewController.h"
+#import "ProfileViewController.h"
 #import "CustomCell.h"
 
 @interface ViewController ()
@@ -42,6 +43,17 @@ static NSString * const reuseIdentifier = @"Cell";
                           @"L i l i",@"P u p p y",@"R e g g i e",@"P u p u",
                           @"D o t d o t",@"D u m p l i n g",@"L u L u",@"M a o b a o",
                           @"M e i z a i",nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showProfile2"])
+    {
+        NSIndexPath *selectedIndexPath = [self.myCollectionView indexPathsForSelectedItems][0];
+        UIImage *myImage = [UIImage imageNamed:[arrayOfImage objectAtIndex:selectedIndexPath.item]];
+        ProfileViewController *detailViewController = segue.destinationViewController;
+        detailViewController.myImage = myImage;
+    }
 }
 
 #pragma mark <UICollectionViewDataSource>

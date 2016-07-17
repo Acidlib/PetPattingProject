@@ -5,4 +5,4 @@ PatPet.xcodeproj/xcuserdata/YLibrarian.xcuserdatad/xcdebugger/
 *.o
 build/*
 build/Debug-iphoneos/PatPet.app/Base.lproj/*
-
+build/PatPet.build/Debug-iphoneos/PatPet.build/dgph

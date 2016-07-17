@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ProfileFavViewController : UIViewController
+@interface ProfileFavViewController : BaseViewController
 @property (nonatomic, strong) UIImage *myImageFav;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *profileBackButton;

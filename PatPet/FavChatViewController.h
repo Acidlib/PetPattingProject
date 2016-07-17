@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FavChatViewController : UIViewController
+@interface FavChatViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *favchatBackButton;
 -(IBAction)done:(id)sender;

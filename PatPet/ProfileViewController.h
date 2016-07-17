@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : BaseViewController
 
 @property (nonatomic, strong) UIImage *myImage;
 @property (nonatomic, strong) NSString *myStringName;

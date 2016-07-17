@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FavoriteViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface FavoriteViewController : BaseViewController<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *favBackButton;
 

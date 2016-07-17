@@ -1,20 +1,18 @@
 //
-//  ProfileFavViewController.m
+//  BaseViewController.m
 //  PatPet
 //
-//  Created by Yi-Ling Wu on 1/23/16.
+//  Created by Yi-Ling Wu on 7/17/16.
 //  Copyright © 2016 Yi-Ling Wu. All rights reserved.
 //
 
-#import "ProfileFavViewController.h"
+#import "BaseViewController.h"
 
-@interface ProfileFavViewController ()
-@property (nonatomic, weak) IBOutlet UIImageView *imageViewFav;
-
+@interface BaseViewController ()
 
 @end
 
-@implementation ProfileFavViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,12 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.imageViewFav.image = self.myImageFav;
-}
-
 /*
 #pragma mark - Navigation
 
@@ -41,9 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
--(IBAction)done:(id)sender{
-    [self.navigationController popToRootViewControllerAnimated:NO];
-}
-
 
 @end

@@ -11,6 +11,7 @@
 		6D0BCA301D3A58DA0072D86B /* YLColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */; };
 		6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA321D3A59370072D86B /* YLCircle.m */; };
 		6D0BCA351D3A70C60072D86B /* icn_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0BCA341D3A70C60072D86B /* icn_setting.png */; };
+		6D0BCA3D1D3B5B2C0072D86B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA3C1D3B5B2C0072D86B /* BaseViewController.m */; };
 		6D1D896E1C429E40001B9983 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D896D1C429E40001B9983 /* SWRevealViewController.m */; };
 		6D1D89711C42A369001B9983 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D89701C42A369001B9983 /* NavigationViewController.m */; };
 		6D1D89741C42AD9B001B9983 /* Prof_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D89731C42AD9B001B9983 /* Prof_1@3x.png */; };
@@ -164,6 +165,8 @@
 		6D0BCA311D3A59370072D86B /* YLCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLCircle.h; path = YLViews/YLCircle.h; sourceTree = "<group>"; };
 		6D0BCA321D3A59370072D86B /* YLCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLCircle.m; path = YLViews/YLCircle.m; sourceTree = "<group>"; };
 		6D0BCA341D3A70C60072D86B /* icn_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_setting.png; sourceTree = "<group>"; };
+		6D0BCA3B1D3B5B2C0072D86B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ViewControllers/Portal/BaseViewController.h; sourceTree = "<group>"; };
+		6D0BCA3C1D3B5B2C0072D86B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewControllers/Portal/BaseViewController.m; sourceTree = "<group>"; };
 		6D1D896C1C429E40001B9983 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		6D1D896D1C429E40001B9983 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6D1D896F1C42A369001B9983 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
@@ -361,10 +364,10 @@
 		6D0BCA361D3B55630072D86B /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */,
-				6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */,
 				6DCB09DF1C4651A3003FBE23 /* FavoriteViewController.h */,
 				6DCB09E01C4651A3003FBE23 /* FavoriteViewController.m */,
+				6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */,
+				6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */,
 				6D9C433F1C4B413D007C05A2 /* FavCell.h */,
 				6D9C43401C4B413D007C05A2 /* FavCell.m */,
 				6D7BF29B1C54800800BE7F4A /* FavChatViewController.h */,
@@ -386,6 +389,8 @@
 				6D6AB8821C4FFDF7005F3CD7 /* InfoCollectionViewCell.m */,
 				6D1D896F1C42A369001B9983 /* NavigationViewController.h */,
 				6D1D89701C42A369001B9983 /* NavigationViewController.m */,
+				6D0BCA3B1D3B5B2C0072D86B /* BaseViewController.h */,
+				6D0BCA3C1D3B5B2C0072D86B /* BaseViewController.m */,
 			);
 			name = Portal;
 			sourceTree = "<group>";
@@ -393,12 +398,12 @@
 		6D0BCA381D3B58020072D86B /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				6D9C42311C48EEE9007C05A2 /* ChatCell.h */,
-				6D9C42321C48EEE9007C05A2 /* ChatCell.m */,
-				6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */,
-				6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */,
 				6D7BF29E1C54840000BE7F4A /* chatMainContentViewController.h */,
 				6D7BF29F1C54840000BE7F4A /* chatMainContentViewController.m */,
+				6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */,
+				6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */,
+				6D9C42311C48EEE9007C05A2 /* ChatCell.h */,
+				6D9C42321C48EEE9007C05A2 /* ChatCell.m */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -408,12 +413,12 @@
 			children = (
 				6D866F6B1C4237FC00CC2D43 /* ViewController.h */,
 				6DB4A2831C9D060000F604EC /* ViewController.m */,
-				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
-				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
 				6D6AB8881C52788F005F3CD7 /* ProfileViewController.h */,
 				6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */,
 				6DF5DA261C53F4F2000A2892 /* MessageViewController.h */,
 				6DF5DA271C53F4F2000A2892 /* MessageViewController.m */,
+				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
+				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
@@ -889,6 +894,7 @@
 				6D9C42E11C49D975007C05A2 /* PreferenceViewController.m in Sources */,
 				6D6AB8831C4FFDF7005F3CD7 /* InfoCollectionViewCell.m in Sources */,
 				6D9C42331C48EEE9007C05A2 /* ChatCell.m in Sources */,
+				6D0BCA3D1D3B5B2C0072D86B /* BaseViewController.m in Sources */,
 				6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */,
 				6DA3F19D1D3A21FD00609E7D /* UIColor+Hex.m in Sources */,
 				6D6AB88A1C52788F005F3CD7 /* ProfileViewController.m in Sources */,

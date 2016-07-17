@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MessageViewController : UIViewController
+@interface MessageViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *messageBackButton;
 -(IBAction)done:(id)sender;

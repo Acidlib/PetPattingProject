@@ -38,6 +38,7 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
 
 }
 
+#pragma mark - collectionViewDelegate
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 
@@ -67,12 +68,13 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
 #pragma mark Show detail Profile
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showProfile2"])
+    if ([segue.identifier isEqualToString:@"showProfile"])
     {
         NSIndexPath *selectedIndexPath = [self.FavCollectionView indexPathsForSelectedItems][0];
         UIImage *myImage = [UIImage imageNamed:[arrayOfFavProfilePic objectAtIndex:selectedIndexPath.item]];
         ProfileFavViewController *detailViewController = segue.destinationViewController;
         detailViewController.myImageFav = myImage;
+        
     }
 }
 

@@ -134,7 +134,10 @@
 		6DCB0A061C46BFC1003FBE23 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DCB0A051C46BFC1003FBE23 /* test@2x.png */; };
 		6DCB0A081C46C3CE003FBE23 /* line2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DCB0A071C46C3CE003FBE23 /* line2.png */; };
 		6DCEF2971C53B2DF00B2A7B1 /* ProfileFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */; };
-		6DF5DA251C53EA8E000A2892 /* chatIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5DA241C53EA8E000A2892 /* chatIcon.png */; };
+		6DCFA1CE1D3B869100A6DB67 /* icn_chat_bf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1CD1D3B869100A6DB67 /* icn_chat_bf.png */; };
+		6DCFA1D81D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1D61D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a */; };
+		6DCFA1D91D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */; };
+		6DCFA1DB1D3B930B00A6DB67 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCFA1DA1D3B930B00A6DB67 /* AVFoundation.framework */; };
 		6DF5DA281C53F4F2000A2892 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5DA271C53F4F2000A2892 /* MessageViewController.m */; };
 		6DF5DA2B1C53FA09000A2892 /* favIcon_af.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5DA291C53FA09000A2892 /* favIcon_af.png */; };
 		6DF5DA2C1C53FA09000A2892 /* favIcon_bf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5DA2A1C53FA09000A2892 /* favIcon_bf.png */; };
@@ -314,7 +317,10 @@
 		6DCB0A071C46C3CE003FBE23 /* line2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line2.png; sourceTree = "<group>"; };
 		6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileFavViewController.h; sourceTree = "<group>"; };
 		6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileFavViewController.m; sourceTree = "<group>"; };
-		6DF5DA241C53EA8E000A2892 /* chatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatIcon.png; sourceTree = "<group>"; };
+		6DCFA1CD1D3B869100A6DB67 /* icn_chat_bf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_chat_bf.png; sourceTree = "<group>"; };
+		6DCFA1D61D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = CAT_SoundEffect.m4a; sourceTree = "<group>"; };
+		6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dog_SoundEffect.m4a; sourceTree = "<group>"; };
+		6DCFA1DA1D3B930B00A6DB67 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6DF5DA261C53F4F2000A2892 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		6DF5DA271C53F4F2000A2892 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		6DF5DA291C53FA09000A2892 /* favIcon_af.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favIcon_af.png; sourceTree = "<group>"; };
@@ -327,6 +333,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DCFA1DB1D3B930B00A6DB67 /* AVFoundation.framework in Frameworks */,
 				6D1D89A11C443155001B9983 /* CoreGraphics.framework in Frameworks */,
 				6D1D899F1C44314D001B9983 /* Foundation.framework in Frameworks */,
 				6D1D899D1C443138001B9983 /* UIKit.framework in Frameworks */,
@@ -435,6 +442,7 @@
 		6D1D89721C42A84E001B9983 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6DCFA1CD1D3B869100A6DB67 /* icn_chat_bf.png */,
 				6D0BCA341D3A70C60072D86B /* icn_setting.png */,
 				6D7BF2A71C548B4F00BE7F4A /* search2.png */,
 				6D7BF2A11C54883B00BE7F4A /* search.png */,
@@ -444,7 +452,6 @@
 				6DF5DA2D1C53FD00000A2892 /* test.png */,
 				6DF5DA291C53FA09000A2892 /* favIcon_af.png */,
 				6DF5DA2A1C53FA09000A2892 /* favIcon_bf.png */,
-				6DF5DA241C53EA8E000A2892 /* chatIcon.png */,
 				6D6AB8841C5265C9005F3CD7 /* bg1.png */,
 				6D7BF2A51C548A2300BE7F4A /* search1.png */,
 				6D6AB8851C5265C9005F3CD7 /* bg2.png */,
@@ -541,6 +548,7 @@
 		6D1D89A21C443186001B9983 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DCFA1DA1D3B930B00A6DB67 /* AVFoundation.framework */,
 				6D1D89A01C443155001B9983 /* CoreGraphics.framework */,
 				6D1D899E1C44314D001B9983 /* Foundation.framework */,
 				6D1D899C1C443138001B9983 /* UIKit.framework */,
@@ -590,6 +598,7 @@
 		6D866F651C4237FC00CC2D43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6DCFA1CF1D3B890400A6DB67 /* Sounds */,
 				6D1D89721C42A84E001B9983 /* Images */,
 				6D1D896B1C429E40001B9983 /* SlideOutMenuFiles */,
 				6D866F661C4237FC00CC2D43 /* main.m */,
@@ -651,6 +660,15 @@
 				6D0BCA391D3B583F0072D86B /* MainPage */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6DCFA1CF1D3B890400A6DB67 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6DCFA1D61D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a */,
+				6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -812,6 +830,7 @@
 				6DCB0A011C46BE74003FBE23 /* 1_search_af.png in Resources */,
 				6D9C42461C4901E7007C05A2 /* Prof_c10.png in Resources */,
 				6D6AB8711C4E8931005F3CD7 /* p25.png in Resources */,
+				6DCFA1D81D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a in Resources */,
 				6D0BCA351D3A70C60072D86B /* icn_setting.png in Resources */,
 				6D7BF2A81C548B4F00BE7F4A /* search2.png in Resources */,
 				6D1D89741C42AD9B001B9983 /* Prof_1@3x.png in Resources */,
@@ -819,6 +838,7 @@
 				6DCB09EE1C46BE48003FBE23 /* line.png in Resources */,
 				6D9C43391C4A32D8007C05A2 /* 0_british_shorthair.jpg in Resources */,
 				6D6AB8691C4E8490005F3CD7 /* p23.png in Resources */,
+				6DCFA1CE1D3B869100A6DB67 /* icn_chat_bf.png in Resources */,
 				6D6AB8581C4E8490005F3CD7 /* p6.png in Resources */,
 				6D866F701C4237FC00CC2D43 /* Main.storyboard in Resources */,
 				6DCB09FF1C46BE74003FBE23 /* 1_redar_af.png in Resources */,
@@ -838,7 +858,6 @@
 				6D9C424F1C490558007C05A2 /* Prof_c7.png in Resources */,
 				6D6AB8791C4E8FBE005F3CD7 /* offline.png in Resources */,
 				6D9C433C1C4A32D8007C05A2 /* 0_persian.jpg in Resources */,
-				6DF5DA251C53EA8E000A2892 /* chatIcon.png in Resources */,
 				6D5B27E21C47C9A7004CE54B /* back0.png in Resources */,
 				6D6AB8801C4FFD31005F3CD7 /* sasa3.png in Resources */,
 				6D6AB85C1C4E8490005F3CD7 /* p10.png in Resources */,
@@ -846,6 +865,7 @@
 				6D9C43361C4A32D8007C05A2 /* 0_abyssinian.jpg in Resources */,
 				6D6AB8651C4E8490005F3CD7 /* p19.png in Resources */,
 				6D6AB8561C4E8490005F3CD7 /* p4.png in Resources */,
+				6DCFA1D91D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a in Resources */,
 				6D6AB85B1C4E8490005F3CD7 /* p9.png in Resources */,
 				6DF5DA2E1C53FD00000A2892 /* test.png in Resources */,
 				6DCB09F91C46BE74003FBE23 /* 1_char_af3.png in Resources */,

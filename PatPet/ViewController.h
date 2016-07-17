@@ -17,5 +17,7 @@
 @property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 
+@property (weak, nonatomic) IBOutlet UITextField *searchField;
+
 @end
 

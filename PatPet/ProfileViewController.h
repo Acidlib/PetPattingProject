@@ -11,9 +11,10 @@
 
 @interface ProfileViewController : BaseViewController
 
-@property (nonatomic, strong) UIImage *myImage;
-@property (nonatomic, strong) NSString *myStringName;
-@property (nonatomic, strong) NSString *myStringAge;
-@property (nonatomic, strong) NSString *myStringDistance;
+@property (nonatomic, strong) UIImage *img;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *age;
+@property (nonatomic, strong) NSString *distance;
+@property (weak, nonatomic) IBOutlet UILabel *indication;
 
 @end

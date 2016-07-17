@@ -100,8 +100,6 @@
 		6D9C424D1C490550007C05A2 /* Prof_c6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9C424C1C490550007C05A2 /* Prof_c6.png */; };
 		6D9C424F1C490558007C05A2 /* Prof_c7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9C424E1C490558007C05A2 /* Prof_c7.png */; };
 		6D9C42511C490A00007C05A2 /* 1_chat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9C42501C490A00007C05A2 /* 1_chat2.png */; };
-		6D9C42571C497261007C05A2 /* ButtonInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42561C497261007C05A2 /* ButtonInView.m */; };
-		6D9C425A1C498143007C05A2 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42591C498143007C05A2 /* SearchView.m */; };
 		6D9C42E11C49D975007C05A2 /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */; };
 		6D9C42E41C49E300007C05A2 /* InfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42E31C49E300007C05A2 /* InfomationViewController.m */; };
 		6D9C432C1C4A1614007C05A2 /* BreedsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C432B1C4A1614007C05A2 /* BreedsCell.m */; };
@@ -272,10 +270,6 @@
 		6D9C424C1C490550007C05A2 /* Prof_c6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prof_c6.png; sourceTree = "<group>"; };
 		6D9C424E1C490558007C05A2 /* Prof_c7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prof_c7.png; sourceTree = "<group>"; };
 		6D9C42501C490A00007C05A2 /* 1_chat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_chat2.png; sourceTree = "<group>"; };
-		6D9C42551C497261007C05A2 /* ButtonInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonInView.h; sourceTree = "<group>"; };
-		6D9C42561C497261007C05A2 /* ButtonInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonInView.m; sourceTree = "<group>"; };
-		6D9C42581C498143007C05A2 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
-		6D9C42591C498143007C05A2 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
 		6D9C42DF1C49D975007C05A2 /* PreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceViewController.h; sourceTree = "<group>"; };
 		6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
 		6D9C42E21C49E300007C05A2 /* InfomationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfomationViewController.h; sourceTree = "<group>"; };
@@ -362,6 +356,66 @@
 				6D0BCA321D3A59370072D86B /* YLCircle.m */,
 			);
 			name = YLViews;
+			sourceTree = "<group>";
+		};
+		6D0BCA361D3B55630072D86B /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */,
+				6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */,
+				6DCB09DF1C4651A3003FBE23 /* FavoriteViewController.h */,
+				6DCB09E01C4651A3003FBE23 /* FavoriteViewController.m */,
+				6D9C433F1C4B413D007C05A2 /* FavCell.h */,
+				6D9C43401C4B413D007C05A2 /* FavCell.m */,
+				6D7BF29B1C54800800BE7F4A /* FavChatViewController.h */,
+				6D7BF29C1C54800800BE7F4A /* FavChatViewController.m */,
+			);
+			name = Favorite;
+			sourceTree = "<group>";
+		};
+		6D0BCA371D3B57650072D86B /* Portal */ = {
+			isa = PBXGroup;
+			children = (
+				6D9C42DF1C49D975007C05A2 /* PreferenceViewController.h */,
+				6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */,
+				6D9C432A1C4A1614007C05A2 /* BreedsCell.h */,
+				6D9C432B1C4A1614007C05A2 /* BreedsCell.m */,
+				6D9C42E21C49E300007C05A2 /* InfomationViewController.h */,
+				6D9C42E31C49E300007C05A2 /* InfomationViewController.m */,
+				6D6AB8811C4FFDF7005F3CD7 /* InfoCollectionViewCell.h */,
+				6D6AB8821C4FFDF7005F3CD7 /* InfoCollectionViewCell.m */,
+				6D1D896F1C42A369001B9983 /* NavigationViewController.h */,
+				6D1D89701C42A369001B9983 /* NavigationViewController.m */,
+			);
+			name = Portal;
+			sourceTree = "<group>";
+		};
+		6D0BCA381D3B58020072D86B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				6D9C42311C48EEE9007C05A2 /* ChatCell.h */,
+				6D9C42321C48EEE9007C05A2 /* ChatCell.m */,
+				6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */,
+				6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */,
+				6D7BF29E1C54840000BE7F4A /* chatMainContentViewController.h */,
+				6D7BF29F1C54840000BE7F4A /* chatMainContentViewController.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		6D0BCA391D3B583F0072D86B /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				6D866F6B1C4237FC00CC2D43 /* ViewController.h */,
+				6DB4A2831C9D060000F604EC /* ViewController.m */,
+				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
+				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
+				6D6AB8881C52788F005F3CD7 /* ProfileViewController.h */,
+				6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */,
+				6DF5DA261C53F4F2000A2892 /* MessageViewController.h */,
+				6DF5DA271C53F4F2000A2892 /* MessageViewController.m */,
+			);
+			name = MainPage;
 			sourceTree = "<group>";
 		};
 		6D1D896B1C429E40001B9983 /* SlideOutMenuFiles */ = {
@@ -519,22 +573,6 @@
 				6D866F681C4237FC00CC2D43 /* AppDelegate.h */,
 				6D866F691C4237FC00CC2D43 /* AppDelegate.m */,
 				6D866F6E1C4237FC00CC2D43 /* Main.storyboard */,
-				6D9C42551C497261007C05A2 /* ButtonInView.h */,
-				6D9C42561C497261007C05A2 /* ButtonInView.m */,
-				6D9C42581C498143007C05A2 /* SearchView.h */,
-				6D9C42591C498143007C05A2 /* SearchView.m */,
-				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
-				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
-				6D9C42311C48EEE9007C05A2 /* ChatCell.h */,
-				6D9C42321C48EEE9007C05A2 /* ChatCell.m */,
-				6D9C432A1C4A1614007C05A2 /* BreedsCell.h */,
-				6D9C432B1C4A1614007C05A2 /* BreedsCell.m */,
-				6D9C433F1C4B413D007C05A2 /* FavCell.h */,
-				6D9C43401C4B413D007C05A2 /* FavCell.m */,
-				6D1D896F1C42A369001B9983 /* NavigationViewController.h */,
-				6D1D89701C42A369001B9983 /* NavigationViewController.m */,
-				6D6AB8811C4FFDF7005F3CD7 /* InfoCollectionViewCell.h */,
-				6D6AB8821C4FFDF7005F3CD7 /* InfoCollectionViewCell.m */,
 				6D866F741C4237FC00CC2D43 /* Assets.xcassets */,
 				6D866F761C4237FC00CC2D43 /* LaunchScreen.storyboard */,
 				6D866F791C4237FC00CC2D43 /* Info.plist */,
@@ -602,26 +640,10 @@
 		6DA3F19E1D3A221100609E7D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6D9C42DF1C49D975007C05A2 /* PreferenceViewController.h */,
-				6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */,
-				6D9C42E21C49E300007C05A2 /* InfomationViewController.h */,
-				6D9C42E31C49E300007C05A2 /* InfomationViewController.m */,
-				6DCB09DF1C4651A3003FBE23 /* FavoriteViewController.h */,
-				6DCB09E01C4651A3003FBE23 /* FavoriteViewController.m */,
-				6D7BF29E1C54840000BE7F4A /* chatMainContentViewController.h */,
-				6D7BF29F1C54840000BE7F4A /* chatMainContentViewController.m */,
-				6D7BF29B1C54800800BE7F4A /* FavChatViewController.h */,
-				6D7BF29C1C54800800BE7F4A /* FavChatViewController.m */,
-				6DF5DA261C53F4F2000A2892 /* MessageViewController.h */,
-				6DF5DA271C53F4F2000A2892 /* MessageViewController.m */,
-				6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */,
-				6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */,
-				6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */,
-				6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */,
-				6D866F6B1C4237FC00CC2D43 /* ViewController.h */,
-				6DB4A2831C9D060000F604EC /* ViewController.m */,
-				6D6AB8881C52788F005F3CD7 /* ProfileViewController.h */,
-				6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */,
+				6D0BCA371D3B57650072D86B /* Portal */,
+				6D0BCA361D3B55630072D86B /* Favorite */,
+				6D0BCA381D3B58020072D86B /* Chat */,
+				6D0BCA391D3B583F0072D86B /* MainPage */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -856,7 +878,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9C425A1C498143007C05A2 /* SearchView.m in Sources */,
 				6DCEF2971C53B2DF00B2A7B1 /* ProfileFavViewController.m in Sources */,
 				6D9C43411C4B413D007C05A2 /* FavCell.m in Sources */,
 				6D7BF2A01C54840000BE7F4A /* chatMainContentViewController.m in Sources */,
@@ -869,7 +890,6 @@
 				6D6AB8831C4FFDF7005F3CD7 /* InfoCollectionViewCell.m in Sources */,
 				6D9C42331C48EEE9007C05A2 /* ChatCell.m in Sources */,
 				6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */,
-				6D9C42571C497261007C05A2 /* ButtonInView.m in Sources */,
 				6DA3F19D1D3A21FD00609E7D /* UIColor+Hex.m in Sources */,
 				6D6AB88A1C52788F005F3CD7 /* ProfileViewController.m in Sources */,
 				6D0BCA301D3A58DA0072D86B /* YLColorButton.m in Sources */,

@@ -42,7 +42,7 @@
 }
 */
 -(IBAction)done:(id)sender{
-    [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

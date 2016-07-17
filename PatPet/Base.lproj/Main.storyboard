@@ -617,7 +617,7 @@
                                             <outlet property="favOnlineStatus" destination="PGF-eB-pdY" id="5Rq-zT-Wvg"/>
                                             <outlet property="favProfileName" destination="0AN-Qt-oQC" id="dwc-5z-nqe"/>
                                             <outlet property="favProfilePic" destination="aYo-ty-yF2" id="lEV-CK-P6J"/>
-                                            <segue destination="hWv-fb-Q3t" kind="push" identifier="showProfile2" id="EiI-N6-Fn6"/>
+                                            <segue destination="hWv-fb-Q3t" kind="show" identifier="showProfile2" id="EiI-N6-Fn6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

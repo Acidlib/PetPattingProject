@@ -1,3 +1,5 @@
 PatPet.xcodeproj/project.xcworkspace/xcuserdata/
 PatPet.xcodeproj/xcuserdata/YLibrarian.xcuserdatad/xcdebugger/
-
+*.nib
+build/*
+build/Debug-iphoneos/PatPet.app/Base.lproj/*

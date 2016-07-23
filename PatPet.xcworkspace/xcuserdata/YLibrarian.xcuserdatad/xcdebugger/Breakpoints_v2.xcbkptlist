@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "490957322.213959"
+            timestampString = "490982647.630387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
@@ -36,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "490957350.527367"
+            timestampString = "490982647.630387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -52,7 +52,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "490957354.045716"
+            timestampString = "490982647.630387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490957513.663294"
+            timestampString = "490983023.550087"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -84,12 +84,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490972443.785333"
+            timestampString = "490983653.932895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-receiveMessagePressed:"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ViewControllers/MainPage/MainModelData.m"
-            timestampString = "490972318.722492"
+            timestampString = "490976075.742526"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "-init"
             landmarkType = "5">
          </BreakpointContent>
@@ -112,15 +112,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490972443.785333"
+            timestampString = "490983653.932895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "320"
-            endingLineNumber = "320"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
             landmarkName = "-collectionView:avatarImageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490972443.785333"
+            timestampString = "490983653.932895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "520"
-            endingLineNumber = "520"
+            startingLineNumber = "528"
+            endingLineNumber = "528"
             landmarkName = "-collectionView:didTapAvatarImageView:atIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -148,27 +148,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490972443.785333"
+            timestampString = "490983653.932895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "-receiveMessagePressed:"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490972443.785333"
+            timestampString = "490983653.932895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
             landmarkName = "-collectionView:messageBubbleImageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -176,15 +176,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "490972443.785333"
+            timestampString = "490983653.932895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "380"
-            endingLineNumber = "380"
+            startingLineNumber = "388"
+            endingLineNumber = "388"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -192,11 +192,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.m"
-            timestampString = "490971284.418664"
+            timestampString = "490982338.51367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "590"
@@ -208,16 +208,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.m"
-            timestampString = "490971606.188444"
+            timestampString = "490982338.51367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "589"
             endingLineNumber = "589"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PatPet/MessageViewController.m"
+            timestampString = "490983653.932895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PatPet/MessageViewController.m"
+            timestampString = "490983653.932895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-receiveMessagePressed"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MessageViewController receiveMessagePressed]"
+                  moduleName = "PatPet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
+                  timestampString = "490983533.38529"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46-[MessageViewController receiveMessagePressed]_block_invoke"
+                  moduleName = "PatPet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
+                  timestampString = "490983533.385482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PatPet/MessageViewController.m"
+            timestampString = "490983653.932895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-receiveMessagePressed"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PatPet/MessageViewController.m"
+            timestampString = "490983653.932895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

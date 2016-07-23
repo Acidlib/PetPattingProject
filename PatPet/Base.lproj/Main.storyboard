@@ -507,14 +507,15 @@
                         <viewControllerLayoutGuide type="top" id="evJ-YE-cp0"/>
                         <viewControllerLayoutGuide type="bottom" id="fIe-Sl-z9h"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xLz-SF-leV">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="xLz-SF-leV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Message" id="69c-rA-LFZ">
-                        <barButtonItem key="leftBarButtonItem" image="back0.png" id="Aln-jN-mZ0">
-                            <color key="tintColor" red="0.76729166666666671" green="0.76729166666666671" blue="0.76729166666666671" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="icn-back.png" width="20" style="plain" id="Aln-jN-mZ0">
+                            <inset key="imageInsets" minX="0.0" minY="10" maxX="20" maxY="10"/>
+                            <color key="tintColor" red="0.92691689729690552" green="0.9166368842124939" blue="0.20239287614822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="done:" destination="jRp-WC-yHZ" id="euO-0P-Fcd"/>
                             </connections>

@@ -9,8 +9,11 @@
 #import "MessageViewController.h"
 #import "UIImage+JSQMessages.h"
 #import "JSQMessage.h"
+#import "PetColor.h"
 
 @interface MessageViewController ()
+
+@property int sendCount;
 
 @end
 
@@ -18,11 +21,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupUIAttribute];
+    [self setupJSQMessagesCollectionView];
+
+}
+
+- (void)setupUIAttribute
+{
+    _messageBackButton.tintColor = [PetColor lemonDarkColor];
+}
+
+- (void)setupJSQMessagesCollectionView
+{
     self.title = @"Jessica";    // Todo: should use the pet's name
     self.inputToolbar.contentView.textView.pasteDelegate = self;
     self.demoData = [[MainModelData alloc] init];
     self.showLoadEarlierMessagesHeader = YES;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage jsq_defaultTypingIndicatorImage] style:UIBarButtonItemStylePlain target:self action:@selector(receiveMessagePressed:)];
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(customAction:)];
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
 }
@@ -55,7 +69,7 @@
 
 #pragma mark - Actions
 
-- (void)receiveMessagePressed:(UIBarButtonItem *)sender
+- (void)receiveMessagePressed
 {
     self.showTypingIndicator = !self.showTypingIndicator;
     [self scrollToBottomAnimated:YES];
@@ -213,24 +227,18 @@
          senderDisplayName:(NSString *)senderDisplayName
                       date:(NSDate *)date
 {
-    /**
-     *  Sending a message. Your implementation of this method should do *at least* the following:
-     *
-     *  1. Play sound (optional)
-     *  2. Add new id<JSQMessageData> object to your data source
-     *  3. Call `finishSendingMessage`
-     */
-
-    // [JSQSystemSoundPlayer jsq_playMessageSentSound];
-
+    _sendCount += 1;
     JSQMessage *message = [[JSQMessage alloc] initWithSenderId:senderId
                                              senderDisplayName:senderDisplayName
                                                           date:date
                                                           text:text];
-
     [self.demoData.messages addObject:message];
-
     [self finishSendingMessageAnimated:YES];
+
+    if (_sendCount > 3) {
+        _sendCount = 0;
+        [self receiveMessagePressed];
+    }
 }
 
 - (void)didPressAccessoryButton:(UIButton *)sender

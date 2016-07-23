@@ -18,25 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"JSQMessages";
+    self.title = @"Jessica";    // Todo: should use the pet's name
     self.inputToolbar.contentView.textView.pasteDelegate = self;
     self.demoData = [[MainModelData alloc] init];
-    self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
-    self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
     self.showLoadEarlierMessagesHeader = YES;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage jsq_defaultTypingIndicatorImage] style:UIBarButtonItemStylePlain target:self action:@selector(receiveMessagePressed:)];
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(customAction:)];
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
-}
-
-- (void)setName:(NSString *)name
-{
-    _name = name;
-}
-
-- (void)setImg:(UIImage *)img
-{
-    _img = img;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,9 +67,6 @@
                                                  text:@"First received!"];
     }
 
-    /**
-     *  Allow typing indicator to show
-     */
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
         NSMutableArray *userIds = [[self.demoData.users allKeys] mutableCopy];
@@ -321,58 +306,17 @@
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    /**
-     *  You may return nil here if you do not want bubbles.
-     *  In this case, you should set the background color of your collection view cell's textView.
-     *
-     *  Otherwise, return your previously created bubble image data objects.
-     */
 
     JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
-
     if ([message.senderId isEqualToString:self.senderId]) {
         return self.demoData.outgoingBubbleImageData;
     }
-
     return self.demoData.incomingBubbleImageData;
 }
 
 - (id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    /**
-     *  Return `nil` here if you do not want avatars.
-     *  If you do return `nil`, be sure to do the following in `viewDidLoad`:
-     *
-     *  self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
-     *  self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
-     *
-     *  It is possible to have only outgoing avatars or only incoming avatars, too.
-     */
-
-    /**
-     *  Return your previously created avatar image data objects.
-     *
-     *  Note: these the avatars will be sized according to these values:
-     *
-     *  self.collectionView.collectionViewLayout.incomingAvatarViewSize
-     *  self.collectionView.collectionViewLayout.outgoingAvatarViewSize
-     *
-     *  Override the defaults in `viewDidLoad`
-     */
     JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
-
-//    if ([message.senderId isEqualToString:self.senderId]) {
-//        if (![NSUserDefaults outgoingAvatarSetting]) {
-//            return nil;
-//        }
-//    }
-//    else {
-//        if (![NSUserDefaults incomingAvatarSetting]) {
-//            return nil;
-//        }
-//    }
-
-
     return [self.demoData.avatars objectForKey:message.senderId];
 }
 

@@ -46,6 +46,15 @@
                            alpha:1.0f];
 }
 
++ (UIColor *)jsq_messageBubbleLemonDarkColor
+{
+    return [UIColor colorWithHue:49.f / 360.0f
+                      saturation:0.61f
+                      brightness:0.85f
+                           alpha:1.0f];
+
+}
+
 + (UIColor *)jsq_messageBubbleLightGrayColor
 {
     return [UIColor colorWithHue:240.0f / 360.0f

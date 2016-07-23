@@ -39,6 +39,7 @@
     self.showLoadEarlierMessagesHeader = YES;
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(customAction:)];
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
+    self.showLoadEarlierMessagesHeader = NO;
 }
 
 - (void)didReceiveMemoryWarning {

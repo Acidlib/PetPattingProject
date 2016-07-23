@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "MessageViewController.h"
 #import "PetColor.h"
 #import <AudioToolbox/AudioServices.h>
 #import <AVFoundation/AVAudioPlayer.h>
@@ -103,6 +104,20 @@
 
 }
 
+/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showMessage"]) {
+        MessageViewController *msgVC = segue.destinationViewController;
+        msgVC.img = self.img;
+        msgVC.name = self.name;
+    }
+}*/
+
+- (IBAction)messagePressed:(id)sender
+{
+    
+}
+
 - (IBAction)backPressed:(id)sender
 {
     [self.navigationController popToRootViewControllerAnimated:NO];
@@ -112,14 +127,5 @@
 - (void) playMySoundLikeRightNowReally {
     AudioServicesPlaySystemSound(audioEffect);
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

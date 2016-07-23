@@ -307,7 +307,8 @@
                                 </constraints>
                                 <state key="normal" image="icn_chat_bf.png"/>
                                 <connections>
-                                    <segue destination="Eyy-5m-GrF" kind="presentation" modalTransitionStyle="coverVertical" id="HFR-Lr-jMj"/>
+                                    <action selector="messagePressed:" destination="Cd6-PZ-DA1" eventType="touchUpInside" id="VUc-Gx-CB1"/>
+                                    <segue destination="Eyy-5m-GrF" kind="presentation" identifier="showMessage" modalTransitionStyle="coverVertical" id="HFR-Lr-jMj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="msj-mf-wd8">

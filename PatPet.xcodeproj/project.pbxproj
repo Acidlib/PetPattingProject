@@ -139,10 +139,13 @@
 		6DCFA1D91D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */; };
 		6DCFA1DB1D3B930B00A6DB67 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCFA1DA1D3B930B00A6DB67 /* AVFoundation.framework */; };
 		6DCFA1DD1D3BB9C000A6DB67 /* icn-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1DC1D3BB9C000A6DB67 /* icn-back.png */; };
+		6DF4A3FF1D433D9100370031 /* MainModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4A3FE1D433D9100370031 /* MainModelData.m */; };
+		6DF4A4021D434AFC00370031 /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4A4011D434AFC00370031 /* NSUserDefaults+DemoSettings.m */; };
 		6DF5DA281C53F4F2000A2892 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5DA271C53F4F2000A2892 /* MessageViewController.m */; };
 		6DF5DA2B1C53FA09000A2892 /* favIcon_af.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5DA291C53FA09000A2892 /* favIcon_af.png */; };
 		6DF5DA2C1C53FA09000A2892 /* favIcon_bf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5DA2A1C53FA09000A2892 /* favIcon_bf.png */; };
 		6DF5DA2E1C53FD00000A2892 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5DA2D1C53FD00000A2892 /* test.png */; };
+		87A8323BB8C35E364C8134B2 /* Pods_PatPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5B60ED2B9C0463194C3E66 /* Pods_PatPet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,11 +326,18 @@
 		6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dog_SoundEffect.m4a; sourceTree = "<group>"; };
 		6DCFA1DA1D3B930B00A6DB67 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6DCFA1DC1D3BB9C000A6DB67 /* icn-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icn-back.png"; path = "../../../../../../Desktop/website/Ku/icn-back.png"; sourceTree = "<group>"; };
+		6DF4A3FD1D433D9100370031 /* MainModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainModelData.h; path = ViewControllers/MainPage/MainModelData.h; sourceTree = "<group>"; };
+		6DF4A3FE1D433D9100370031 /* MainModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainModelData.m; path = ViewControllers/MainPage/MainModelData.m; sourceTree = "<group>"; };
+		6DF4A4001D434AFC00370031 /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
+		6DF4A4011D434AFC00370031 /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
 		6DF5DA261C53F4F2000A2892 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		6DF5DA271C53F4F2000A2892 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		6DF5DA291C53FA09000A2892 /* favIcon_af.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favIcon_af.png; sourceTree = "<group>"; };
 		6DF5DA2A1C53FA09000A2892 /* favIcon_bf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favIcon_bf.png; sourceTree = "<group>"; };
 		6DF5DA2D1C53FD00000A2892 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		6FA6B47CB502BA9E5DE5DD66 /* Pods-PatPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatPet/Pods-PatPet.release.xcconfig"; sourceTree = "<group>"; };
+		7E5B60ED2B9C0463194C3E66 /* Pods_PatPet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatPet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D8BC10B7E63EF79BCC7E5E /* Pods-PatPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatPet/Pods-PatPet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +349,7 @@
 				6D1D89A11C443155001B9983 /* CoreGraphics.framework in Frameworks */,
 				6D1D899F1C44314D001B9983 /* Foundation.framework in Frameworks */,
 				6D1D899D1C443138001B9983 /* UIKit.framework in Frameworks */,
+				87A8323BB8C35E364C8134B2 /* Pods_PatPet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +370,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68681486C46FE269E566EA45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81D8BC10B7E63EF79BCC7E5E /* Pods-PatPet.debug.xcconfig */,
+				6FA6B47CB502BA9E5DE5DD66 /* Pods-PatPet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6D0BCA2D1D3A571E0072D86B /* YLViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +446,10 @@
 				6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */,
 				6DF5DA261C53F4F2000A2892 /* MessageViewController.h */,
 				6DF5DA271C53F4F2000A2892 /* MessageViewController.m */,
+				6DF4A3FD1D433D9100370031 /* MainModelData.h */,
+				6DF4A3FE1D433D9100370031 /* MainModelData.m */,
+				6DF4A4001D434AFC00370031 /* NSUserDefaults+DemoSettings.h */,
+				6DF4A4011D434AFC00370031 /* NSUserDefaults+DemoSettings.m */,
 				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
 				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
 			);
@@ -555,6 +579,7 @@
 				6D1D89A01C443155001B9983 /* CoreGraphics.framework */,
 				6D1D899E1C44314D001B9983 /* Foundation.framework */,
 				6D1D899C1C443138001B9983 /* UIKit.framework */,
+				7E5B60ED2B9C0463194C3E66 /* Pods_PatPet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -567,6 +592,7 @@
 				6D866F8C1C4237FC00CC2D43 /* PatPetUITests */,
 				6D866F631C4237FC00CC2D43 /* Products */,
 				6D1D89A21C443186001B9983 /* Frameworks */,
+				68681486C46FE269E566EA45 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -681,9 +707,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D866F921C4237FC00CC2D43 /* Build configuration list for PBXNativeTarget "PatPet" */;
 			buildPhases = (
+				DB6B165801861225C3D97777 /* [CP] Check Pods Manifest.lock */,
 				6D866F5E1C4237FC00CC2D43 /* Sources */,
 				6D866F5F1C4237FC00CC2D43 /* Frameworks */,
 				6D866F601C4237FC00CC2D43 /* Resources */,
+				92D381110D63B564C4A5458A /* [CP] Embed Pods Frameworks */,
+				1C625217833E116B07ECD3C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -902,6 +931,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C625217833E116B07ECD3C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatPet/Pods-PatPet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D381110D63B564C4A5458A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatPet/Pods-PatPet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6B165801861225C3D97777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D866F5E1C4237FC00CC2D43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -911,9 +988,11 @@
 				6D9C43411C4B413D007C05A2 /* FavCell.m in Sources */,
 				6D7BF2A01C54840000BE7F4A /* chatMainContentViewController.m in Sources */,
 				6D5B27FF1C480355004CE54B /* ChatCollectionViewController.m in Sources */,
+				6DF4A3FF1D433D9100370031 /* MainModelData.m in Sources */,
 				6D9C42E41C49E300007C05A2 /* InfomationViewController.m in Sources */,
 				6D7BF29D1C54800800BE7F4A /* FavChatViewController.m in Sources */,
 				6DF5DA281C53F4F2000A2892 /* MessageViewController.m in Sources */,
+				6DF4A4021D434AFC00370031 /* NSUserDefaults+DemoSettings.m in Sources */,
 				6D866F731C4237FC00CC2D43 /* PatPet.xcdatamodeld in Sources */,
 				6D9C42E11C49D975007C05A2 /* PreferenceViewController.m in Sources */,
 				6D6AB8831C4FFDF7005F3CD7 /* InfoCollectionViewCell.m in Sources */,
@@ -1068,6 +1147,7 @@
 		};
 		6D866F931C4237FC00CC2D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D8BC10B7E63EF79BCC7E5E /* Pods-PatPet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1081,6 +1161,7 @@
 		};
 		6D866F941C4237FC00CC2D43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA6B47CB502BA9E5DE5DD66 /* Pods-PatPet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

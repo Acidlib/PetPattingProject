@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "JSQMessagesViewController.h"
+#import "MainModelData.h"
 
-@interface MessageViewController : BaseViewController
+@interface MessageViewController : JSQMessagesViewController <UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate>
 
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) UIImage *img;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *messageBackButton;
 -(IBAction)done:(id)sender;
+
+@property (strong, nonatomic) MainModelData *demoData;
+- (void)receiveMessagePressed:(UIBarButtonItem *)sender;
+//- (void)closePressed:(UIBarButtonItem *)sender;
+
 @end

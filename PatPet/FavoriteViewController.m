@@ -32,6 +32,17 @@ static NSString *kDetailedViewControllerID = @"DetailProfile2";    // view
     [self setupCollectionView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    self.navigationController.navigationBar.hidden = NO;
+//}
+
 - (void)setupUIAttribute
 {
     //

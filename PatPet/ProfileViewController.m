@@ -93,10 +93,10 @@
     [_audioPlayer play];
 }
 
--(void)zap:(UIBarButtonItem *)sender
-{
-    [self.navigationController popViewControllerAnimated:NO];
-}
+//-(void)zap:(UIBarButtonItem *)sender
+//{
+//    [self.navigationController popViewControllerAnimated:NO];
+//}
 
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
 {

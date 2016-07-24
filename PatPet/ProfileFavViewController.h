@@ -11,7 +11,4 @@
 
 @interface ProfileFavViewController : BaseViewController
 @property (nonatomic, strong) UIImage *myImageFav;
-
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *profileBackButton;
--(IBAction)done:(id)sender;
 @end

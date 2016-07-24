@@ -28,6 +28,11 @@
     return [UIColor colorForHex:@"eaeaea"];
 }
 
++ (UIColor *)darkGrayColor
+{
+    return [UIColor colorForHex:@"bfbfbf"];
+}
+
 /* sRGB IEC61966-2.1 : cc4a44 */
 + (UIColor *)destructiveColor
 {

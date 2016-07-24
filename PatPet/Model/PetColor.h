@@ -14,6 +14,7 @@
 + (UIColor *)appColor;
 + (UIColor *)darkColor;
 + (UIColor *)lightColor;
++ (UIColor *)darkGrayColor;
 + (UIColor *)destructiveColor;
 + (UIColor *)lightTitleColor;
 + (UIColor *)subtitleColor;

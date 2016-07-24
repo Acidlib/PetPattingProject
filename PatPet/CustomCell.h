@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *myImage;
 @property (weak, nonatomic) IBOutlet UILabel *myDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *colorLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *onlineStatus;
 
 @end

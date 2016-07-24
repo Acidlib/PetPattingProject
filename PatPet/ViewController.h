@@ -14,10 +14,12 @@
 @property (weak, nonatomic) IBOutlet UIView *View0;
 @property (weak, nonatomic) IBOutlet UIView *View1;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *messageItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *favItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *searchItem;
+
 @property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
-
-@property (weak, nonatomic) IBOutlet UITextField *searchField;
 
 @end
 

@@ -154,13 +154,95 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wI4-uX-0wq">
+                                <rect key="frame" x="0.0" y="65" width="414" height="671"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="dRv-k0-Aum">
+                                    <size key="itemSize" width="375" height="105"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Chat_Cell" id="H1V-YQ-kI7" customClass="ChatCell">
+                                        <rect key="frame" x="19.5" y="0.0" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prof_c3.png" translatesAutoresizingMaskIntoConstraints="NO" id="vIj-Yo-IlK">
+                                                    <rect key="frame" x="20" y="10" width="85" height="85"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="85" id="RFy-pW-TvS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1_chat2.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-Uc-54O">
+                                                    <rect key="frame" x="116" y="48" width="242" height="47"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="T O M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQ5-hd-ZpY">
+                                                    <rect key="frame" x="116" y="19" width="47" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="B34-13-iNF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-YT-CIR">
+                                                    <rect key="frame" x="326" y="21" width="32" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How's goin'" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fG-m5-ISU">
+                                                    <rect key="frame" x="130" y="55" width="89" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Sir-YT-CIR" secondAttribute="trailing" constant="9" id="6fd-P4-Ftv"/>
+                                            <constraint firstItem="SQ5-hd-ZpY" firstAttribute="leading" secondItem="vIj-Yo-IlK" secondAttribute="trailing" constant="16" id="JKZ-py-6lh"/>
+                                            <constraint firstItem="9fG-m5-ISU" firstAttribute="leading" secondItem="vIj-Yo-IlK" secondAttribute="trailing" constant="25" id="Krb-Hq-u01"/>
+                                            <constraint firstItem="vIj-Yo-IlK" firstAttribute="centerY" secondItem="H1V-YQ-kI7" secondAttribute="centerY" id="O2h-NY-56B"/>
+                                            <constraint firstItem="Sir-YT-CIR" firstAttribute="top" secondItem="H1V-YQ-kI7" secondAttribute="topMargin" constant="13" id="PgZ-hQ-p3M"/>
+                                            <constraint firstItem="SQ5-hd-ZpY" firstAttribute="top" secondItem="H1V-YQ-kI7" secondAttribute="topMargin" constant="11" id="TrJ-B9-kss"/>
+                                            <constraint firstItem="9fG-m5-ISU" firstAttribute="top" secondItem="SQ5-hd-ZpY" secondAttribute="bottom" constant="15" id="X2w-OL-zfA"/>
+                                            <constraint firstItem="vIj-Yo-IlK" firstAttribute="top" secondItem="H1V-YQ-kI7" secondAttribute="topMargin" constant="2" id="bhr-p5-2WT"/>
+                                            <constraint firstItem="vIj-Yo-IlK" firstAttribute="leading" secondItem="H1V-YQ-kI7" secondAttribute="leadingMargin" constant="12" id="g4e-5p-txt"/>
+                                        </constraints>
+                                        <size key="customSize" width="375" height="105"/>
+                                        <connections>
+                                            <outlet property="chatContent" destination="9fG-m5-ISU" id="bxG-mS-o9C"/>
+                                            <outlet property="chatProfileName" destination="SQ5-hd-ZpY" id="Ez9-Rm-gId"/>
+                                            <outlet property="chatTime" destination="Sir-YT-CIR" id="37T-Y7-xqK"/>
+                                            <outlet property="imageViewTest1" destination="2ex-Uc-54O" id="9UV-9e-dgp"/>
+                                            <outlet property="imageViewTest2" destination="vIj-Yo-IlK" id="D8e-SK-Rhr"/>
+                                            <segue destination="Eyy-5m-GrF" kind="show" id="q3C-TN-lK2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wcp-9h-8SI" id="bUO-P1-xeN"/>
+                                    <outlet property="delegate" destination="Wcp-9h-8SI" id="uBc-TW-vwl"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rXA-9z-ccc" firstAttribute="top" secondItem="E0y-mT-uA5" secondAttribute="top" id="92p-xs-sQs"/>
                             <constraint firstAttribute="trailing" secondItem="rXA-9z-ccc" secondAttribute="trailing" id="ExB-yX-XQK"/>
+                            <constraint firstItem="wI4-uX-0wq" firstAttribute="leading" secondItem="E0y-mT-uA5" secondAttribute="leading" id="Hcx-9q-zMX"/>
+                            <constraint firstAttribute="bottom" secondItem="wI4-uX-0wq" secondAttribute="bottom" id="WIy-os-JYD"/>
+                            <constraint firstAttribute="trailing" secondItem="wI4-uX-0wq" secondAttribute="trailing" id="apz-LP-2KD"/>
                             <constraint firstItem="rXA-9z-ccc" firstAttribute="leading" secondItem="E0y-mT-uA5" secondAttribute="leading" id="uog-lt-YuM"/>
                             <constraint firstAttribute="bottomMargin" secondItem="rXA-9z-ccc" secondAttribute="bottom" id="vsa-6o-YNb"/>
+                            <constraint firstItem="wI4-uX-0wq" firstAttribute="top" secondItem="E0y-mT-uA5" secondAttribute="top" constant="65" id="yYg-Se-BBn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jiS-3j-EWV">
@@ -170,7 +252,6 @@
                             <barButtonItem image="1_char_bf3.png" id="ibE-ql-9Lq">
                                 <connections>
                                     <action selector="messagePressed:" destination="Wcp-9h-8SI" id="D03-Jk-77e"/>
-                                    <segue destination="AD4-oM-99l" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="NV2-Si-M5Y"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="1_label_bf3.png" id="L3C-nK-V83">
@@ -190,6 +271,7 @@
                         <outlet property="View1" destination="rXA-9z-ccc" id="4K7-jK-0ib"/>
                         <outlet property="barButton" destination="RsQ-j9-ifm" id="KEn-L6-I8k"/>
                         <outlet property="favItem" destination="L3C-nK-V83" id="i0l-bx-YBS"/>
+                        <outlet property="messageCollectionView" destination="wI4-uX-0wq" id="PR3-R8-930"/>
                         <outlet property="messageItem" destination="ibE-ql-9Lq" id="KWu-Rn-xp2"/>
                         <outlet property="myCollectionView" destination="3y4-zz-PqY" id="O9N-Cs-OQe"/>
                         <outlet property="searchItem" destination="jJH-k1-9zW" id="R1p-Nz-oB5"/>
@@ -436,7 +518,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Chat_Cell" id="hjs-fB-Ox5" customClass="ChatCell">
-                                <rect key="frame" x="19.5" y="44" width="375" height="105"/>
+                                <rect key="frame" x="19.5" y="64" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
@@ -968,6 +1050,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fOr-6g-NAf"/>
-        <segue reference="am8-yv-TGj"/>
+        <segue reference="q3C-TN-lK2"/>
     </inferredMetricsTieBreakers>
 </document>

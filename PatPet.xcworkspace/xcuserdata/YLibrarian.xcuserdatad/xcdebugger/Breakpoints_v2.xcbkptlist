@@ -244,7 +244,7 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491161259.545837"
+                  timestampString = "491167669.564676"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
@@ -259,7 +259,7 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491161259.54598"
+                  timestampString = "491167669.564798"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
@@ -393,6 +393,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PatPet/PreferenceViewController.m"
+            timestampString = "491167669.385653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>

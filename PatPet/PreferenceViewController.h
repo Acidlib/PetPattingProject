@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *breedsCollectionView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButtonOfPref;
 @property (weak, nonatomic) IBOutlet UITableView *PrefTableView;
+@property (weak, nonatomic) IBOutlet UIButton *moreButton;
 
 @property(copy, nonatomic) NSArray *prefType;
 @property(copy, nonatomic) NSArray *detailType;

@@ -73,6 +73,9 @@
 		6D6AB8861C5265CA005F3CD7 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6AB8841C5265C9005F3CD7 /* bg1.png */; };
 		6D6AB8871C5265CA005F3CD7 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6AB8851C5265C9005F3CD7 /* bg2.png */; };
 		6D6AB88A1C52788F005F3CD7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */; };
+		6D6AEB4C1D469DFA00D9DE6D /* icn-long-fur-y.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6AEB491D469DFA00D9DE6D /* icn-long-fur-y.png */; };
+		6D6AEB4D1D469DFA00D9DE6D /* icn-no-fur-y.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6AEB4A1D469DFA00D9DE6D /* icn-no-fur-y.png */; };
+		6D6AEB4E1D469DFA00D9DE6D /* icn-short-fur-y.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6AEB4B1D469DFA00D9DE6D /* icn-short-fur-y.png */; };
 		6D7BF2981C54782F00BE7F4A /* keyboards.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D7BF2971C54782F00BE7F4A /* keyboards.jpg */; };
 		6D7BF29A1C54795600BE7F4A /* lineMessage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D7BF2991C54795600BE7F4A /* lineMessage.jpg */; };
 		6D7BF29D1C54800800BE7F4A /* FavChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BF29C1C54800800BE7F4A /* FavChatViewController.m */; };
@@ -241,6 +244,9 @@
 		6D6AB8851C5265C9005F3CD7 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		6D6AB8881C52788F005F3CD7 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		6D6AEB491D469DFA00D9DE6D /* icn-long-fur-y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-long-fur-y.png"; sourceTree = "<group>"; };
+		6D6AEB4A1D469DFA00D9DE6D /* icn-no-fur-y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-no-fur-y.png"; sourceTree = "<group>"; };
+		6D6AEB4B1D469DFA00D9DE6D /* icn-short-fur-y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-short-fur-y.png"; sourceTree = "<group>"; };
 		6D7BF2971C54782F00BE7F4A /* keyboards.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = keyboards.jpg; sourceTree = "<group>"; };
 		6D7BF2991C54795600BE7F4A /* lineMessage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineMessage.jpg; sourceTree = "<group>"; };
 		6D7BF29B1C54800800BE7F4A /* FavChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavChatViewController.h; sourceTree = "<group>"; };
@@ -468,6 +474,9 @@
 		6D1D89721C42A84E001B9983 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6D6AEB491D469DFA00D9DE6D /* icn-long-fur-y.png */,
+				6D6AEB4A1D469DFA00D9DE6D /* icn-no-fur-y.png */,
+				6D6AEB4B1D469DFA00D9DE6D /* icn-short-fur-y.png */,
 				6DCFA1DC1D3BB9C000A6DB67 /* icn-back.png */,
 				6DCFA1CD1D3B869100A6DB67 /* icn_chat_bf.png */,
 				6D0BCA341D3A70C60072D86B /* icn_setting.png */,
@@ -823,6 +832,7 @@
 				6D9C43371C4A32D8007C05A2 /* 0_American Shorthair.jpg in Resources */,
 				6D1D899B1C43E2A4001B9983 /* Prof_s14.png in Resources */,
 				6D0BCA1E1D3A52420072D86B /* icn_preference.png in Resources */,
+				6D6AEB4C1D469DFA00D9DE6D /* icn-long-fur-y.png in Resources */,
 				6DCB09CE1C457B54003FBE23 /* Prof_s12.png in Resources */,
 				6D7BF2981C54782F00BE7F4A /* keyboards.jpg in Resources */,
 				6D1D899A1C43E2A4001B9983 /* Prof_s13.png in Resources */,
@@ -855,6 +865,7 @@
 				6D6AB8761C4E8931005F3CD7 /* p30.png in Resources */,
 				6D7BF29A1C54795600BE7F4A /* lineMessage.jpg in Resources */,
 				6D6AB8661C4E8490005F3CD7 /* p20.png in Resources */,
+				6D6AEB4E1D469DFA00D9DE6D /* icn-short-fur-y.png in Resources */,
 				6D6AB8721C4E8931005F3CD7 /* p26.png in Resources */,
 				6D9C42411C4901E7007C05A2 /* Prof_c5.png in Resources */,
 				6D6AB87E1C4FFD30005F3CD7 /* sasa1.png in Resources */,
@@ -894,6 +905,7 @@
 				6D5B27E21C47C9A7004CE54B /* back0.png in Resources */,
 				6D6AB8801C4FFD31005F3CD7 /* sasa3.png in Resources */,
 				6D6AB85C1C4E8490005F3CD7 /* p10.png in Resources */,
+				6D6AEB4D1D469DFA00D9DE6D /* icn-no-fur-y.png in Resources */,
 				6D9C42491C490411007C05A2 /* Prof_c2.png in Resources */,
 				6D9C43361C4A32D8007C05A2 /* 0_abyssinian.jpg in Resources */,
 				6D6AB8651C4E8490005F3CD7 /* p19.png in Resources */,

@@ -9,6 +9,7 @@
 #import "PreferenceViewController.h"
 #import "SWRevealViewController.h"
 #import "BreedsCell.h"
+#import "PetColor.h"
 
 @interface PreferenceViewController ()<UITextFieldDelegate>
 
@@ -29,36 +30,16 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Text Field
-    [self configureTextField];
-
     // Hamburger btn
     _backButtonOfPref.target = self.revealViewController;
     _backButtonOfPref.action = @selector(revealToggle:);
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
-    // Images
-    
-    [[self breedsCollectionView]setDataSource:self];
-    [[self breedsCollectionView]setDelegate:self];
-
-    arrayOfBreedsImage = [[NSArray alloc]initWithObjects:@"0_mixed.jpg",@"0_abyssinian.jpg",@"0_American Shorthair.jpg",@"0_bengal.jpg",@"0_british_shorthair.jpg",@"0_maine_coon.jpg",@"0_persian.jpg",@"0_ragdoll.jpg",@"0_siamese.jpg",nil];
-    arrayOfBreedsDescription = [[NSArray alloc]initWithObjects:@"Mixed",@"Abyssinian",@"American Shorthair",@"Bengal",@"British Shorthair",@"Maine coon",@"Persian",@"ragdoll",@"Siamese",nil];
-
-    // table
-    self.prefType = @[@"S i z e",@"L e n g t h / c m",@"W e i g h t / K g",@"F u r  C o l o r"];
-    self.detailType = @[@"Mediem",@"80 CM",@"3 KG",@"ALL"];
-
-    // selected & deselected
-    self.breedsCollectionView.allowsMultipleSelection = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    // Listen for changes to keyboard visibility so that we can adjust the text view accordingly.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleKeyboardNotification:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleKeyboardNotification:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

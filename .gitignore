@@ -6,3 +6,8 @@ PatPet.xcodeproj/xcuserdata/YLibrarian.xcuserdatad/xcdebugger/
 build/*
 build/Debug-iphoneos/PatPet.app/Base.lproj/*
 build/PatPet.build/Debug-iphoneos/PatPet.build/dgph
+*.xcurserstate
+*.swp
+PatPet.xcworkspace/xcuserdata/YLibrarian.xcuserdatad/UserInterfaceState.xcuserstate
+
+

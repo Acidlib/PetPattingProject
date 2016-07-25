@@ -485,127 +485,6 @@
             </objects>
             <point key="canvasLocation" x="3463" y="557"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Uog-DK-YOs">
-            <objects>
-                <navigationController id="AD4-oM-99l" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kwP-nt-JA5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BG0-Jg-U3U" kind="relationship" relationship="rootViewController" id="Fux-1F-Ekw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5iz-cq-YvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2390" y="-289"/>
-        </scene>
-        <!--Chat Collection View Controller-->
-        <scene sceneID="Lxs-ZO-Zn3">
-            <objects>
-                <collectionViewController id="BG0-Jg-U3U" customClass="ChatCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dph-hP-Stx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="q69-Nk-OHf">
-                            <size key="itemSize" width="375" height="105"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Chat_Cell" id="hjs-fB-Ox5" customClass="ChatCell">
-                                <rect key="frame" x="19.5" y="64" width="375" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prof_c3.png" translatesAutoresizingMaskIntoConstraints="NO" id="h7k-2q-RtR">
-                                            <rect key="frame" x="20" y="10" width="85" height="85"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="85" id="1aT-Ew-QTI"/>
-                                            </constraints>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1_chat2.png" translatesAutoresizingMaskIntoConstraints="NO" id="NVC-vE-EA8">
-                                            <rect key="frame" x="116" y="48" width="242" height="47"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="T O M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hN-Yk-0Ql">
-                                            <rect key="frame" x="116" y="19" width="47" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="X0f-hS-YLd"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deg-Mx-daS">
-                                            <rect key="frame" x="326" y="21" width="32" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How's goin'" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-2I-KNy">
-                                            <rect key="frame" x="130" y="55" width="89" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailingMargin" secondItem="Deg-Mx-daS" secondAttribute="trailing" constant="9" id="C66-oN-wdX"/>
-                                    <constraint firstItem="h7k-2q-RtR" firstAttribute="leading" secondItem="hjs-fB-Ox5" secondAttribute="leadingMargin" constant="12" id="Kp6-GX-qzk"/>
-                                    <constraint firstItem="8hN-Yk-0Ql" firstAttribute="leading" secondItem="h7k-2q-RtR" secondAttribute="trailing" constant="16" id="TJj-lA-c3H"/>
-                                    <constraint firstItem="lwv-2I-KNy" firstAttribute="top" secondItem="8hN-Yk-0Ql" secondAttribute="bottom" constant="15" id="aRt-5i-x5B"/>
-                                    <constraint firstItem="h7k-2q-RtR" firstAttribute="top" secondItem="hjs-fB-Ox5" secondAttribute="topMargin" constant="2" id="eI3-zF-Qdr"/>
-                                    <constraint firstItem="lwv-2I-KNy" firstAttribute="leading" secondItem="h7k-2q-RtR" secondAttribute="trailing" constant="25" id="ftW-LK-pXj"/>
-                                    <constraint firstItem="h7k-2q-RtR" firstAttribute="centerY" secondItem="hjs-fB-Ox5" secondAttribute="centerY" id="iPo-7w-ojo"/>
-                                    <constraint firstItem="8hN-Yk-0Ql" firstAttribute="top" secondItem="hjs-fB-Ox5" secondAttribute="topMargin" constant="11" id="poR-md-EGQ"/>
-                                    <constraint firstItem="Deg-Mx-daS" firstAttribute="top" secondItem="hjs-fB-Ox5" secondAttribute="topMargin" constant="13" id="qkk-AW-V09"/>
-                                </constraints>
-                                <size key="customSize" width="375" height="105"/>
-                                <connections>
-                                    <outlet property="chatContent" destination="lwv-2I-KNy" id="TCf-xq-58u"/>
-                                    <outlet property="chatProfileName" destination="8hN-Yk-0Ql" id="k4U-HV-aQd"/>
-                                    <outlet property="chatTime" destination="Deg-Mx-daS" id="hag-zb-p9z"/>
-                                    <outlet property="imageViewTest1" destination="NVC-vE-EA8" id="qKW-3G-ri2"/>
-                                    <outlet property="imageViewTest2" destination="h7k-2q-RtR" id="RW9-yY-kD3"/>
-                                    <segue destination="Eyy-5m-GrF" kind="show" id="am8-yv-TGj"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="BG0-Jg-U3U" id="U4e-8y-fik"/>
-                            <outlet property="delegate" destination="BG0-Jg-U3U" id="Jtf-MD-ZME"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="d4P-CT-qcA">
-                        <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="back0.png" id="Rnn-U7-GjI">
-                            <color key="tintColor" red="0.81302750109999999" green="0.71162283420000005" blue="0.26488092540000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="done:" destination="BG0-Jg-U3U" id="D38-Av-bzR"/>
-                            </connections>
-                        </barButtonItem>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PAu-Dd-Ph4">
-                            <rect key="frame" x="191.5" y="7" width="31" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="tintColor" red="0.79275058178191493" green="0.79275058178191493" blue="0.79275058178191493" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" image="1_char_bf3.png"/>
-                        </button>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Flg-cu-nzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2918" y="-297"/>
-        </scene>
         <!--Navigation View Controller-->
         <scene sceneID="fmX-xp-ydo">
             <objects>
@@ -1039,7 +918,6 @@
         <image name="Prof_c3.png" width="861" height="861"/>
         <image name="Prof_s1.png" width="802" height="802"/>
         <image name="Prof_s11.png" width="975" height="1008"/>
-        <image name="back0.png" width="16" height="16"/>
         <image name="bg2.png" width="861" height="861"/>
         <image name="icn-back.png" width="44" height="44"/>
         <image name="icn_chat_bf.png" width="80" height="80"/>
@@ -1049,7 +927,7 @@
         <image name="p18.png" width="861" height="861"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fOr-6g-NAf"/>
         <segue reference="q3C-TN-lK2"/>
+        <segue reference="fOr-6g-NAf"/>
     </inferredMetricsTieBreakers>
 </document>

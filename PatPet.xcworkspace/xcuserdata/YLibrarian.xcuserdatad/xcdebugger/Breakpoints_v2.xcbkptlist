@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "490982647.630387"
+            timestampString = "491239302.691424"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-handleSingleTap:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "490982647.630387"
+            timestampString = "491239302.691424"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "@implementation ProfileViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -244,12 +244,12 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491167669.564676"
+                  timestampString = "491242279.524348"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
                   endingLineNumber = "85"
-                  offsetFromSymbolStart = "388">
+                  offsetFromSymbolStart = "462">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -259,12 +259,12 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491167669.564798"
+                  timestampString = "491242279.524858"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
                   endingLineNumber = "85"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "30">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -308,11 +308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "491031097.918584"
+            timestampString = "491239302.691424"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "-backPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -400,16 +400,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PatPet/NavigationViewController.m"
+            timestampString = "491240532.863588"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-layoutForPhoneSize"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PatPet/PreferenceViewController.m"
-            timestampString = "491167669.385653"
+            filePath = "PatPet/NavigationViewController.m"
+            timestampString = "491241657.768912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-layoutForPhoneSize"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -11,10 +11,12 @@
 @import UIKit;
 @interface PreferenceViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource,UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UICollectionView *breedsCollectionView;
+//@property (weak, nonatomic) IBOutlet UICollectionView *breedsCollectionView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButtonOfPref;
-@property (weak, nonatomic) IBOutlet UITableView *PrefTableView;
+//@property (weak, nonatomic) IBOutlet UITableView *PrefTableView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *moreButton;
+@property (weak, nonatomic) IBOutlet UIImageView *catTypeImage;
 
 @property(copy, nonatomic) NSArray *prefType;
 @property(copy, nonatomic) NSArray *detailType;

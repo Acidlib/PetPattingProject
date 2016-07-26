@@ -29,12 +29,7 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Hamburger btn
-    _backButtonOfPref.target = self.revealViewController;
-    _backButtonOfPref.action = @selector(revealToggle:);
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
+    [self setupUIAttribute];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -47,6 +42,21 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
+
+- (void)setupUIAttribute
+{
+    // Hamburger btn
+    _backButtonOfPref.target = self.revealViewController;
+    _backButtonOfPref.action = @selector(revealToggle:);
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
+    // GIF
+    _catTypeImage.image = [UIImage animatedImageNamed:@"icn-fur-y-" duration:1.0f];
+
+    // Bounce
+    _scrollView.bounces = NO;
+    
 }
 
 #pragma mark - Configuration
@@ -77,41 +87,41 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 #pragma mark - Keyboard Event Notifications
 
 - (void)handleKeyboardNotification:(NSNotification *)notification {
-    NSDictionary *userInfo = notification.userInfo;
-
-    // Get information about the animation.
-    NSTimeInterval animationDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    UIViewAnimationOptions animationCurve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
-
-    // Convert the keyboard frame from screen to view coordinates.
-    CGRect keyboardScreenBeginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-    CGRect keyboardScreenEndFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-
-    CGRect keyboardViewBeginFrame = [self.view convertRect:keyboardScreenBeginFrame fromView:self.view.window];
-    CGRect keyboardViewEndFrame = [self.view convertRect:keyboardScreenEndFrame fromView:self.view.window];
-
-    // Determine how far the keyboard has moved up or down.
-    CGFloat originDelta = keyboardViewEndFrame.origin.y - keyboardViewBeginFrame.origin.y;
-
-    // Calculate new scroll indicator and content insets for the table view.
-    UIEdgeInsets newIndicatorInsets = self.PrefTableView.scrollIndicatorInsets;
-    newIndicatorInsets.bottom -= originDelta;
-
-    UIEdgeInsets newContentInsets = self.PrefTableView.contentInset;
-    newContentInsets.bottom -= originDelta;
-
-    // Update the insets on the table view with the new values.
-    self.PrefTableView.scrollIndicatorInsets = newIndicatorInsets;
-    self.PrefTableView.contentInset = newContentInsets;
-
-    // Inform the view that its the layout should be updated.
-    [self.view setNeedsLayout];
-
-    // Animate updating the view's layout by calling `layoutIfNeeded` inside a `UIView` animation block.
-    UIViewAnimationOptions animationOptions = animationCurve | UIViewAnimationOptionBeginFromCurrentState;
-    [UIView animateWithDuration:animationDuration delay:0 options:animationOptions animations:^{
-        [self.view layoutIfNeeded];
-    } completion:nil];
+//    NSDictionary *userInfo = notification.userInfo;
+//
+//    // Get information about the animation.
+//    NSTimeInterval animationDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+//    UIViewAnimationOptions animationCurve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
+//
+//    // Convert the keyboard frame from screen to view coordinates.
+//    CGRect keyboardScreenBeginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+//    CGRect keyboardScreenEndFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+//
+//    CGRect keyboardViewBeginFrame = [self.view convertRect:keyboardScreenBeginFrame fromView:self.view.window];
+//    CGRect keyboardViewEndFrame = [self.view convertRect:keyboardScreenEndFrame fromView:self.view.window];
+//
+//    // Determine how far the keyboard has moved up or down.
+//    CGFloat originDelta = keyboardViewEndFrame.origin.y - keyboardViewBeginFrame.origin.y;
+//
+//    // Calculate new scroll indicator and content insets for the table view.
+//    UIEdgeInsets newIndicatorInsets = self.PrefTableView.scrollIndicatorInsets;
+//    newIndicatorInsets.bottom -= originDelta;
+//
+//    UIEdgeInsets newContentInsets = self.PrefTableView.contentInset;
+//    newContentInsets.bottom -= originDelta;
+//
+//    // Update the insets on the table view with the new values.
+//    self.PrefTableView.scrollIndicatorInsets = newIndicatorInsets;
+//    self.PrefTableView.contentInset = newContentInsets;
+//
+//    // Inform the view that its the layout should be updated.
+//    [self.view setNeedsLayout];
+//
+//    // Animate updating the view's layout by calling `layoutIfNeeded` inside a `UIView` animation block.
+//    UIViewAnimationOptions animationOptions = animationCurve | UIViewAnimationOptionBeginFromCurrentState;
+//    [UIView animateWithDuration:animationDuration delay:0 options:animationOptions animations:^{
+//        [self.view layoutIfNeeded];
+//    } completion:nil];
 }
 
 #pragma mark - UITextFieldDelegate (set in Interface Builder)

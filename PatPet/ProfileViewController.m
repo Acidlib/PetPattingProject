@@ -63,19 +63,6 @@
     // navigation bar hidden
     self.navigationController.navigationBar.hidden = YES;
 
-    /*
-     // gradientView
-    [UIView animateWithDuration: 1.0
-                     animations: ^{
-                         // gradient View
-                         // toggle:
-                         CAGradientLayer *gradient = [CAGradientLayer layer];
-                         gradient.frame = _gradientView.bounds;
-                         gradient.colors = [NSArray arrayWithObjects:(id)[[PetColor darkColor]CGColor], (id)[[UIColor clearColor] CGColor], nil];
-                         [_gradientView.layer insertSublayer:gradient below:_backButton.layer];
-                         _gradientView.alpha = _gradientView.alpha == 1.0 ? 0.0 : 1.0;
-                     }];*/
-
     // backPressed
     UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(zap:)];
     self.navigationItem.leftBarButtonItem = left;
@@ -87,16 +74,11 @@
     [self.view addGestureRecognizer:singleFingerTap];
 
     // Voice
-    NSString *path = [NSString stringWithFormat:@"%@/CAT_SoundEffect.m4a", [[NSBundle mainBundle] resourcePath]];
+    /*NSString *path = [NSString stringWithFormat:@"%@/CAT_SoundEffect.m4a", [[NSBundle mainBundle] resourcePath]];
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
-    [_audioPlayer play];
+    [_audioPlayer play];*/
 }
-
-//-(void)zap:(UIBarButtonItem *)sender
-//{
-//    [self.navigationController popViewControllerAnimated:NO];
-//}
 
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
 {

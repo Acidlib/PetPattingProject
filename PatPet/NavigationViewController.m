@@ -39,14 +39,50 @@
     _activateLabel.text = @"Activated 30 mins ago Central Park, New York";
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    [self layoutForPhoneSize];
+}
+
+- (void)layoutForPhoneSize
+{
+    NSInteger phoneSize = [self phoneSize];
+    if (phoneSize <= 1) {
+        for (NSLayoutConstraint *c in _btnSetting.constraints) {
+            if (c.secondItem == _activateLabel && c.secondAttribute == NSLayoutAttributeTop) {
+                c.constant = 15;
+                break;
+            }
+        }
+    }
+}
+
+#pragma mark - Phone Size
+
+- (NSInteger)phoneSize
+{
+    CGFloat length = MAX([[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+    /*
+     PhoneSizeSmall,
+     PhoneSizeMedium,
+     PhoneSizeLarge,
+     PhoneSizeExtraLarge
+     */
+    if (length < 568)
+        return 0;
+    else if (length >= 568 && length < 667)
+        return 1;
+    else if (length >= 667 && length < 736)
+        return 2;
+    else
+        return 3;
+}
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-
-
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
 

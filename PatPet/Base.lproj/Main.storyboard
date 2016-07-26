@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -615,7 +614,6 @@
                             <constraint firstItem="LI4-S1-QKC" firstAttribute="top" secondItem="gGj-js-DJs" secondAttribute="bottom" id="FXS-uF-LMZ"/>
                             <constraint firstItem="6Qj-Xq-Mlw" firstAttribute="centerX" secondItem="gGj-js-DJs" secondAttribute="centerX" id="Ioe-FY-H69"/>
                             <constraint firstItem="MWm-KJ-GD1" firstAttribute="top" secondItem="98J-uj-5ym" secondAttribute="top" id="MkN-BM-VdB"/>
-                            <constraint firstItem="gGj-js-DJs" firstAttribute="top" relation="lessThanOrEqual" secondItem="Z0q-9B-Ubi" secondAttribute="bottom" multiplier="1.5" constant="40" id="Mm0-2A-4jj"/>
                             <constraint firstItem="98J-uj-5ym" firstAttribute="centerX" secondItem="h62-e3-eiW" secondAttribute="centerX" constant="-40" id="UWw-Rt-fwK"/>
                             <constraint firstItem="Z0q-9B-Ubi" firstAttribute="leading" secondItem="o0Q-E0-tWE" secondAttribute="leading" id="UjG-Gn-acL"/>
                             <constraint firstItem="MWm-KJ-GD1" firstAttribute="trailing" secondItem="98J-uj-5ym" secondAttribute="trailing" id="VmG-uL-Cor"/>
@@ -639,9 +637,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="activateLabel" destination="Z0q-9B-Ubi" id="Vq7-ld-SKT"/>
+                        <outlet property="activateLabel_Pref" destination="6y5-kw-TQh" id="WnA-hO-E5I"/>
                         <outlet property="btnPreference" destination="gGj-js-DJs" id="SbB-3w-kfK"/>
                         <outlet property="btnSetting" destination="6Qj-Xq-Mlw" id="Upv-eK-Lyt"/>
                         <outlet property="mainView" destination="h62-e3-eiW" id="Rf2-2a-fng"/>
+                        <outlet property="myProfile_Top" destination="aRW-EZ-GKV" id="RYZ-yY-eNZ"/>
                         <outlet property="nameLabel" destination="o0Q-E0-tWE" id="1S9-9o-dFK"/>
                     </connections>
                 </viewController>

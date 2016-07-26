@@ -12,6 +12,8 @@
 #import "YLCircle.h"
 
 @interface NavigationViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *activateLabel_Pref;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *myProfile_Top;
 
 @end
 
@@ -49,12 +51,8 @@
 {
     NSInteger phoneSize = [self phoneSize];
     if (phoneSize <= 1) {
-        for (NSLayoutConstraint *c in _btnSetting.constraints) {
-            if (c.secondItem == _activateLabel && c.secondAttribute == NSLayoutAttributeTop) {
-                c.constant = 15;
-                break;
-            }
-        }
+        _activateLabel_Pref.constant = 10;
+        _myProfile_Top.constant = 40;
     }
 }
 

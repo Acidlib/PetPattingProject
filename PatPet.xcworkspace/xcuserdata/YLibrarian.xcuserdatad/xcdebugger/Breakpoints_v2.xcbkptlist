@@ -244,7 +244,7 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491242279.524348"
+                  timestampString = "491244113.616588"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
@@ -259,7 +259,7 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491242279.524858"
+                  timestampString = "491244113.616777"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
@@ -404,27 +404,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/NavigationViewController.m"
-            timestampString = "491240532.863588"
+            timestampString = "491244113.468122"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-layoutForPhoneSize"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PatPet/NavigationViewController.m"
-            timestampString = "491241657.768912"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-layoutForPhoneSize"
             landmarkType = "5">
          </BreakpointContent>

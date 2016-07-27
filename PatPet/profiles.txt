@@ -1,0 +1,48 @@
+img_1,Golden,1,2,2,774,2
+img_2,Cloud,1,1,7,806,1
+img_3,Pukka,1,2,3,825,2
+img_4,Chamomile,1,1,7,849,2
+img_5,Bleu,1,2,7,866,1
+img_6,Orange,1,1,8,883,2
+img_7,PanPan,2,2,5,907,2
+img_8,Enga,2,2,1,949,2
+img_9,Pinknose,1,2,1,966,2
+img_10,Emika,1,2,10,972,2
+img_11,Tongue,2,2,2,1024,1
+img_12,Benzo,2,1,9,1032,1
+img_13,Kaka,2,1,6,1094,1
+img_14,Ghosty,1,1,1,1105,1
+img_15,Blake,2,2,1,1141,2
+img_16,Ju,1,1,5,1159,1
+img_17,Chubby,1,2,2,1176,1
+img_18,Tri,1,1,10,1177,1
+img_19,Chin,1,2,1,1200,1
+img_20,Mr. Lonely Heart,1,1,8,1217,1
+img_21,Friday,2,1,9,1253,1
+img_22,Smile,1,1,1,1265,2
+img_23,Eraserhead,1,2,1,1270,1
+img_24,Tommy,1,1,4,1311,1
+img_25,Sasaya,1,1,3,1314,2
+img_26,Seifu,1,2,9,1316,2
+img_27,Sexy Candy,1,2,5,1336,1
+img_28,Lolli,1,2,10,1338,1
+img_29,Moon,1,2,2,1380,1
+img_30,Meizai,1,1,3,1412,1
+img_31,Green Eyes,1,2,2,1469,2
+img_32,Acid,1,2,2,1494,1
+img_33,Nono,2,1,9,1496,2
+img_34,Sociopath,1,2,6,1539,2
+img_35,I hate Line,1,1,6,1590,1
+img_36,Niuniu,1,1,2,1605,1
+img_37,Lauwuwu,1,2,9,1640,1
+img_38,UFO,2,2,7,1645,1
+img_39,Choppy,2,2,4,1645,1
+img_40,Ben,1,1,6,1662,2
+img_41,Limeibo,1,2,5,1688,1
+img_42,U_U,2,1,1,1692,1
+img_43,Moroccan,2,1,3,1782,2
+img_44,Agus,2,1,2,1785,1
+img_45,Coffee,2,1,2,1815,2
+img_46,Saddy,1,2,3,1829,2
+img_47,Jumpy,2,1,5,1833,1
+img_48,BBBBBB,2,2,1,1846,2

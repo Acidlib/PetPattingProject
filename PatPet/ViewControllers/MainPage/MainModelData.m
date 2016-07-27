@@ -11,7 +11,15 @@
 #import "NSUserDefaults+DemoSettings.h"
 #import "JSQMessagesAvatarImageFactory.h"
 
-@implementation MainModelData
+@implementation MainModelData {
+    NSMutableArray *_featuresAttrib_fileName;
+    NSMutableArray *_featuresAttrib_nickName;
+    NSMutableArray *_featuresAttrib_species;
+    NSMutableArray *_featuresAttrib_gender;
+    NSMutableArray *_featuresAttrib_age;
+    NSMutableArray *_featuresAttrib_distance;
+    NSMutableArray *_featuresAttrib_Favorite;
+}
 
 - (instancetype)init
 {
@@ -24,6 +32,51 @@
         else {
             [self loadFakeMessages];
         }
+
+        // Read Txt:
+        _featuresAttrib_fileName = [[NSMutableArray alloc]init];
+        _featuresAttrib_nickName = [[NSMutableArray alloc]init];
+        _featuresAttrib_species = [[NSMutableArray alloc]init];
+        _featuresAttrib_gender = [[NSMutableArray alloc]init];
+        _featuresAttrib_age = [[NSMutableArray alloc]init];
+        _featuresAttrib_distance = [[NSMutableArray alloc]init];
+        _featuresAttrib_Favorite = [[NSMutableArray alloc]init];
+
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"profiles" ofType:@"txt"];
+        NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+        for (int index = 0; index < [content componentsSeparatedByString:@"\n"].count; index++) {
+            NSString *snipet = [content componentsSeparatedByString:@"\n"][index];
+            for (int i = 0; i < [snipet componentsSeparatedByString:@","].count; i++) {
+                NSInteger distribute = i % 7;
+                switch (distribute) {
+                    case 0:
+                        [_featuresAttrib_fileName addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    case 1:
+                        [_featuresAttrib_nickName addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    case 2:
+                        [_featuresAttrib_species addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    case 3:
+                        [_featuresAttrib_gender addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    case 4:
+                        [_featuresAttrib_age addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    case 5:
+                        [_featuresAttrib_distance addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    case 6:
+                        [_featuresAttrib_Favorite addObject:[snipet componentsSeparatedByString:@","][i]];
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+
         JSQMessagesAvatarImage *jsqImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s11"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
         JSQMessagesAvatarImage *cookImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s1"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
 

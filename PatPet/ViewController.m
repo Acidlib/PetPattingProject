@@ -75,6 +75,25 @@ static NSString * const reuseIdentifier = @"Cell";
     // images
     [[self myCollectionView]setDataSource:self];
     [[self myCollectionView]setDelegate:self];
+
+    // collectionView
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (collectionView == _myCollectionView) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        CGFloat len = (self.view.frame.size.width - 3 * 15)/3 - 5;
+        layout.itemSize = CGSizeMake(len, len);
+        return layout.itemSize;
+    } else {
+        NSInteger itemCountInRow = 1;
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.minimumInteritemSpacing = 0;
+        CGFloat length = (self.view.frame.size.width - 2 * 5);
+        layout.itemSize = CGSizeMake(length, 105);
+        return layout.itemSize;
+    }
 }
 
 - (void)setupMainCollectionView

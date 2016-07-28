@@ -11,6 +11,7 @@
 
 @interface ProfileViewController : BaseViewController
 
+@property (nonatomic) BOOL species;
 @property (nonatomic, strong) UIImage *img;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *age;

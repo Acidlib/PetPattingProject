@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, viewType) {
     NSArray *arrayOfChatContent;
     NSArray *arrayOfChatTime;
     NSArray *arrayOfChatCloud;
+    int r;
 }
 
 @property (nonatomic) viewType viewType;
@@ -115,15 +116,24 @@ static NSString * const reuseIdentifier = @"Cell";
     if ([segue.identifier isEqualToString:@"showProfile"])
     {
         NSIndexPath *selectedIndexPath = [self.myCollectionView indexPathsForSelectedItems][0];
-        UIImage *img = (_viewType == viewTypeMain) ? [UIImage imageNamed:[arrayOfImage objectAtIndex:selectedIndexPath.item]] : [UIImage imageNamed:[arrayOfFavProfilePic objectAtIndex:selectedIndexPath.item]];
-        NSString *name = (_viewType == viewTypeMain) ? [arrayOfDescription objectAtIndex:selectedIndexPath.item] : [arrayOfFavProfileName objectAtIndex:selectedIndexPath.item];
-        NSString *age = [arrayOfAge objectAtIndex:selectedIndexPath.item];
-        NSString *dist = [arrayOfDistance objectAtIndex:selectedIndexPath.item];
+        NSInteger index = (_viewType == viewTypeMain) ? [self.demoData.searchList[selectedIndexPath.item] integerValue] : [self.demoData.favoriteList[selectedIndexPath.item] integerValue];
+        UIImage *img;
+        if (_viewType == viewTypeFav && r == 0) {
+            UIImage *image = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
+            img = [self convertImageToGrayScale:image];
+        } else {
+            img = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
+        }
+        NSString *name = self.demoData.featuresAttrib_nickName[index];
+        NSString *age = [NSString stringWithFormat:@"%@-year-old", self.demoData.featuresAttrib_age[index]];
+        NSString *dist = self.demoData.featuresAttrib_distance[index];
+        BOOL isCat = [self.demoData.featuresAttrib_species[index] isEqualToString: @"1"];
         ProfileViewController *detailViewController = segue.destinationViewController;
         detailViewController.img = img;
         detailViewController.name = name;
         detailViewController.age = age;
         detailViewController.distance = dist;
+        detailViewController.species = isCat;
     }
 }
 
@@ -189,8 +199,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger index = (_viewType == viewTypeMain) ? [self.demoData.searchList[indexPath.item] integerValue] : [self.demoData.favoriteList[indexPath.item] integerValue];
-    int randNum = rand() % (2 - 1) + 1;
-    int r = arc4random_uniform(2);
+    r = arc4random_uniform(2);
     if (collectionView == _myCollectionView) {
         CustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
         cell.colorLabel.backgroundColor = (_viewType == viewTypeMain) ? [PetColor lemonDarkColor] : [PetColor darkColor];

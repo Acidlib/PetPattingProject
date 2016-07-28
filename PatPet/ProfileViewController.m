@@ -64,8 +64,8 @@
     self.navigationController.navigationBar.hidden = YES;
 
     // backPressed
-    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(zap:)];
-    self.navigationItem.leftBarButtonItem = left;
+//    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(zap:)];
+//    self.navigationItem.leftBarButtonItem = left;
 
     //The setup code (in viewDidLoad in your view controller)
     UITapGestureRecognizer *singleFingerTap =
@@ -74,10 +74,10 @@
     [self.view addGestureRecognizer:singleFingerTap];
 
     // Voice
-    /*NSString *path = [NSString stringWithFormat:@"%@/CAT_SoundEffect.m4a", [[NSBundle mainBundle] resourcePath]];
+    NSString *path = self.species ? [NSString stringWithFormat:@"%@/CAT_SoundEffect.m4a", [[NSBundle mainBundle] resourcePath]] : [NSString stringWithFormat:@"%@/Dog_SoundEffect.m4a", [[NSBundle mainBundle] resourcePath]];
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
-    [_audioPlayer play];*/
+    [_audioPlayer play];
 }
 
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer

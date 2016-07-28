@@ -195,10 +195,15 @@ static NSString * const reuseIdentifier = @"Cell";
         CustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
         cell.colorLabel.backgroundColor = (_viewType == viewTypeMain) ? [PetColor lemonDarkColor] : [PetColor darkColor];
         cell.colorLabel.alpha = 0.6;
-        cell.myImage.image = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
         cell.myDescriptionLabel.text = self.demoData.featuresAttrib_nickName[index];
         cell.myDescriptionLabel.textColor = (_viewType == viewTypeMain) ? [PetColor darkColor] : [UIColor whiteColor];
         cell.onlineStatus.image = (_viewType == viewTypeMain) ? nil : (r == 0) ? [UIImage imageNamed:@"offline.png"] : [UIImage imageNamed:@"online.png"];
+        if (_viewType == viewTypeFav && r == 0) {
+            UIImage *image = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
+            cell.myImage.image = [self convertImageToGrayScale:image];
+        } else {
+            cell.myImage.image = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
+        }
         return cell;
     } else {
         ChatCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Chat_Cell" forIndexPath:indexPath];
@@ -211,6 +216,20 @@ static NSString * const reuseIdentifier = @"Cell";
         [cell setTag:indexPath.row];
         return cell;
     }
+}
+
+- (UIImage *)convertImageToGrayScale:(UIImage *)image
+{
+    CGRect imageRect = CGRectMake(0, 0, image.size.width, image.size.height);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    CGContextRef context = CGBitmapContextCreate(nil, image.size.width, image.size.height, 8, 0, colorSpace, kCGImageAlphaNone);
+    CGContextDrawImage(context, imageRect, [image CGImage]);
+    CGImageRef imageRef = CGBitmapContextCreateImage(context);
+    UIImage *newImage = [UIImage imageWithCGImage:imageRef];
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(context);
+    CFRelease(imageRef);
+    return newImage;
 }
 
 

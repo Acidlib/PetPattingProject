@@ -23,6 +23,17 @@ static NSString * const kJSQDemoAvatarIdWoz = @"309-41802-93823";
 
 @interface MainModelData : NSObject
 
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_fileName;
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_nickName;
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_species;
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_gender;
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_age;
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_distance;
+@property (strong, nonatomic) NSMutableArray *featuresAttrib_Favorite;
+
+@property (strong, nonatomic) NSMutableArray *favoriteList;
+@property (strong, nonatomic) NSMutableArray *searchList;
+
 @property (strong, nonatomic) NSMutableArray *messages;
 @property (strong, nonatomic) NSDictionary *avatars;
 @property (strong, nonatomic) JSQMessagesBubbleImage *outgoingBubbleImageData;

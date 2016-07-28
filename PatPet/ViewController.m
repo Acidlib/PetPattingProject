@@ -12,6 +12,7 @@
 #import "ProfileViewController.h"
 #import "CustomCell.h"
 #import "ChatCell.h"
+#include <stdlib.h>
 
 typedef NS_ENUM(NSInteger, viewType) {
     viewTypeMain = 0,
@@ -47,8 +48,6 @@ static NSString * const reuseIdentifier = @"Cell";
     _viewType = viewTypeMain;
     [super viewDidLoad];
     [self setupUIAttribute];
-    [self setupMainCollectionView];
-    [self setupFavCollectionView];
     [self setupMsgCollectionView];
 }
 
@@ -77,6 +76,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [[self myCollectionView]setDelegate:self];
 
     // collectionView
+    self.demoData = [[MainModelData alloc] init];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -94,43 +94,6 @@ static NSString * const reuseIdentifier = @"Cell";
         layout.itemSize = CGSizeMake(length, 105);
         return layout.itemSize;
     }
-}
-
-- (void)setupMainCollectionView
-{
-    arrayOfImage = [[NSArray alloc]initWithObjects:@"Prof_s1.png",@"Prof_s2.png",@"Prof_s3.png",@"Prof_s4.png",
-                    @"Prof_s6.png",@"Prof_s7.png",@"Prof_s8.png",@"Prof_s9.png",
-                    @"Prof_s10.png",@"Prof_s11.png",@"Prof_s12.png",@"Prof_s13.png",          @"Prof_s14.png",@"Prof_s1.png",@"Prof_s2.png",@"Prof_s3.png",@"Prof_s4.png",
-                    @"Prof_s6.png",@"Prof_s7.png",@"Prof_s8.png",@"Prof_s9.png",
-                    @"Prof_s10.png",@"Prof_s11.png",@"Prof_s12.png",@"Prof_s13.png",
-                    @"Prof_s14.png",nil];
-    arrayOfDescription = [[NSArray
-                           alloc]initWithObjects:@"E d d i e",@"C h a r l i e",@"E l l i e",@"A n g e l",
-                          @"L i l i",@"P u p p y",@"R e g g i e",@"P u p u",
-                          @"D o t d o t",@"D u m p l i n g",@"L u L u",@"M a o b a o",
-                          @"M e i z a i",@"E d d i e",@"C h a r l i e",@"E l l i e",@"A n g e l",
-                          @"L i l i",@"P u p p y",@"R e g g i e",@"P u p u",
-                          @"D o t d o t",@"D u m p l i n g",@"L u L u",@"M a o b a o",
-                          @"M e i z a i",nil];
-    arrayOfAge = [[NSArray alloc]initWithObjects:@"5 years",@"8 years",@"2 years",@"1.5 years",
-                  @"3 years",@"4.5 years",@"5 years",@"3 years", @"4 years",@"2.5 years",@"8 years",@"8 years", @"2 years",@"6 years",@"6.5 years",@"2 years",@"3.5 years",
-                  @"5 years",@"2.5 years",@"6 years",@"2 years",
-                  @"1 years",@"3 years",@"9 years",@"4 years",
-                  @"9 year",nil];
-
-    arrayOfDistance = [[NSArray alloc]initWithObjects:@"757 feet away",@"647 feet away",@"757 feet away",@"935 feet away",
-                       @"945 feet away",@"965 feet away",@"968 feet away",@"1013 feet away", @"1035 feet away",@"1085 feet away",@"1093 feet away",@"", @"",@"1167 feet away",@"1167 feet away",@"1175 feet away",@"1178 feet away",
-                       @"1179 feet away",@"1227 feet away",@"",@"1258 feet away",
-                       @"1222 feet away",@"1108 feet away",@"1222 feet away",@"1895 feet away",
-                       @"945 feet away",nil];
-}
-
-- (void)setupFavCollectionView
-{
-    arrayOfFavProfilePic = [[NSArray alloc]initWithObjects:@"Prof_s1.png",@"p19.png",@"p20.png",@"Prof_s2.png",@"p25.png",@"Prof_s3.png",@"Prof_s4.png",@"p26.png",@"p27.png",@"p28.png",@"p29.png",@"Prof_s6.png",@"Prof_s7.png",@"p21.png",@"Prof_s8.png",@"p30.png",@"Prof_s9.png",@"Prof_s10.png",@"Prof_s11.png",@"Prof_s12.png",@"Prof_s13.png",@"Prof_s14.png",@"p22.png",@"Prof_s12.png",@"p23.png",@"Prof_s13.png",@"p24.png",nil];
-    arrayOfFavOnlineStatus = [[NSArray alloc]initWithObjects:@"offline.png",@"online.png",@"online.png",@"offline.png",@"online.png",@"offline.png",@"offline.png",@"online.png",@"online.png",@"online.png",@"online.png",@"offline.png",@"offline.png",@"online.png",@"offline.png",@"online.png",@"offline.png",@"offline.png",@"offline.png",@"offline.png",@"offline.png",@"offline.png",@"online.png",@"offline.png",@"online.png",@"offline.png",@"online.png",nil];
-
-    arrayOfFavProfileName = [[NSArray alloc]initWithObjects:@"E d d i e",@"C h a r l i e",@"E l l i e",@"A n g e l",                  @"L i l i",@"P u p p y",@"R e g g i e",@"P u p u", @"D o t d o t",@"D u m p l i n g",@"L u L u",@"M a o b a o", @"M e i z a i",@"L u L u",@"M a o b a o", @"M e i z a i",@"T o r o",@"C a r a",@"P o p p y",@"Z a r a",@"K e i t a",@"A m o",@"C o n n i e",@"N i c o l e",@"A l b a",@"F a n n y",@"A n g e l",nil];
 }
 
 - (void)setupMsgCollectionView
@@ -211,10 +174,10 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     switch (_viewType) {
         case viewTypeMain:
-            return [arrayOfDescription count];
+            return self.demoData.searchList.count;
             break;
         case viewTypeFav:
-            return [arrayOfFavProfileName count];
+            return self.demoData.favoriteList.count;
             break;
         case viewTypeMsg:
             return [arrayOfChatTime count];
@@ -225,20 +188,20 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    NSInteger index = (_viewType == viewTypeMain) ? [self.demoData.searchList[indexPath.item] integerValue] : [self.demoData.favoriteList[indexPath.item] integerValue];
+    int randNum = rand() % (2 - 1) + 1;
+    int r = arc4random_uniform(2);
     if (collectionView == _myCollectionView) {
         CustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-
         cell.colorLabel.backgroundColor = (_viewType == viewTypeMain) ? [PetColor lemonDarkColor] : [PetColor darkColor];
         cell.colorLabel.alpha = 0.6;
-        cell.myImage.image =  (_viewType == viewTypeMain) ? [UIImage imageNamed:[arrayOfImage objectAtIndex:indexPath.item]] : [UIImage imageNamed:[arrayOfFavProfilePic objectAtIndex:indexPath.item]];
-        cell.myDescriptionLabel.text = (_viewType == viewTypeMain) ? [arrayOfDescription objectAtIndex:indexPath.item] : [arrayOfFavProfileName objectAtIndex:indexPath.item];
+        cell.myImage.image = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
+        cell.myDescriptionLabel.text = self.demoData.featuresAttrib_nickName[index];
         cell.myDescriptionLabel.textColor = (_viewType == viewTypeMain) ? [PetColor darkColor] : [UIColor whiteColor];
-        cell.onlineStatus.image = (_viewType == viewTypeMain) ? nil : [UIImage imageNamed:[arrayOfFavOnlineStatus objectAtIndex:indexPath.item]];
+        cell.onlineStatus.image = (_viewType == viewTypeMain) ? nil : (r == 0) ? [UIImage imageNamed:@"offline.png"] : [UIImage imageNamed:@"online.png"];
         return cell;
     } else {
         ChatCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Chat_Cell" forIndexPath:indexPath];
-
         [[cell chatProfileName]setText:[arrayOfUserName objectAtIndex:indexPath.item]];
         [[cell chatContent]setText:[arrayOfChatContent objectAtIndex:indexPath.item]];
         [[cell chatTime]setText:[arrayOfChatTime objectAtIndex:indexPath.item]];

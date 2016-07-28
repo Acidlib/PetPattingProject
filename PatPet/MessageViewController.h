@@ -20,6 +20,5 @@
 
 @property (strong, nonatomic) MainModelData *demoData;
 - (void)receiveMessagePressed:(UIBarButtonItem *)sender;
-//- (void)closePressed:(UIBarButtonItem *)sender;
 
 @end

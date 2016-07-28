@@ -11,14 +11,16 @@
 #import "NSUserDefaults+DemoSettings.h"
 #import "JSQMessagesAvatarImageFactory.h"
 
-@implementation MainModelData {
-    NSMutableArray *_featuresAttrib_fileName;
-    NSMutableArray *_featuresAttrib_nickName;
-    NSMutableArray *_featuresAttrib_species;
-    NSMutableArray *_featuresAttrib_gender;
-    NSMutableArray *_featuresAttrib_age;
-    NSMutableArray *_featuresAttrib_distance;
-    NSMutableArray *_featuresAttrib_Favorite;
+@implementation MainModelData 
+
+- (NSArray *)searhcList
+{
+    return [_searchList copy];
+}
+
+- (NSArray *)favoriteList
+{
+    return [_favoriteList copy];
 }
 
 - (instancetype)init
@@ -26,56 +28,25 @@
     self = [super init];
     if (self) {
 
+        // txt Parser
+        _featuresAttrib_fileName = [NSMutableArray new];
+        _featuresAttrib_nickName = [NSMutableArray new];
+        _featuresAttrib_species = [NSMutableArray new];
+        _featuresAttrib_gender = [NSMutableArray new];
+        _featuresAttrib_age = [NSMutableArray new];
+        _featuresAttrib_distance = [NSMutableArray new];
+        _featuresAttrib_Favorite = [NSMutableArray new];
+        // List
+        _favoriteList = [NSMutableArray new];
+        _searchList = [NSMutableArray new];
+
         if ([NSUserDefaults emptyMessagesSetting]) {
             self.messages = [NSMutableArray new];
         }
         else {
             [self loadFakeMessages];
+            [self loadProfiles];
         }
-
-        // Read Txt:
-        _featuresAttrib_fileName = [[NSMutableArray alloc]init];
-        _featuresAttrib_nickName = [[NSMutableArray alloc]init];
-        _featuresAttrib_species = [[NSMutableArray alloc]init];
-        _featuresAttrib_gender = [[NSMutableArray alloc]init];
-        _featuresAttrib_age = [[NSMutableArray alloc]init];
-        _featuresAttrib_distance = [[NSMutableArray alloc]init];
-        _featuresAttrib_Favorite = [[NSMutableArray alloc]init];
-
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"profiles" ofType:@"txt"];
-        NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
-        for (int index = 0; index < [content componentsSeparatedByString:@"\n"].count; index++) {
-            NSString *snipet = [content componentsSeparatedByString:@"\n"][index];
-            for (int i = 0; i < [snipet componentsSeparatedByString:@","].count; i++) {
-                NSInteger distribute = i % 7;
-                switch (distribute) {
-                    case 0:
-                        [_featuresAttrib_fileName addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    case 1:
-                        [_featuresAttrib_nickName addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    case 2:
-                        [_featuresAttrib_species addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    case 3:
-                        [_featuresAttrib_gender addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    case 4:
-                        [_featuresAttrib_age addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    case 5:
-                        [_featuresAttrib_distance addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    case 6:
-                        [_featuresAttrib_Favorite addObject:[snipet componentsSeparatedByString:@","][i]];
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
-
 
         JSQMessagesAvatarImage *jsqImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s11"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
         JSQMessagesAvatarImage *cookImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s1"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
@@ -101,6 +72,56 @@
     }
 
     return self;
+}
+
+- (void)loadProfiles
+{
+    // Read Txt:
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"profiles" ofType:@"txt"];
+    NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    for (int index = 0; index < [content componentsSeparatedByString:@"\n"].count; index++) {
+        NSString *snipet = [content componentsSeparatedByString:@"\n"][index];
+        for (int i = 0; i < [snipet componentsSeparatedByString:@","].count; i++) {
+            NSInteger distribute = i % 7;
+            switch (distribute) {
+                case 0:
+                    [self.featuresAttrib_fileName addObject:[snipet componentsSeparatedByString:@","][i]];
+                    break;
+                case 1:
+                    [_featuresAttrib_nickName addObject:[snipet componentsSeparatedByString:@","][i]];
+                    break;
+                case 2:
+                    [_featuresAttrib_species addObject:[snipet componentsSeparatedByString:@","][i]];
+                    break;
+                case 3:
+                    [_featuresAttrib_gender addObject:[snipet componentsSeparatedByString:@","][i]];
+                    break;
+                case 4:
+                    [_featuresAttrib_age addObject:[snipet componentsSeparatedByString:@","][i]];
+                    break;
+                case 5:
+                    [_featuresAttrib_distance addObject:[snipet componentsSeparatedByString:@","][i]];
+                    break;
+                case 6:
+                {
+                    NSString *lastObject = [snipet componentsSeparatedByString:@","][i];
+                    [_featuresAttrib_Favorite addObject:[lastObject componentsSeparatedByString:@"\r"][0]];
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    for (int index = 0; index < _featuresAttrib_distance.count; index ++) {
+        // fav == 1; notyet == 2;
+        if ([self.featuresAttrib_Favorite[index] isEqualToString:@"1"]) {
+            [_favoriteList addObject:[NSNumber numberWithInt:index]];
+        } else {
+            [_searchList addObject:[NSNumber numberWithInt:index]];
+        }
+    }
 }
 
 - (void)loadFakeMessages

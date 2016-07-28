@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainModelData.h"
 
 @interface BaseViewController : UIViewController
+
+@property (strong, nonatomic) MainModelData *demoData;
 
 @end

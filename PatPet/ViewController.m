@@ -103,7 +103,7 @@ static NSString * const reuseIdentifier = @"Cell";
     self.messageCollectionView.dataSource = self;
     self.messageCollectionView.delegate = self;
 
-    arrayOfChatCloud = [[NSArray alloc]initWithObjects:@"1_chat.png",@"1_chat2.png",@"1_chat.png",@"1_chat.png",@"1_chat2.png",@"1_chat2.png",@"1_chat.png",@"1_chat.png",@"1_chat2.png",@"1_chat.png", nil];
+    arrayOfChatCloud = [[NSArray alloc]initWithObjects:@"icn_bubble_y",@"1_chat2.png",@"icn_bubble_y",@"icn_bubble_y",@"1_chat2.png",@"1_chat2.png",@"icn_bubble_y",@"icn_bubble_y",@"1_chat2.png",@"icn_bubble_y", nil];
 
     arrayOfChatImage = [[NSArray alloc]initWithObjects:@"Prof_c2.png",@"Prof_c3.png",@"Prof_c4.png",@"Prof_c5.png",@"Prof_c6.png",@"Prof_c7.png",@"Prof_c8.png",@"Prof_c9.png",@"Prof_c10.png",@"Prof_c11.png",nil];
     arrayOfUserName = [[NSArray alloc]initWithObjects:@"T O M",@"J E S S", @"X A V",@"P I P I",@"C O M E I",@"E D D I E",@"L I L I",@"M A O B A O",@"M E I Z A I",@"R E G G I E", nil];

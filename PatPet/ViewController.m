@@ -204,8 +204,16 @@ static NSString * const reuseIdentifier = @"Cell";
         CustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
         cell.colorLabel.backgroundColor = (_viewType == viewTypeMain) ? [PetColor lemonDarkColor] : [PetColor darkColor];
         cell.colorLabel.alpha = 0.6;
-        cell.myDescriptionLabel.text = self.demoData.featuresAttrib_nickName[index];
+
+        // Name With Spacing
+        NSString *name = self.demoData.featuresAttrib_nickName[index];
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:name];
+        float spacing = 5.0f;
+        [attributedString addAttribute:NSKernAttributeName value:@(spacing) range:NSMakeRange(0, [name length])];
+        cell.myDescriptionLabel.attributedText = attributedString;
         cell.myDescriptionLabel.textColor = (_viewType == viewTypeMain) ? [PetColor darkColor] : [UIColor whiteColor];
+
+        
         cell.onlineStatus.image = (_viewType == viewTypeMain) ? nil : (r == 0) ? [UIImage imageNamed:@"offline.png"] : [UIImage imageNamed:@"online.png"];
         if (_viewType == viewTypeFav && r == 0) {
             UIImage *image = [UIImage imageNamed:[self.demoData.featuresAttrib_fileName objectAtIndex:index]];
@@ -222,6 +230,9 @@ static NSString * const reuseIdentifier = @"Cell";
         // add multiple images
         cell.imageViewTest1.image = [UIImage imageNamed:[arrayOfChatCloud objectAtIndex:indexPath.item]];
         cell.imageViewTest2.image = [UIImage imageNamed:[arrayOfChatImage objectAtIndex:indexPath.item]];
+        cell.imageViewTest1.alpha = 0.9;
+        if ([[arrayOfChatCloud objectAtIndex:indexPath.item] isEqualToString:@"icn_bubble_y"])
+            cell.chatContent.textColor = [UIColor whiteColor];
         [cell setTag:indexPath.row];
         return cell;
     }

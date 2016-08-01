@@ -262,7 +262,7 @@
                                             <outlet property="chatTime" destination="Sir-YT-CIR" id="37T-Y7-xqK"/>
                                             <outlet property="imageViewTest1" destination="2ex-Uc-54O" id="9UV-9e-dgp"/>
                                             <outlet property="imageViewTest2" destination="vIj-Yo-IlK" id="D8e-SK-Rhr"/>
-                                            <segue destination="Eyy-5m-GrF" kind="show" id="q3C-TN-lK2"/>
+                                            <segue destination="Eyy-5m-GrF" kind="show" identifier="showMessage" id="q3C-TN-lK2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -351,26 +351,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-kc-1Hq">
-                                <rect key="frame" x="15" y="646" width="194" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-kc-1Hq">
+                                <rect key="frame" x="15" y="646" width="120" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="194" id="B7m-tc-qTN"/>
+                                    <constraint firstAttribute="width" constant="120" id="B7m-tc-qTN"/>
                                     <constraint firstAttribute="height" constant="34" id="DgD-LX-OjT"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="24" name="GillSans-SemiBold"/>
+                                            <font key="NSFont" size="18" name="GillSans-SemiBold"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-AV-AAj">
-                                <rect key="frame" x="15" y="680" width="70" height="21"/>
+                                <rect key="frame" x="15" y="680" width="120" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Bod-8I-oWZ"/>
+                                    <constraint firstAttribute="width" constant="120" id="Bod-8I-oWZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -907,7 +907,7 @@
         <image name="p18.png" width="861" height="861"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q3C-TN-lK2"/>
         <segue reference="fOr-6g-NAf"/>
+        <segue reference="q3C-TN-lK2"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,6 +10,7 @@
 #import "BaseViewController.h"
 #import "SWRevealViewController.h"
 #import "ProfileViewController.h"
+#import "MessageViewController.h"
 #import "CustomCell.h"
 #import "ChatCell.h"
 #include <stdlib.h>
@@ -113,8 +114,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showProfile"])
-    {
+    if ([segue.identifier isEqualToString:@"showProfile"]) {
         NSIndexPath *selectedIndexPath = [self.myCollectionView indexPathsForSelectedItems][0];
         NSInteger index = (_viewType == viewTypeMain) ? [self.demoData.searchList[selectedIndexPath.item] integerValue] : [self.demoData.favoriteList[selectedIndexPath.item] integerValue];
         UIImage *img;
@@ -126,7 +126,7 @@ static NSString * const reuseIdentifier = @"Cell";
         }
         NSString *name = self.demoData.featuresAttrib_nickName[index];
         NSString *age = [NSString stringWithFormat:@"%@-year-old", self.demoData.featuresAttrib_age[index]];
-        NSString *dist = self.demoData.featuresAttrib_distance[index];
+        NSString *dist = [NSString stringWithFormat:@"%@ feet away", self.demoData.featuresAttrib_distance[index]];
         BOOL isCat = [self.demoData.featuresAttrib_species[index] isEqualToString: @"1"];
         ProfileViewController *detailViewController = segue.destinationViewController;
         detailViewController.img = img;
@@ -134,6 +134,13 @@ static NSString * const reuseIdentifier = @"Cell";
         detailViewController.age = age;
         detailViewController.distance = dist;
         detailViewController.species = isCat;
+    } else if ([segue.identifier isEqualToString:@"showMessage"]) {
+        NSIndexPath *selectedIndexPath = [self.messageCollectionView indexPathsForSelectedItems][0];
+        NSString *name = arrayOfUserName[selectedIndexPath.item];
+        MessageViewController *msgVC = segue.destinationViewController.childViewControllers[0];
+        msgVC.name = name;
+        msgVC.msgSource = messageFromChat;
+        msgVC.cellIndex = selectedIndexPath.item;
     }
 }
 

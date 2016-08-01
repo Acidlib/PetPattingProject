@@ -53,7 +53,7 @@
 {
     _indication.backgroundColor = [PetColor darkColor];
     _indication.alpha = 0.8;
-    _myName.font = [UIFont fontWithName:@"Helvetica-light" size:24];
+    _myName.font = [UIFont fontWithName:@"Helvetica-bold" size:15];
     _myAge.font = [UIFont fontWithName:@"Helvetica-light" size:14];
     _myDistance.font = [UIFont fontWithName:@"Helvetica-light" size:14];
     _myName.textColor = [PetColor lemonDarkColor];
@@ -86,18 +86,18 @@
 
 }
 
-/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"showMessage"]) {
-        MessageViewController *msgVC = segue.destinationViewController;
-        msgVC.img = self.img;
+        MessageViewController *msgVC = segue.destinationViewController.childViewControllers[0];
         msgVC.name = self.name;
+        msgVC.msgSource = messageFromAnyProfile;
     }
-}*/
+}
 
 - (IBAction)messagePressed:(id)sender
 {
-    
+
 }
 
 - (IBAction)backPressed:(id)sender

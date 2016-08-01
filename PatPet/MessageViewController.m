@@ -14,6 +14,7 @@
 @interface MessageViewController ()
 
 @property int sendCount;
+@property (strong, nonatomic) NSMutableArray *modelMessage;
 
 @end
 
@@ -33,13 +34,19 @@
 
 - (void)setupJSQMessagesCollectionView
 {
-    self.title = @"Jessica";    // Todo: should use the pet's name
-    self.inputToolbar.contentView.textView.pasteDelegate = self;
     self.demoData = [[MainModelData alloc] init];
+    self.modelMessage = (self.msgSource == messageFromChat) ? self.demoData.messages1 : self.demoData.messages;
+    self.title = self.name;    // Todo: should use the pet's name
+    self.inputToolbar.contentView.textView.pasteDelegate = self;
     self.showLoadEarlierMessagesHeader = YES;
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(customAction:)];
     [JSQMessagesCollectionViewCell registerMenuAction:@selector(delete:)];
     self.showLoadEarlierMessagesHeader = NO;
+}
+
+- (void)setName:(NSString *)name
+{
+    _name = name;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,11 +81,11 @@
 {
     self.showTypingIndicator = !self.showTypingIndicator;
     [self scrollToBottomAnimated:YES];
-    JSQMessage *copyMessage = [[self.demoData.messages lastObject] copy];
+    JSQMessage *copyMessage = [[_modelMessage lastObject] copy];
 
     if (!copyMessage) {
-        copyMessage = [JSQMessage messageWithSenderId:kJSQDemoAvatarIdJobs
-                                          displayName:kJSQDemoAvatarDisplayNameJobs
+        copyMessage = [JSQMessage messageWithSenderId:self.demoData.users.allKeys[_cellIndex]
+                                          displayName:self.demoData.users.allValues[_cellIndex]
                                                  text:@"First received!"];
     }
 
@@ -175,7 +182,7 @@
 
         // [JSQSystemSoundPlayer jsq_playMessageReceivedSound];
 
-        [self.demoData.messages addObject:newMessage];
+        [_modelMessage addObject:newMessage];
         [self finishReceivingMessageAnimated:YES];
 
 
@@ -233,7 +240,7 @@
                                              senderDisplayName:senderDisplayName
                                                           date:date
                                                           text:text];
-    [self.demoData.messages addObject:message];
+    [_modelMessage addObject:message];
     [self finishSendingMessageAnimated:YES];
 
     if (_sendCount > 3) {
@@ -278,16 +285,13 @@
             break;
 
         case 2:
-            [self.demoData addVideoMediaMessage];
+            [self.demoData addPhotoMediaMessage];
             break;
 
         case 3:
             [self.demoData addAudioMediaMessage];
             break;
     }
-
-    // [JSQSystemSoundPlayer jsq_playMessageSentSound];
-
     [self finishSendingMessageAnimated:YES];
 }
 
@@ -296,27 +300,36 @@
 #pragma mark - JSQMessages CollectionView DataSource
 
 - (NSString *)senderId {
-    return kJSQDemoAvatarIdSquires;
+    return OwnerId;
 }
 
 - (NSString *)senderDisplayName {
-    return kJSQDemoAvatarDisplayNameSquires;
+    return Owner;
 }
 
 - (id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.demoData.messages objectAtIndex:indexPath.item];
+    switch (self.msgSource) {
+        case messageFromAnyProfile:
+            return [_modelMessage objectAtIndex:indexPath.item];
+            break;
+        case messageFromChat:
+            return [_modelMessage objectAtIndex:indexPath.item];
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)collectionView:(JSQMessagesCollectionView *)collectionView didDeleteMessageAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.demoData.messages removeObjectAtIndex:indexPath.item];
+    [_modelMessage removeObjectAtIndex:indexPath.item];
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
+    JSQMessage *message = [_modelMessage objectAtIndex:indexPath.item];
     if ([message.senderId isEqualToString:self.senderId]) {
         return self.demoData.outgoingBubbleImageData;
     }
@@ -325,7 +338,7 @@
 
 - (id<JSQMessageAvatarImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
+    JSQMessage *message = [_modelMessage objectAtIndex:indexPath.item];
     return [self.demoData.avatars objectForKey:message.senderId];
 }
 
@@ -338,7 +351,7 @@
      *  Show a timestamp for every 3rd message
      */
     if (indexPath.item % 3 == 0) {
-        JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
+        JSQMessage *message = [_modelMessage objectAtIndex:indexPath.item];
         return [[JSQMessagesTimestampFormatter sharedFormatter] attributedTimestampForDate:message.date];
     }
 
@@ -347,7 +360,7 @@
 
 - (NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath
 {
-    JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
+    JSQMessage *message = [_modelMessage objectAtIndex:indexPath.item];
 
     /**
      *  iOS7-style sender name labels
@@ -357,7 +370,7 @@
     }
 
     if (indexPath.item - 1 > 0) {
-        JSQMessage *previousMessage = [self.demoData.messages objectAtIndex:indexPath.item - 1];
+        JSQMessage *previousMessage = [_modelMessage objectAtIndex:indexPath.item - 1];
         if ([[previousMessage senderId] isEqualToString:message.senderId]) {
             return nil;
         }
@@ -378,55 +391,26 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [self.demoData.messages count];
+    return [_modelMessage count];
 }
 
 - (UICollectionViewCell *)collectionView:(JSQMessagesCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    /**
-     *  Override point for customizing cells
-     */
     JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
-
-    /**
-     *  Configure almost *anything* on the cell
-     *
-     *  Text colors, label text, label colors, etc.
-     *
-     *
-     *  DO NOT set `cell.textView.font` !
-     *  Instead, you need to set `self.collectionView.collectionViewLayout.messageBubbleFont` to the font you want in `viewDidLoad`
-     *
-     *
-     *  DO NOT manipulate cell layout information!
-     *  Instead, override the properties you want on `self.collectionView.collectionViewLayout` from `viewDidLoad`
-     */
-
-    JSQMessage *msg = [self.demoData.messages objectAtIndex:indexPath.item];
+    JSQMessage *msg = [_modelMessage objectAtIndex:indexPath.item];
 
     if (!msg.isMediaMessage) {
 
-        if ([msg.senderId isEqualToString:self.senderId]) {
+        if ([msg.senderId isEqualToString:self.senderId])
             cell.textView.textColor = [UIColor blackColor];
-        }
-        else {
+        else
             cell.textView.textColor = [UIColor whiteColor];
-        }
 
         cell.textView.linkTextAttributes = @{ NSForegroundColorAttributeName : cell.textView.textColor,
                                               NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle | NSUnderlinePatternSolid) };
     }
-
-//    cell.accessoryButton.hidden = ![self shouldShowAccessoryButtonForMessage:msg];
-
     return cell;
 }
-
-//- (BOOL)shouldShowAccessoryButtonForMessage:(id<JSQMessageData>)message
-//{
-//    return ([message isMediaMessage] && [NSUserDefaults accessoryButtonForMediaMessages]);
-//}
-
 
 #pragma mark - UICollectionView Delegate
 
@@ -434,10 +418,8 @@
 
 - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
 {
-    if (action == @selector(customAction:)) {
+    if (action == @selector(customAction:))
         return YES;
-    }
-
     return [super collectionView:collectionView canPerformAction:action forItemAtIndexPath:indexPath withSender:sender];
 }
 
@@ -447,14 +429,12 @@
         [self customAction:sender];
         return;
     }
-
     [super collectionView:collectionView performAction:action forItemAtIndexPath:indexPath withSender:sender];
 }
 
 - (void)customAction:(id)sender
 {
     NSLog(@"Custom action received! Sender: %@", sender);
-
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Custom Action", nil)
                                 message:nil
                                delegate:nil
@@ -482,6 +462,7 @@
      *
      *  Show a timestamp for every 3rd message
      */
+
     if (indexPath.item % 3 == 0) {
         return kJSQMessagesCollectionViewCellLabelHeightDefault;
     }
@@ -495,13 +476,13 @@
     /**
      *  iOS7-style sender name labels
      */
-    JSQMessage *currentMessage = [self.demoData.messages objectAtIndex:indexPath.item];
+    JSQMessage *currentMessage = [_modelMessage objectAtIndex:indexPath.item];
     if ([[currentMessage senderId] isEqualToString:self.senderId]) {
         return 0.0f;
     }
 
     if (indexPath.item - 1 > 0) {
-        JSQMessage *previousMessage = [self.demoData.messages objectAtIndex:indexPath.item - 1];
+        JSQMessage *previousMessage = [_modelMessage objectAtIndex:indexPath.item - 1];
         if ([[previousMessage senderId] isEqualToString:[currentMessage senderId]]) {
             return 0.0f;
         }
@@ -550,7 +531,7 @@
                                                  senderDisplayName:self.senderDisplayName
                                                               date:[NSDate date]
                                                              media:item];
-        [self.demoData.messages addObject:message];
+        [_modelMessage addObject:message];
         [self finishSendingMessage];
         return NO;
     }

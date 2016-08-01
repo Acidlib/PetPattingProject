@@ -11,14 +11,21 @@
 #import "JSQMessagesViewController.h"
 #import "MainModelData.h"
 
+typedef NS_ENUM(NSInteger, messageSource) {
+    messageFromAnyProfile = 0,
+    messageFromChat
+};
+
 @interface MessageViewController : JSQMessagesViewController <UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate>
 
+@property (nonatomic) messageSource msgSource;
+@property (nonatomic) NSInteger cellIndex;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) UIImage *img;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *messageBackButton;
 -(IBAction)done:(id)sender;
 
 @property (strong, nonatomic) MainModelData *demoData;
-- (void)receiveMessagePressed:(UIBarButtonItem *)sender;
+//- (void)receiveMessagePressed:(UIBarButtonItem *)sender;
 
 @end

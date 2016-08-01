@@ -48,22 +48,41 @@
             [self loadProfiles];
         }
 
-        JSQMessagesAvatarImage *jsqImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s11"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *cookImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s1"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *ownerImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s11"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_1 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_049"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_2 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_050"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_3 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_051"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_4 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_052"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_5 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_053"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_6 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_054"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_7 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_055"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_8 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_056"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_9 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_057"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_10 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_058"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
 
-        JSQMessagesAvatarImage *jobsImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s1"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        self.avatars = @{ OwnerId : ownerImage,
+                          userId_1 : userImage_1,
+                          userId_2 : userImage_2,
+                          userId_3 : userImage_3,
+                          userId_4 : userImage_4,
+                          userId_5 : userImage_5,
+                          userId_6 : userImage_6,
+                          userId_7 : userImage_7,
+                          userId_8 : userImage_8,
+                          userId_9 : userImage_9,
+                          userId_10 : userImage_10};
 
-        JSQMessagesAvatarImage *wozImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s1"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-
-        self.avatars = @{ kJSQDemoAvatarIdSquires : jsqImage,
-                          kJSQDemoAvatarIdCook : cookImage,
-                          kJSQDemoAvatarIdJobs : jobsImage,
-                          kJSQDemoAvatarIdWoz : wozImage };
-
-        self.users = @{ kJSQDemoAvatarIdJobs : kJSQDemoAvatarDisplayNameJobs,
-                        kJSQDemoAvatarIdCook : kJSQDemoAvatarDisplayNameCook,
-                        kJSQDemoAvatarIdWoz : kJSQDemoAvatarDisplayNameWoz,
-                        kJSQDemoAvatarIdSquires : kJSQDemoAvatarDisplayNameSquires };
+        self.users = @{ OwnerId : Owner,
+                        userId_1 : user1,
+                        userId_2 : user2,
+                        userId_3 : user3,
+                        userId_4 : user4,
+                        userId_5 : user5,
+                        userId_6 : user6,
+                        userId_7 : user7,
+                        userId_8 : user8,
+                        userId_9 : user9,
+                        userId_10 : user10};
 
         JSQMessagesBubbleImageFactory *bubbleFactory = [[JSQMessagesBubbleImageFactory alloc] init];
 
@@ -126,88 +145,20 @@
 
 - (void)loadFakeMessages
 {
-    /**
-     *  Load some fake messages for demo.
-     *
-     *  You should have a mutable array or orderedSet, or something.
-     */
-    self.messages = [[NSMutableArray alloc] initWithObjects:
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-                                                     date:[NSDate distantPast]
-                                                     text:NSLocalizedString(@"Welcome to JSQMessages: A messaging UI framework for iOS.", nil)],
-
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdWoz
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameWoz
-                                                     date:[NSDate distantPast]
-                                                     text:NSLocalizedString(@"It is simple, elegant, and easy to use. There are super sweet default settings, but you can customize like crazy.", nil)],
-
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-                                                     date:[NSDate distantPast]
-                                                     text:NSLocalizedString(@"It even has data detectors. You can call me tonight. My cell number is 123-456-7890. My website is www.hexedbits.com.", nil)],
-
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdJobs
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameJobs
-                                                     date:[NSDate date]
-                                                     text:NSLocalizedString(@"JSQMessagesViewController is nearly an exact replica of the iOS Messages App. And perhaps, better.", nil)],
-
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdCook
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameCook
-                                                     date:[NSDate date]
-                                                     text:NSLocalizedString(@"It is unit-tested, free, open-source, and documented.", nil)],
-
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-                                                     date:[NSDate date]
-                                                     text:NSLocalizedString(@"Now with media messages!", nil)],
+    /* Message 0 */
+    self.messages = [[NSMutableArray alloc] init];
+    /* Message 1 */
+    self.messages1 = [[NSMutableArray alloc] initWithObjects:
+                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"I just can't believe that bitch bited my yesterday.", nil)],
+                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"what do you think?", nil)],
+                     [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"I don't know man, I need to go sleep now.", nil)],
+                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Good Morning :)", nil)],
+                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Are you there?", nil)],
+                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Take a stroll?", nil)],
                      nil];
 
-    [self addPhotoMediaMessage];
-    [self addAudioMediaMessage];
+    
 
-    /**
-     *  Setting to load extra messages for testing/demo
-     */
-    if ([NSUserDefaults extraMessagesSetting]) {
-        NSArray *copyOfMessages = [self.messages copy];
-        for (NSUInteger i = 0; i < 4; i++) {
-            [self.messages addObjectsFromArray:copyOfMessages];
-        }
-    }
-
-
-    /**
-     *  Setting to load REALLY long message for testing/demo
-     *  You should see "END" twice
-     */
-    if ([NSUserDefaults longMessageSetting]) {
-        JSQMessage *reallyLongMessage = [JSQMessage messageWithSenderId:kJSQDemoAvatarIdSquires
-                                                            displayName:kJSQDemoAvatarDisplayNameSquires
-                                                                   text:@"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? END Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? END"];
-
-        [self.messages addObject:reallyLongMessage];
-    }
-}
-
-- (void)addAudioMediaMessage
-{
-    NSString * sample = [[NSBundle mainBundle] pathForResource:@"jsq_messages_sample" ofType:@"m4a"];
-    NSData * audioData = [NSData dataWithContentsOfFile:sample];
-    JSQAudioMediaItem *audioItem = [[JSQAudioMediaItem alloc] initWithData:audioData];
-    JSQMessage *audioMessage = [JSQMessage messageWithSenderId:kJSQDemoAvatarIdSquires
-                                                   displayName:kJSQDemoAvatarDisplayNameSquires
-                                                         media:audioItem];
-    [self.messages addObject:audioMessage];
-}
-
-- (void)addPhotoMediaMessage
-{
-    JSQPhotoMediaItem *photoItem = [[JSQPhotoMediaItem alloc] initWithImage:[UIImage imageNamed:@"goldengate"]];
-    JSQMessage *photoMessage = [JSQMessage messageWithSenderId:kJSQDemoAvatarIdSquires
-                                                   displayName:kJSQDemoAvatarDisplayNameSquires
-                                                         media:photoItem];
-    [self.messages addObject:photoMessage];
 }
 
 - (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion
@@ -217,22 +168,40 @@
     JSQLocationMediaItem *locationItem = [[JSQLocationMediaItem alloc] init];
     [locationItem setLocation:ferryBuildingInSF withCompletionHandler:completion];
 
-    JSQMessage *locationMessage = [JSQMessage messageWithSenderId:kJSQDemoAvatarIdSquires
-                                                      displayName:kJSQDemoAvatarDisplayNameSquires
+    JSQMessage *locationMessage = [JSQMessage messageWithSenderId:OwnerId
+                                                      displayName:Owner
                                                             media:locationItem];
     [self.messages addObject:locationMessage];
 }
 
+- (void)addPhotoMediaMessage
+{
+    JSQPhotoMediaItem *photoItem = [[JSQPhotoMediaItem alloc] initWithImage:[UIImage imageNamed:@"scenery.jpg"]];
+    JSQMessage *photoMessage = [JSQMessage messageWithSenderId:OwnerId
+                                                   displayName:Owner
+                                                         media:photoItem];
+    [self.messages addObject:photoMessage];
+}
+
 - (void)addVideoMediaMessage
 {
-    // don't have a real video, just pretending
     NSURL *videoURL = [NSURL URLWithString:@"file://"];
-
     JSQVideoMediaItem *videoItem = [[JSQVideoMediaItem alloc] initWithFileURL:videoURL isReadyToPlay:YES];
-    JSQMessage *videoMessage = [JSQMessage messageWithSenderId:kJSQDemoAvatarIdSquires
-                                                   displayName:kJSQDemoAvatarDisplayNameSquires
+    JSQMessage *videoMessage = [JSQMessage messageWithSenderId:OwnerId
+                                                   displayName:Owner
                                                          media:videoItem];
     [self.messages addObject:videoMessage];
+}
+
+- (void)addAudioMediaMessage
+{
+    NSString * sample = [NSString stringWithFormat:@"%@/CAT_SoundEffect.m4a", [[NSBundle mainBundle] resourcePath]];
+    NSData * audioData = [NSData dataWithContentsOfFile:sample];
+    JSQAudioMediaItem *audioItem = [[JSQAudioMediaItem alloc] initWithData:audioData];
+    JSQMessage *audioMessage = [JSQMessage messageWithSenderId:OwnerId
+                                                   displayName:Owner
+                                                         media:audioItem];
+    [self.messages addObject:audioMessage];
 }
 
 @end

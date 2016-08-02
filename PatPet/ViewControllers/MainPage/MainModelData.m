@@ -158,7 +158,8 @@
                      nil];
 
     
-
+    [self addPhotoMediaMessage];
+    [self addAudioMediaMessage];
 }
 
 - (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion

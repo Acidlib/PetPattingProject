@@ -12,7 +12,8 @@
 #import <AudioToolbox/AudioServices.h>
 #import <AVFoundation/AVAudioPlayer.h>
 
-@interface ProfileViewController ()
+@interface ProfileViewController () <UIGestureRecognizerDelegate>
+
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UILabel *myName;
 @property (nonatomic, weak) IBOutlet UILabel *myAge;

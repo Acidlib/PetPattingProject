@@ -18,6 +18,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *myName;
 @property (nonatomic, weak) IBOutlet UILabel *myAge;
 @property (nonatomic, weak) IBOutlet UILabel *myDistance;
+@property (weak, nonatomic) IBOutlet UIImageView *likeImage;
+@property (weak, nonatomic) IBOutlet UIButton *likeButton;
 
 @property (readwrite) CFURLRef pathURL;
 @property (readonly)  SystemSoundID audioEffect;
@@ -52,6 +54,8 @@
 
 - (void)setupAttribute
 {
+    _likeButton.hidden = YES;
+    _likeImage.hidden = YES;
     _indication.backgroundColor = [PetColor darkColor];
     _indication.alpha = 0.8;
     _myName.font = [UIFont fontWithName:@"Helvetica-bold" size:15];
@@ -63,10 +67,6 @@
 
     // navigation bar hidden
     self.navigationController.navigationBar.hidden = YES;
-
-    // backPressed
-//    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(zap:)];
-//    self.navigationItem.leftBarButtonItem = left;
 
     //The setup code (in viewDidLoad in your view controller)
     UITapGestureRecognizer *singleFingerTap =
@@ -84,7 +84,28 @@
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer
 {
     CGPoint location = [recognizer locationInView:[recognizer.view superview]];
+    [UIView transitionWithView:_likeImage
+                      duration:0.4
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        _likeImage.hidden = NO;
+                    }
+                    completion:^(BOOL finished){
+                        if (finished) {
+                            [UIView transitionWithView:_likeImage
+                                              duration:0.4
+                                               options:UIViewAnimationOptionTransitionCrossDissolve
+                                            animations:^{
+                                                _likeImage.hidden = YES;
+                                                _likeButton.hidden = NO;
+                                            } completion:nil];
+                        }
+                    }];
+}
 
+- (IBAction)didTapLike:(id)sender
+{
+    _likeButton.hidden = YES;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

@@ -16,15 +16,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "491239302.691424"
+            timestampString = "491851176.734593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-handleSingleTap:"
             landmarkType = "5">
          </BreakpointContent>
@@ -228,11 +228,11 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491763802.543787"
+                  timestampString = "491850458.45226"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
                   offsetFromSymbolStart = "736">
                </Location>
                <Location
@@ -243,11 +243,11 @@
                   moduleName = "PatPet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/YLibrarian/Documents/Project/KuPetProject/PetsPatting/petspatting/PatPet/MessageViewController.m"
-                  timestampString = "491763802.543893"
+                  timestampString = "491850458.452573"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
@@ -292,11 +292,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "491505982.772376"
+            timestampString = "491851299.034221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "-backPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -756,11 +756,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "491505982.772376"
+            timestampString = "491851299.034221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-messagePressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -772,11 +772,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ProfileViewController.m"
-            timestampString = "491505982.772376"
+            timestampString = "491851299.034221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>

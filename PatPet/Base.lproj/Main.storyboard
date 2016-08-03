@@ -332,7 +332,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p18.png" translatesAutoresizingMaskIntoConstraints="NO" id="LSy-Ch-eo5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prof_s3.png" translatesAutoresizingMaskIntoConstraints="NO" id="LSy-Ch-eo5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9I0-ho-HrR">
@@ -383,7 +383,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu3-hQ-40O">
-                                <rect key="frame" x="177" y="653.5" width="60" height="60"/>
+                                <rect key="frame" x="177" y="653" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="eWe-Y4-eoR"/>
                                     <constraint firstAttribute="width" constant="60" id="p6w-20-4qZ"/>
@@ -412,11 +412,30 @@
                                     <action selector="backPressed:" destination="Cd6-PZ-DA1" eventType="touchUpInside" id="hWb-cA-xJJ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-like.png" translatesAutoresizingMaskIntoConstraints="NO" id="w3a-2a-p1u">
+                                <rect key="frame" x="158" y="319" width="98" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="e9k-Ah-WpY"/>
+                                    <constraint firstAttribute="height" constant="98" id="wuo-nw-v5V"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdD-ur-bNl">
+                                <rect key="frame" x="364" y="651" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="12M-I8-Ffw"/>
+                                    <constraint firstAttribute="height" constant="30" id="2Oc-Zg-ebv"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icn-like.png"/>
+                                <connections>
+                                    <action selector="didTapLike:" destination="Cd6-PZ-DA1" eventType="touchUpInside" id="9cx-Vi-ufx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="LSy-Ch-eo5" secondAttribute="bottom" id="4bw-Fe-Z7L"/>
                             <constraint firstItem="Csx-AV-AAj" firstAttribute="leading" secondItem="S3T-kc-1Hq" secondAttribute="leading" id="5fz-Jx-juD"/>
+                            <constraint firstItem="wdD-ur-bNl" firstAttribute="trailing" secondItem="6e0-Vd-JES" secondAttribute="trailing" constant="-20" id="7fq-zl-T5t"/>
                             <constraint firstAttribute="trailing" secondItem="LSy-Ch-eo5" secondAttribute="trailing" id="EkL-vH-rk1"/>
                             <constraint firstItem="9I0-ho-HrR" firstAttribute="top" secondItem="VDi-Al-9CD" secondAttribute="top" id="FlR-To-n4l"/>
                             <constraint firstItem="Yu3-hQ-40O" firstAttribute="centerY" secondItem="6e0-Vd-JES" secondAttribute="centerY" id="LFP-Vn-k6r"/>
@@ -425,9 +444,11 @@
                             <constraint firstAttribute="trailing" secondItem="LMj-5R-IxJ" secondAttribute="trailing" constant="15" id="Noz-Zt-BKt"/>
                             <constraint firstItem="9I0-ho-HrR" firstAttribute="leading" secondItem="VDi-Al-9CD" secondAttribute="leading" id="OFw-5R-z3u"/>
                             <constraint firstItem="6e0-Vd-JES" firstAttribute="leading" secondItem="VDi-Al-9CD" secondAttribute="leading" id="OqP-c4-NHf"/>
+                            <constraint firstItem="wdD-ur-bNl" firstAttribute="top" secondItem="6e0-Vd-JES" secondAttribute="top" constant="20" id="QRm-Rx-PeF"/>
                             <constraint firstItem="msj-mf-wd8" firstAttribute="centerY" secondItem="oju-56-Mgl" secondAttribute="centerY" id="TUL-0g-wFc"/>
                             <constraint firstItem="oju-56-Mgl" firstAttribute="bottom" secondItem="Csx-AV-AAj" secondAttribute="bottom" id="VCM-vC-ouF"/>
                             <constraint firstItem="LSy-Ch-eo5" firstAttribute="top" secondItem="VDi-Al-9CD" secondAttribute="top" id="VGf-hI-aoe"/>
+                            <constraint firstItem="w3a-2a-p1u" firstAttribute="centerY" secondItem="VDi-Al-9CD" secondAttribute="centerY" id="WBl-UX-aTV"/>
                             <constraint firstItem="oju-56-Mgl" firstAttribute="leading" secondItem="Csx-AV-AAj" secondAttribute="trailing" id="XE3-my-EIE"/>
                             <constraint firstItem="Csx-AV-AAj" firstAttribute="top" secondItem="S3T-kc-1Hq" secondAttribute="bottom" id="Yqd-va-E5q"/>
                             <constraint firstItem="msj-mf-wd8" firstAttribute="trailing" secondItem="oju-56-Mgl" secondAttribute="leading" constant="-5" id="ZNX-MQ-NJ6"/>
@@ -435,6 +456,7 @@
                             <constraint firstItem="S3T-kc-1Hq" firstAttribute="leading" secondItem="6e0-Vd-JES" secondAttribute="leading" constant="15" id="dS4-yA-ScA"/>
                             <constraint firstItem="Csx-AV-AAj" firstAttribute="bottom" secondItem="msj-mf-wd8" secondAttribute="top" constant="-5" id="dtq-Tj-ig5"/>
                             <constraint firstItem="oju-56-Mgl" firstAttribute="centerX" secondItem="Csx-AV-AAj" secondAttribute="centerX" id="fdB-2H-Bwf"/>
+                            <constraint firstItem="w3a-2a-p1u" firstAttribute="centerX" secondItem="VDi-Al-9CD" secondAttribute="centerX" id="gsW-tr-X8B"/>
                             <constraint firstItem="msj-mf-wd8" firstAttribute="leading" secondItem="S3T-kc-1Hq" secondAttribute="leading" id="jhH-RP-V3l"/>
                             <constraint firstItem="6e0-Vd-JES" firstAttribute="top" secondItem="Yu3-hQ-40O" secondAttribute="top" constant="-20" id="nEt-ab-ww2"/>
                             <constraint firstAttribute="trailing" secondItem="9I0-ho-HrR" secondAttribute="trailing" id="oje-8A-zfK"/>
@@ -466,6 +488,8 @@
                         <outlet property="gradientView" destination="9I0-ho-HrR" id="onj-yV-X3O"/>
                         <outlet property="imageView" destination="LSy-Ch-eo5" id="f5X-Uw-1BR"/>
                         <outlet property="indication" destination="6e0-Vd-JES" id="6CQ-FE-B20"/>
+                        <outlet property="likeButton" destination="wdD-ur-bNl" id="BC6-sM-rPw"/>
+                        <outlet property="likeImage" destination="w3a-2a-p1u" id="a4S-Sa-zzT"/>
                         <outlet property="myAge" destination="Csx-AV-AAj" id="zmr-2O-3m5"/>
                         <outlet property="myDistance" destination="oju-56-Mgl" id="peE-Uw-ntI"/>
                         <outlet property="myName" destination="S3T-kc-1Hq" id="Kng-U7-vJI"/>
@@ -896,18 +920,19 @@
         <image name="Prof_c3.png" width="861" height="861"/>
         <image name="Prof_s1.png" width="802" height="802"/>
         <image name="Prof_s11.png" width="975" height="1008"/>
+        <image name="Prof_s3.png" width="792" height="792"/>
         <image name="bg2.png" width="861" height="861"/>
         <image name="icn-back.png" width="44" height="44"/>
         <image name="icn-cancel.png" width="48" height="48"/>
         <image name="icn-fur-y-1.png" width="117" height="108"/>
+        <image name="icn-like.png" width="144" height="144"/>
         <image name="icn_chat_bf.png" width="80" height="80"/>
         <image name="icn_preference.png" width="130" height="130"/>
         <image name="icn_setting.png" width="130" height="130"/>
         <image name="more.png" width="11" height="9"/>
-        <image name="p18.png" width="861" height="861"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fOr-6g-NAf"/>
-        <segue reference="q3C-TN-lK2"/>
+        <segue reference="HFR-Lr-jMj"/>
     </inferredMetricsTieBreakers>
 </document>

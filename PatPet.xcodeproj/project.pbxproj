@@ -48,6 +48,7 @@
 		6D46999E1D4BC343009D8F92 /* img_060.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699911D4BC343009D8F92 /* img_060.png */; };
 		6D46999F1D4BC343009D8F92 /* img_061.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699921D4BC343009D8F92 /* img_061.png */; };
 		6D4699A11D4FAA99009D8F92 /* scenery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699A01D4FAA99009D8F92 /* scenery.jpg */; };
+		6D4699A61D510A0F009D8F92 /* icn-like.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699A51D510A0F009D8F92 /* icn-like.png */; };
 		6D5B27E21C47C9A7004CE54B /* back0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B27E11C47C9A7004CE54B /* back0.png */; };
 		6D5B27F91C47F48D004CE54B /* 1_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B27F81C47F48D004CE54B /* 1_chat.png */; };
 		6D5B27FF1C480355004CE54B /* ChatCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */; };
@@ -233,6 +234,7 @@
 		6D4699911D4BC343009D8F92 /* img_060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_060.png; path = ../resources/ProfileImage/img_060.png; sourceTree = "<group>"; };
 		6D4699921D4BC343009D8F92 /* img_061.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_061.png; path = ../resources/ProfileImage/img_061.png; sourceTree = "<group>"; };
 		6D4699A01D4FAA99009D8F92 /* scenery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery.jpg; sourceTree = "<group>"; };
+		6D4699A51D510A0F009D8F92 /* icn-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icn-like.png"; path = "resources/Images/icn-like.png"; sourceTree = "<group>"; };
 		6D5B27E11C47C9A7004CE54B /* back0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back0.png; sourceTree = "<group>"; };
 		6D5B27F81C47F48D004CE54B /* 1_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_chat.png; sourceTree = "<group>"; };
 		6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCollectionViewController.h; sourceTree = "<group>"; };
@@ -660,6 +662,7 @@
 		6D866F591C4237FC00CC2D43 = {
 			isa = PBXGroup;
 			children = (
+				6D4699A51D510A0F009D8F92 /* icn-like.png */,
 				6D4699811D4BA63E009D8F92 /* icn_bubble_y.png */,
 				6D866F641C4237FC00CC2D43 /* PatPet */,
 				6D866F811C4237FC00CC2D43 /* PatPetTests */,
@@ -883,6 +886,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4699A61D510A0F009D8F92 /* icn-like.png in Resources */,
 				6D4699931D4BC343009D8F92 /* img_049.png in Resources */,
 				6D4699941D4BC343009D8F92 /* img_050.png in Resources */,
 				6D4699951D4BC343009D8F92 /* img_051.png in Resources */,

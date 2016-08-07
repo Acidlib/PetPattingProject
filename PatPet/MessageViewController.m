@@ -35,7 +35,44 @@
 - (void)setupJSQMessagesCollectionView
 {
     self.demoData = [[MainModelData alloc] init];
-    self.modelMessage = (self.msgSource == messageFromChat) ? self.demoData.messages1 : self.demoData.messages;
+    if (self.msgSource == messageFromChat) {
+        switch (_cellIndex + 1) {
+            case 1: {
+                self.modelMessage = self.demoData.messages1;
+            } break;
+            case 2: {
+                self.modelMessage = self.demoData.messages2;
+            } break;
+            case 3: {
+                self.modelMessage = self.demoData.messages3;
+            } break;
+            case 4: {
+                self.modelMessage = self.demoData.messages4;
+            } break;
+            case 5: {
+                self.modelMessage = self.demoData.messages5;
+            } break;
+            case 6: {
+                self.modelMessage = self.demoData.messages6;
+            } break;
+            case 7: {
+                self.modelMessage = self.demoData.messages7;
+            } break;
+            case 8: {
+                self.modelMessage = self.demoData.messages8;
+            } break;
+            case 9: {
+                self.modelMessage = self.demoData.messages9;
+            } break;
+            case 10: {
+                self.modelMessage = self.demoData.messages10;
+            } break;
+            default:
+                break;
+        }
+    } else {
+        self.modelMessage = self.demoData.messages;
+    }
     self.title = self.name;    // Todo: should use the pet's name
     self.inputToolbar.contentView.textView.pasteDelegate = self;
     self.showLoadEarlierMessagesHeader = YES;

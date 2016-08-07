@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "342"
-            endingLineNumber = "342"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "-collectionView:avatarImageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "510"
-            endingLineNumber = "510"
+            startingLineNumber = "547"
+            endingLineNumber = "547"
             landmarkName = "-collectionView:didTapAvatarImageView:atIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -116,11 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "332"
-            endingLineNumber = "332"
+            startingLineNumber = "369"
+            endingLineNumber = "369"
             landmarkName = "-collectionView:messageBubbleImageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -148,11 +148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "399"
-            endingLineNumber = "399"
+            startingLineNumber = "436"
+            endingLineNumber = "436"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -196,11 +196,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
             landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
             landmarkType = "5">
          </BreakpointContent>
@@ -212,11 +212,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
             <Locations>
@@ -260,11 +260,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
@@ -276,11 +276,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "-receiveMessagePressed"
             landmarkType = "5">
          </BreakpointContent>
@@ -788,11 +788,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "-setName:"
             landmarkType = "5">
          </BreakpointContent>
@@ -804,11 +804,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ViewControllers/MainPage/MainModelData.m"
-            timestampString = "491792906.398404"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "-addAudioMediaMessage"
             landmarkType = "5">
          </BreakpointContent>
@@ -820,11 +820,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/ViewControllers/MainPage/MainModelData.m"
-            timestampString = "491792906.398404"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
             landmarkName = "-addPhotoMediaMessage"
             landmarkType = "5">
          </BreakpointContent>
@@ -836,11 +836,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
             landmarkName = "-actionSheet:didDismissWithButtonIndex:"
             landmarkType = "5">
          </BreakpointContent>
@@ -852,11 +852,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "358"
+            endingLineNumber = "358"
             landmarkName = "-collectionView:messageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -868,11 +868,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "312"
-            endingLineNumber = "312"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
             landmarkName = "-collectionView:messageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -884,11 +884,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "-collectionView:messageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -900,11 +900,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "363"
-            endingLineNumber = "363"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "-collectionView:attributedTextForMessageBubbleTopLabelAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -916,11 +916,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "527"
-            endingLineNumber = "527"
+            startingLineNumber = "564"
+            endingLineNumber = "564"
             landmarkName = "-composerTextView:shouldPasteWithSender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -932,11 +932,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
             landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
             landmarkType = "5">
          </BreakpointContent>
@@ -948,11 +948,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "238"
-            endingLineNumber = "238"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
             landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
             landmarkType = "5">
          </BreakpointContent>
@@ -964,11 +964,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "-didPressAccessoryButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -980,11 +980,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
             landmarkName = "-senderId"
             landmarkType = "5">
          </BreakpointContent>
@@ -996,11 +996,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "307"
-            endingLineNumber = "307"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "-senderDisplayName"
             landmarkType = "5">
          </BreakpointContent>
@@ -1012,11 +1012,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "326"
-            endingLineNumber = "326"
+            startingLineNumber = "363"
+            endingLineNumber = "363"
             landmarkName = "-collectionView:didDeleteMessageAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1028,11 +1028,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "-collectionView:avatarImageDataForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1044,11 +1044,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "353"
-            endingLineNumber = "353"
+            startingLineNumber = "390"
+            endingLineNumber = "390"
             landmarkName = "-collectionView:attributedTextForCellTopLabelAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1060,11 +1060,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "387"
-            endingLineNumber = "387"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
             landmarkName = "-collectionView:attributedTextForCellBottomLabelAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1076,11 +1076,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "394"
-            endingLineNumber = "394"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
             landmarkName = "-collectionView:numberOfItemsInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1092,11 +1092,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
+            startingLineNumber = "458"
+            endingLineNumber = "458"
             landmarkName = "-collectionView:canPerformAction:forItemAtIndexPath:withSender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1108,11 +1108,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
+            startingLineNumber = "465"
+            endingLineNumber = "465"
             landmarkName = "-collectionView:performAction:forItemAtIndexPath:withSender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1124,11 +1124,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "437"
-            endingLineNumber = "437"
+            startingLineNumber = "474"
+            endingLineNumber = "474"
             landmarkName = "-customAction:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1140,11 +1140,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "466"
-            endingLineNumber = "466"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
             landmarkName = "-collectionView:layout:heightForCellTopLabelAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1156,11 +1156,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "479"
-            endingLineNumber = "479"
+            startingLineNumber = "516"
+            endingLineNumber = "516"
             landmarkName = "-collectionView:layout:heightForMessageBubbleTopLabelAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1172,11 +1172,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "497"
-            endingLineNumber = "497"
+            startingLineNumber = "534"
+            endingLineNumber = "534"
             landmarkName = "-collectionView:layout:heightForCellBottomLabelAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1188,11 +1188,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "505"
-            endingLineNumber = "505"
+            startingLineNumber = "542"
+            endingLineNumber = "542"
             landmarkName = "-collectionView:header:didTapLoadEarlierMessagesButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1204,28 +1204,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763894.050451"
+            timestampString = "492279558.461909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "515"
-            endingLineNumber = "515"
+            startingLineNumber = "552"
+            endingLineNumber = "552"
             landmarkName = "-collectionView:didTapMessageBubbleAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PatPet/MessageViewController.m"
-            timestampString = "491763666.797636"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-setupJSQMessagesCollectionView"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

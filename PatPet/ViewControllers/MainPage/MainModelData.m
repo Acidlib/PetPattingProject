@@ -49,16 +49,16 @@
         }
 
         JSQMessagesAvatarImage *ownerImage = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"Prof_s11"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_1 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_049"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_2 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_050"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_3 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_051"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_4 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_052"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_5 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_053"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_6 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_054"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_7 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_055"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_8 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_056"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_9 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_057"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
-        JSQMessagesAvatarImage *userImage_10 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_058"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_1 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_058"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_2 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_059"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_3 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_049"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_4 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_050"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_5 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_051"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_6 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_055"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_7 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_053"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_8 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_054"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_9 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_056"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
+        JSQMessagesAvatarImage *userImage_10 = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"img_057"] diameter:kJSQMessagesCollectionViewAvatarSizeDefault];
 
         self.avatars = @{ OwnerId : ownerImage,
                           userId_1 : userImage_1,
@@ -149,17 +149,68 @@
     self.messages = [[NSMutableArray alloc] init];
     /* Message 1 */
     self.messages1 = [[NSMutableArray alloc] initWithObjects:
-                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"I just can't believe that bitch bited my yesterday.", nil)],
-                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"what do you think?", nil)],
-                     [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"I don't know man, I need to go sleep now.", nil)],
-                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Good Morning :)", nil)],
-                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Are you there?", nil)],
-                     [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Take a stroll?", nil)],
-                     nil];
+                      [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"What's up?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"Nice weather, lets go to park?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Nope, just tired", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"I would like to take a snap", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_1 senderDisplayName:user1 date:[NSDate distantPast] text:NSLocalizedString(@"Sleepy...zzz", nil)],
+                      nil];
 
+    self.messages2 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"Hey Pretty, free?", nil)],
+                      nil];
+
+    self.messages3 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:userId_3 senderDisplayName:user3 date:[NSDate distantPast] text:NSLocalizedString(@"I just can't believe that bitch bited my yesterday.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_3 senderDisplayName:user3 date:[NSDate distantPast] text:NSLocalizedString(@"what do you think?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"I don't know man, I need to go sleep now.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_3 senderDisplayName:user3 date:[NSDate distantPast] text:NSLocalizedString(@"Good Morning :)", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_3 senderDisplayName:user3 date:[NSDate distantPast] text:NSLocalizedString(@"Are you there?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_3 senderDisplayName:user3 date:[NSDate distantPast] text:NSLocalizedString(@"Take a stroll?", nil)],
+                      nil];
+    self.messages4 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"I got somthing wrong with my appetite. I drop 400 grams this month :(", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_4 senderDisplayName:user4 date:[NSDate distantPast] text:NSLocalizedString(@"When will you see the vet?", nil)],
+                      nil];
+    self.messages5 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:userId_5 senderDisplayName:user5 date:[NSDate distantPast] text:NSLocalizedString(@"Haven't met you for a wile, you remember me?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"Yes, I do, but I currently live in the other city, with my grandpa.", nil)],
+                      nil];
+    self.messages6 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"3 pm @ Lavis Park?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_6 senderDisplayName:user6 date:[NSDate distantPast] text:NSLocalizedString(@"Yes, see you @3 pm", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"How's goin?", nil)],
+                      nil];
+    self.messages7 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:userId_7 senderDisplayName:user7 date:[NSDate distantPast] text:NSLocalizedString(@"Sorry, I have been busy lately. untimely reply.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"That's okay, bro. you okay?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_7 senderDisplayName:user7 date:[NSDate distantPast] text:NSLocalizedString(@"fine.", nil)],
+                      nil];
+    self.messages8 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:userId_8 senderDisplayName:user8 date:[NSDate distantPast] text:NSLocalizedString(@"you see.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_8 senderDisplayName:user8 date:[NSDate distantPast] text:NSLocalizedString(@"I saw you on the news.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_8 senderDisplayName:user8 date:[NSDate distantPast] text:NSLocalizedString(@"is that you?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_8 senderDisplayName:user8 date:[NSDate distantPast] text:NSLocalizedString(@"http://goo.gl/G33RUR", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"I don't know man, I need to go sleep now.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_8 senderDisplayName:user8 date:[NSDate distantPast] text:NSLocalizedString(@"bye.", nil)],
+                      nil];
+    self.messages9 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:userId_9 senderDisplayName:user9 date:[NSDate distantPast] text:NSLocalizedString(@"Thank you for the ride.", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"No problem, I was passing by.", nil)],
+                      nil];
+    self.messages10 = [[NSMutableArray alloc] initWithObjects:
+                      [[JSQMessage alloc] initWithSenderId:userId_10 senderDisplayName:user10 date:[NSDate distantPast] text:NSLocalizedString(@"Sweety, I'm Reggie, Nice to see you", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"Hihi, how are you", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_10 senderDisplayName:user10 date:[NSDate distantPast] text:NSLocalizedString(@"Coun't be better. you looks so sexy, babe", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_10 senderDisplayName:user10 date:[NSDate distantPast] text:NSLocalizedString(@"can we be friends?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"sure :)", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_10 senderDisplayName:user10 date:[NSDate distantPast] text:NSLocalizedString(@"wanna have fun?", nil)],
+                      [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"Oui", nil)],
+                      [[JSQMessage alloc] initWithSenderId:userId_10 senderDisplayName:user10 date:[NSDate distantPast] text:NSLocalizedString(@"Good.", nil)],
+                      nil];
     
-    [self addPhotoMediaMessage];
-    [self addAudioMediaMessage];
+    //[self addPhotoMediaMessage];
+    //[self addAudioMediaMessage];
 }
 
 - (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion

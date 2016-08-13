@@ -14,6 +14,7 @@
 //@property (weak, nonatomic) IBOutlet UICollectionView *breedsCollectionView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButtonOfPref;
 //@property (weak, nonatomic) IBOutlet UITableView *PrefTableView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *moreButton;
 @property (weak, nonatomic) IBOutlet UIImageView *catTypeImage;

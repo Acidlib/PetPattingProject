@@ -49,6 +49,12 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     _viewType = viewTypeMain;
     [super viewDidLoad];
+    
+    // Hamburger btn
+    _barButton.target = self.revealViewController;
+    _barButton.action = @selector(revealToggle:);
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
     [self setupUIAttribute];
     [self setupMsgCollectionView];
 }
@@ -62,12 +68,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)setupUIAttribute
 {
     _messageCollectionView.hidden = YES;
-    
-    // Hamburger btn
-    _barButton.target = self.revealViewController;
-    _barButton.action = @selector(revealToggle:);
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
     // items
     _searchItem.tintColor = [PetColor lemonDarkColor];
     _favItem.tintColor = [PetColor darkGrayColor];

@@ -11,12 +11,10 @@
 #import "BreedsCell.h"
 #import "PetColor.h"
 
-@interface PreferenceViewController ()<UITextFieldDelegate>
+#define VIEW_HEIGHT self.view.frame.size.height - 65
+#define VIEW_WIDTH self.view.frame.size.width
 
-@property (nonatomic, weak) IBOutlet UITextField *sizeTextField;
-@property (nonatomic, weak) IBOutlet UITextField *lengthTextField;
-@property (nonatomic, weak) IBOutlet UITextField *weightTextField;
-@property (nonatomic, weak) IBOutlet UITextField *colorTextField;
+@interface PreferenceViewController ()<UITextFieldDelegate>
 
 @end
 
@@ -30,6 +28,14 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUIAttribute];
+    // Hamburger btn
+    _backButtonOfPref.target = self.revealViewController;
+    _backButtonOfPref.action = @selector(revealToggle:);
+    //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
+    // disable panGesture of SWReveal
+    SWRevealViewController *reveal = self.revealViewController;
+    reveal.panGestureRecognizer.enabled = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -46,158 +52,87 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 
 - (void)setupUIAttribute
 {
-    // Hamburger btn
-    _backButtonOfPref.target = self.revealViewController;
-    _backButtonOfPref.action = @selector(revealToggle:);
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
     // GIF
     _catTypeImage.image = [UIImage animatedImageNamed:@"icn-fur-y-" duration:1.0f];
 
     // Bounce
     _scrollView.bounces = NO;
-    
+    _scrollView.scrollEnabled = NO;
 }
 
-#pragma mark - Configuration
-
-- (void)configureTextField {
-    self.sizeTextField.placeholder = NSLocalizedString(@"Small / Mediem / Large", nil);
-    self.sizeTextField.autocorrectionType = UITextAutocorrectionTypeYes;
-    self.sizeTextField.returnKeyType = UIReturnKeyDone;
-    self.sizeTextField.clearButtonMode = UITextFieldViewModeNever;
-
-    self.lengthTextField.placeholder = NSLocalizedString(@"Centimeter (cm)", nil);
-    self.lengthTextField.autocorrectionType = UITextAutocorrectionTypeYes;
-    self.lengthTextField.returnKeyType = UIReturnKeyDone;
-    self.lengthTextField.clearButtonMode = UITextFieldViewModeNever;
-
-    self.weightTextField.placeholder = NSLocalizedString(@"Kilogram (Kg)", nil);
-    self.weightTextField.autocorrectionType = UITextAutocorrectionTypeYes;
-    self.weightTextField.returnKeyType = UIReturnKeyDone;
-    self.weightTextField.clearButtonMode = UITextFieldViewModeNever;
-
-    self.colorTextField.placeholder = NSLocalizedString(@"Color Name", nil);
-    self.colorTextField.autocorrectionType = UITextAutocorrectionTypeYes;
-    self.colorTextField.returnKeyType = UIReturnKeyDone;
-    self.colorTextField.clearButtonMode = UITextFieldViewModeNever;
+- (IBAction)continuePressed:(id)sender
+{
+    CGRect frame = CGRectMake(0, VIEW_HEIGHT, VIEW_WIDTH, VIEW_HEIGHT);
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+    [self setupAttributeSexualPreference];
 
 }
 
-#pragma mark - Keyboard Event Notifications
+- (void)setupAttributeSexualPreference
+{
+    // Title
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 260)/2, VIEW_HEIGHT + 15, 260, 70)];
+    titleLabel.text = @"Sexual Preference";;
+    titleLabel.font = [UIFont fontWithName:@"Helvetica" size:35];
+    titleLabel.numberOfLines = 0;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.adjustsFontSizeToFitWidth = YES;
+    titleLabel.minimumScaleFactor = 10.0f/12.0f;
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:titleLabel];
 
-- (void)handleKeyboardNotification:(NSNotification *)notification {
-//    NSDictionary *userInfo = notification.userInfo;
-//
-//    // Get information about the animation.
-//    NSTimeInterval animationDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-//    UIViewAnimationOptions animationCurve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
-//
-//    // Convert the keyboard frame from screen to view coordinates.
-//    CGRect keyboardScreenBeginFrame = [userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-//    CGRect keyboardScreenEndFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-//
-//    CGRect keyboardViewBeginFrame = [self.view convertRect:keyboardScreenBeginFrame fromView:self.view.window];
-//    CGRect keyboardViewEndFrame = [self.view convertRect:keyboardScreenEndFrame fromView:self.view.window];
-//
-//    // Determine how far the keyboard has moved up or down.
-//    CGFloat originDelta = keyboardViewEndFrame.origin.y - keyboardViewBeginFrame.origin.y;
-//
-//    // Calculate new scroll indicator and content insets for the table view.
-//    UIEdgeInsets newIndicatorInsets = self.PrefTableView.scrollIndicatorInsets;
-//    newIndicatorInsets.bottom -= originDelta;
-//
-//    UIEdgeInsets newContentInsets = self.PrefTableView.contentInset;
-//    newContentInsets.bottom -= originDelta;
-//
-//    // Update the insets on the table view with the new values.
-//    self.PrefTableView.scrollIndicatorInsets = newIndicatorInsets;
-//    self.PrefTableView.contentInset = newContentInsets;
-//
-//    // Inform the view that its the layout should be updated.
-//    [self.view setNeedsLayout];
-//
-//    // Animate updating the view's layout by calling `layoutIfNeeded` inside a `UIView` animation block.
-//    UIViewAnimationOptions animationOptions = animationCurve | UIViewAnimationOptionBeginFromCurrentState;
-//    [UIView animateWithDuration:animationDuration delay:0 options:animationOptions animations:^{
-//        [self.view layoutIfNeeded];
-//    } completion:nil];
+    // Subtitle
+    UILabel *subTitle = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 240)/2, VIEW_HEIGHT + 90, 240, 50)];
+    subTitle.text = @"Please select your sexual preference(s)";;
+    subTitle.font = [UIFont fontWithName:@"Helvetica" size:16];
+    subTitle.numberOfLines = 2;
+    subTitle.textAlignment = NSTextAlignmentCenter;
+    subTitle.adjustsFontSizeToFitWidth = YES;
+    subTitle.backgroundColor = [UIColor clearColor];
+    subTitle.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:subTitle];
+
+    // Image
+    UIImageView *gender1 = [[UIImageView alloc] initWithFrame:CGRectMake((VIEW_WIDTH - 40*3 - 35*2)/2, VIEW_HEIGHT + 90 + 100, 40, 40)];
+    UIImageView *gender2 = [[UIImageView alloc] initWithFrame:CGRectMake((VIEW_WIDTH - 40*3 - 35*2)/2 + 75, VIEW_HEIGHT + 90 + 100, 40, 40)];
+    UIImageView *gender3 = [[UIImageView alloc] initWithFrame:CGRectMake((VIEW_WIDTH - 40*3 - 35*2)/2 + 75 * 2, VIEW_HEIGHT + 90 + 100, 40, 40)];
+    gender1.image = [UIImage imageNamed:@"icn_female"];
+    gender2.image = [UIImage imageNamed:@"icn_genderOthers"];
+    gender3.image = [UIImage imageNamed:@"icn_male"];
+    [self.scrollView addSubview:gender1];
+    [self.scrollView addSubview:gender2];
+    [self.scrollView addSubview:gender3];
+
+    // slider
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake((VIEW_WIDTH - 200)/2, VIEW_HEIGHT + 200+ 70, 200, 10)];
+    [slider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
+    [slider setBackgroundColor:[UIColor clearColor]];
+    slider.minimumTrackTintColor = [UIColor lightGrayColor];
+    slider.minimumValue = 0.0;
+    slider.maximumValue = 50.0;
+    slider.continuous = NO;
+    slider.value = 25.0;
+    [self.scrollView addSubview:slider];
+
+    // scrollDown
+    UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT + 240 + 100, 60, 60)];
+    [next setBackgroundImage:[UIImage imageNamed:@"icn_scrollDown"] forState:UIControlStateNormal];
+    [next addTarget:self action:@selector(speciesPreference) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:next];
 }
 
-#pragma mark - UITextFieldDelegate (set in Interface Builder)
-
-//- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-//    [textField resignFirstResponder];
-//
-//    return YES;
-//}
-
-
-# pragma mark - TableView (Table view to describe preference items)
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.prefType count];
+-(void)sliderAction:(id)sender
+{
+    UISlider *slider = (UISlider*)sender;
+    //float value = slider.value;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *breedsIdentifier = @"BreedsIdentifier";
-    UITableViewCell *prefbreadscell = [tableView dequeueReusableCellWithIdentifier:breedsIdentifier];
-    if (prefbreadscell == nil){
-        prefbreadscell = [[ UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:breedsIdentifier];
-    }
-    prefbreadscell.textLabel.text = self.prefType[indexPath.row];
-    prefbreadscell.detailTextLabel.text = self.detailType[indexPath.row];
-
-    prefbreadscell.textLabel.textColor = [UIColor grayColor];
-    prefbreadscell.textLabel.font = [UIFont systemFontOfSize:16];
-
-    return prefbreadscell;
-
-}
-
-#pragma mark <UICollectionViewDataSource>
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-
-    return 1;
-}
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-
-    return [arrayOfBreedsImage count];
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-
-    BreedsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    [[cell breedsImage]setImage:[UIImage imageNamed:[arrayOfBreedsImage objectAtIndex:indexPath.item]]];
-    [[cell breedsDescription]setText:[arrayOfBreedsDescription objectAtIndex:indexPath.item]];
-    return cell;
-}
-
-#pragma mark <UICollectionViewDelegate>
-
--(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-
-}
-
--(void) collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
-
-}
-
--(void) collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
-
-}
-
--(void) collectionView:(UICollectionView *)collectionView didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)speciesPreference
+{
+    CGRect frame = CGRectMake(0, (VIEW_HEIGHT) * 2 , VIEW_WIDTH, VIEW_HEIGHT);
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+    //[self setupAttributeSexualPreference];
 }
 
 @end

@@ -745,17 +745,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-fur-y-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-BP-3Ab">
-                                                <rect key="frame" x="157" y="170" width="100" height="100"/>
+                                                <rect key="frame" x="157" y="200" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="ESQ-Xe-vsO"/>
                                                     <constraint firstAttribute="height" constant="100" id="ZDl-cw-dLW"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-L0-Y2b">
-                                                <rect key="frame" x="177" y="340" width="60" height="60"/>
+                                                <rect key="frame" x="182" y="410" width="50" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="R3o-NN-9xa"/>
-                                                    <constraint firstAttribute="width" constant="60" id="TTP-wg-Ow4"/>
+                                                    <constraint firstAttribute="height" constant="50" id="R3o-NN-9xa"/>
+                                                    <constraint firstAttribute="width" constant="50" id="TTP-wg-Ow4"/>
                                                 </constraints>
                                                 <state key="normal" image="icn_scrollDown.png"/>
                                                 <connections>
@@ -763,7 +763,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try pairing Machine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-hz-dzE">
-                                                <rect key="frame" x="147" y="280" width="120" height="50"/>
+                                                <rect key="frame" x="147" y="350" width="120" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="j8r-KI-t68"/>
                                                     <constraint firstAttribute="width" constant="120" id="raY-ri-8ds"/>
@@ -780,8 +780,8 @@
                                             <constraint firstItem="fWg-bn-4Qw" firstAttribute="top" secondItem="Hx4-ha-jdt" secondAttribute="bottom" constant="5" id="HeY-iU-v2j"/>
                                             <constraint firstItem="fWg-bn-4Qw" firstAttribute="leading" secondItem="3fS-7p-aXt" secondAttribute="leading" constant="70" id="KCx-0t-Ffr"/>
                                             <constraint firstItem="Hx4-ha-jdt" firstAttribute="top" secondItem="3fS-7p-aXt" secondAttribute="top" constant="15" id="Lss-9P-FeS"/>
-                                            <constraint firstItem="ubi-BP-3Ab" firstAttribute="top" secondItem="fWg-bn-4Qw" secondAttribute="bottom" constant="10" id="PqA-0y-MXq"/>
-                                            <constraint firstItem="ZzQ-hz-dzE" firstAttribute="top" secondItem="ubi-BP-3Ab" secondAttribute="bottom" constant="10" id="Qbb-9P-Y59"/>
+                                            <constraint firstItem="ubi-BP-3Ab" firstAttribute="top" secondItem="fWg-bn-4Qw" secondAttribute="bottom" constant="40" id="PqA-0y-MXq"/>
+                                            <constraint firstItem="ZzQ-hz-dzE" firstAttribute="top" secondItem="ubi-BP-3Ab" secondAttribute="bottom" constant="50" id="Qbb-9P-Y59"/>
                                             <constraint firstItem="Hx4-ha-jdt" firstAttribute="centerX" secondItem="3fS-7p-aXt" secondAttribute="centerX" id="QvZ-tz-mau"/>
                                             <constraint firstAttribute="trailing" secondItem="fWg-bn-4Qw" secondAttribute="trailing" constant="70" id="TO2-OP-o7w"/>
                                             <constraint firstItem="ubi-BP-3Ab" firstAttribute="centerX" secondItem="3fS-7p-aXt" secondAttribute="centerX" id="fa3-s8-PLR"/>

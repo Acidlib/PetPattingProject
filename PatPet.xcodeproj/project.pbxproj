@@ -15,6 +15,8 @@
 		6D06C7811D5F2B8B0006F464 /* OpenSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C77E1D5F2B8B0006F464 /* OpenSans-Bold.otf */; };
 		6D06C7821D5F2B8B0006F464 /* OpenSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C77F1D5F2B8B0006F464 /* OpenSans-Light.otf */; };
 		6D06C7831D5F2B8B0006F464 /* OpenSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7801D5F2B8B0006F464 /* OpenSans-Regular.otf */; };
+		6D06C7871D5F9DBF0006F464 /* icn_cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7851D5F9DBF0006F464 /* icn_cat.png */; };
+		6D06C7881D5F9DBF0006F464 /* icn_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7861D5F9DBF0006F464 /* icn_dog.png */; };
 		6D0BCA1E1D3A52420072D86B /* icn_preference.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0BCA1C1D3A52420072D86B /* icn_preference.png */; };
 		6D0BCA301D3A58DA0072D86B /* YLColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */; };
 		6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA321D3A59370072D86B /* YLCircle.m */; };
@@ -203,6 +205,8 @@
 		6D06C77E1D5F2B8B0006F464 /* OpenSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.otf"; path = "../resources/Fonts/OpenSans-Bold.otf"; sourceTree = "<group>"; };
 		6D06C77F1D5F2B8B0006F464 /* OpenSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.otf"; path = "../resources/Fonts/OpenSans-Light.otf"; sourceTree = "<group>"; };
 		6D06C7801D5F2B8B0006F464 /* OpenSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.otf"; path = "../resources/Fonts/OpenSans-Regular.otf"; sourceTree = "<group>"; };
+		6D06C7851D5F9DBF0006F464 /* icn_cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat.png; path = resources/Images/icn_cat.png; sourceTree = "<group>"; };
+		6D06C7861D5F9DBF0006F464 /* icn_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_dog.png; path = resources/Images/icn_dog.png; sourceTree = "<group>"; };
 		6D0BCA1C1D3A52420072D86B /* icn_preference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_preference.png; sourceTree = "<group>"; };
 		6D0BCA2E1D3A58DA0072D86B /* YLColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLColorButton.h; path = YLViews/YLColorButton.h; sourceTree = "<group>"; };
 		6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLColorButton.m; path = YLViews/YLColorButton.m; sourceTree = "<group>"; };
@@ -695,6 +699,8 @@
 		6D866F591C4237FC00CC2D43 = {
 			isa = PBXGroup;
 			children = (
+				6D06C7851D5F9DBF0006F464 /* icn_cat.png */,
+				6D06C7861D5F9DBF0006F464 /* icn_dog.png */,
 				6D866F641C4237FC00CC2D43 /* PatPet */,
 				6D866F811C4237FC00CC2D43 /* PatPetTests */,
 				6D866F8C1C4237FC00CC2D43 /* PatPetUITests */,
@@ -918,6 +924,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D06C7871D5F9DBF0006F464 /* icn_cat.png in Resources */,
+				6D06C7881D5F9DBF0006F464 /* icn_dog.png in Resources */,
 				6D06C7811D5F2B8B0006F464 /* OpenSans-Bold.otf in Resources */,
 				6D06C7821D5F2B8B0006F464 /* OpenSans-Light.otf in Resources */,
 				6D06C7831D5F2B8B0006F464 /* OpenSans-Regular.otf in Resources */,

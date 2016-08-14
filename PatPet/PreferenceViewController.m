@@ -11,10 +11,12 @@
 #import "BreedsCell.h"
 #import "PetColor.h"
 
-#define VIEW_HEIGHT self.view.frame.size.height - 65
+#define VIEW_HEIGHT (self.view.frame.size.height - 65)
 #define VIEW_WIDTH self.view.frame.size.width
 
 @interface PreferenceViewController ()<UITextFieldDelegate>
+
+@property (strong, nonatomic) UIView *line;
 
 @end
 
@@ -116,7 +118,8 @@ static NSString * const reuseIdentifier = @"BreedsCell";
     [self.scrollView addSubview:slider];
 
     // scrollDown
-    UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT + 240 + 100, 60, 60)];
+    //UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT + 240 + 100, 60, 60)];
+    UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 2 - 80, 50, 50)];
     [next setBackgroundImage:[UIImage imageNamed:@"icn_scrollDown"] forState:UIControlStateNormal];
     [next addTarget:self action:@selector(speciesPreference) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:next];
@@ -132,7 +135,110 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 {
     CGRect frame = CGRectMake(0, (VIEW_HEIGHT) * 2 , VIEW_WIDTH, VIEW_HEIGHT);
     [self.scrollView scrollRectToVisible:frame animated:YES];
-    //[self setupAttributeSexualPreference];
+    [self setupAttributeSpecies];
+}
+
+- (void)setupAttributeSpecies
+{
+    // Title
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 260)/2, VIEW_HEIGHT * 2 + 15, 260, 70)];
+    titleLabel.text = @"Cats or Dogs?";;
+    titleLabel.font = [UIFont fontWithName:@"Helvetica" size:35];
+    titleLabel.numberOfLines = 0;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.adjustsFontSizeToFitWidth = YES;
+    titleLabel.minimumScaleFactor = 10.0f/12.0f;
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:titleLabel];
+
+    // Subtitle
+    UILabel *subTitle = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 240)/2, VIEW_HEIGHT * 2 + 90, 240, 50)];
+    subTitle.text = @"Hmmm, you like to make friends with either cats or dogs or you prefer errr.... well";;
+    subTitle.font = [UIFont fontWithName:@"Helvetica" size:16];
+    subTitle.numberOfLines = 2;
+    subTitle.textAlignment = NSTextAlignmentCenter;
+    subTitle.adjustsFontSizeToFitWidth = YES;
+    subTitle.backgroundColor = [UIColor clearColor];
+    subTitle.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:subTitle];
+
+    // reset
+    UIButton *reset = [[UIButton alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 240)/2, VIEW_HEIGHT * 2 + 130, 240, 30)];
+    [reset setTitle:@"reset" forState:UIControlStateNormal];
+    reset.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
+    reset.titleLabel.textAlignment = NSTextAlignmentCenter;
+    reset.backgroundColor = [UIColor clearColor];
+    reset.titleLabel.textColor = [PetColor lemonDarkColor];
+    [reset addTarget:self action:@selector(selectReset) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:reset];
+
+    // Imagetton
+    UIButton *catButton = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 100*2 - 25*1)/2, VIEW_HEIGHT * 2 + 90 + 100, 100, 100)];
+    UIButton *dogButton = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 100*2 - 25*1)/2 + 115, VIEW_HEIGHT * 2 + 90 + 100, 100, 100)];
+    [catButton setBackgroundImage:[UIImage imageNamed:@"icn_cat"] forState:UIControlStateNormal];
+    [dogButton setBackgroundImage:[UIImage imageNamed:@"icn_dog"] forState:UIControlStateNormal];
+    [catButton addTarget:self action:@selector(selectCat) forControlEvents:UIControlEventTouchUpInside];
+    [dogButton addTarget:self action:@selector(selectDog) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:catButton];
+    [self.scrollView addSubview:dogButton];
+
+    // line slider
+    _line = [[UIView alloc] initWithFrame:CGRectMake((VIEW_WIDTH - 70)/2, VIEW_HEIGHT * 2 + 330, 70, 10)];
+    _line.backgroundColor = [PetColor lemonDarkColor];
+    _line.alpha = 0.5;
+    [self.scrollView addSubview:_line];
+
+    // Text of scrollDown
+    UILabel *nextText = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 3 - 130, 50, 50)];
+    nextText.text = @"next";;
+    nextText.font = [UIFont fontWithName:@"Helvetica" size:16];
+    nextText.textAlignment = NSTextAlignmentCenter;
+    nextText.adjustsFontSizeToFitWidth = YES;
+    nextText.backgroundColor = [UIColor clearColor];
+    nextText.textColor = [PetColor lemonDarkColor];
+    [self.scrollView addSubview:nextText];
+
+    // scrollDown
+    UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 3 - 80, 50, 50)];
+    [next setBackgroundImage:[UIImage imageNamed:@"icn_scrollDown"] forState:UIControlStateNormal];
+    [next addTarget:self action:@selector(appearancePreference) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:next];
+}
+
+- (void)selectReset
+{
+    [UIView animateWithDuration:0.3f animations:^{
+        [_line setFrame:CGRectMake((VIEW_WIDTH - 70)/2, VIEW_HEIGHT * 2 + 330, 70, 10)];
+    } completion:nil];
+}
+
+- (void)selectCat
+{
+    [UIView animateWithDuration:0.3f animations:^{
+        [_line setFrame:CGRectMake((VIEW_WIDTH - 100*2 - 25*1 + (100-70)/2) /2, VIEW_HEIGHT * 2 + 330, 70, 10)];
+    } completion:nil];
+
+}
+
+- (void)selectDog
+{
+    [UIView animateWithDuration:0.3f animations:^{
+        [_line setFrame:CGRectMake((VIEW_WIDTH - 100*2 - 25*1 + (100-70)/2) /2 + 125, VIEW_HEIGHT * 2 + 330, 70, 10)];
+    } completion:nil];
+
+}
+
+- (void)appearancePreference
+{
+    CGRect frame = CGRectMake(0, (VIEW_HEIGHT) * 3 , VIEW_WIDTH, VIEW_HEIGHT);
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+    [self setupAttributeAppearance];
+}
+
+- (void)setupAttributeAppearance
+{
+
 }
 
 @end

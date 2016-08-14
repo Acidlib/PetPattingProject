@@ -17,6 +17,18 @@
 		6D06C7831D5F2B8B0006F464 /* OpenSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7801D5F2B8B0006F464 /* OpenSans-Regular.otf */; };
 		6D06C7871D5F9DBF0006F464 /* icn_cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7851D5F9DBF0006F464 /* icn_cat.png */; };
 		6D06C7881D5F9DBF0006F464 /* icn_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7861D5F9DBF0006F464 /* icn_dog.png */; };
+		6D06C7901D6055600006F464 /* icn_cat_breads1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7891D6055600006F464 /* icn_cat_breads1.png */; };
+		6D06C7911D6055600006F464 /* icn_cat_breads2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C78A1D6055600006F464 /* icn_cat_breads2.png */; };
+		6D06C7921D6055600006F464 /* icn_cat_breads3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C78B1D6055600006F464 /* icn_cat_breads3.png */; };
+		6D06C7931D6055600006F464 /* icn_cat_breads4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C78C1D6055600006F464 /* icn_cat_breads4.png */; };
+		6D06C7941D6055600006F464 /* icn_cat_breads5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C78D1D6055600006F464 /* icn_cat_breads5.png */; };
+		6D06C7951D6055600006F464 /* icn_cat_breads6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C78E1D6055600006F464 /* icn_cat_breads6.png */; };
+		6D06C7961D6055600006F464 /* icn_cat_breads7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C78F1D6055600006F464 /* icn_cat_breads7.png */; };
+		6D06C79A1D605BE20006F464 /* icn_machine1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7971D605BE20006F464 /* icn_machine1.png */; };
+		6D06C79B1D605BE20006F464 /* icn_machine2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7981D605BE20006F464 /* icn_machine2.png */; };
+		6D06C79C1D605BE20006F464 /* icn_machine3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C7991D605BE20006F464 /* icn_machine3.png */; };
+		6D06C79E1D6064340006F464 /* icn_finishParing.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C79D1D6064340006F464 /* icn_finishParing.png */; };
+		6D06C7A01D6067730006F464 /* icn_done.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D06C79F1D6067730006F464 /* icn_done.png */; };
 		6D0BCA1E1D3A52420072D86B /* icn_preference.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0BCA1C1D3A52420072D86B /* icn_preference.png */; };
 		6D0BCA301D3A58DA0072D86B /* YLColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */; };
 		6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCA321D3A59370072D86B /* YLCircle.m */; };
@@ -207,6 +219,18 @@
 		6D06C7801D5F2B8B0006F464 /* OpenSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.otf"; path = "../resources/Fonts/OpenSans-Regular.otf"; sourceTree = "<group>"; };
 		6D06C7851D5F9DBF0006F464 /* icn_cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat.png; path = resources/Images/icn_cat.png; sourceTree = "<group>"; };
 		6D06C7861D5F9DBF0006F464 /* icn_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_dog.png; path = resources/Images/icn_dog.png; sourceTree = "<group>"; };
+		6D06C7891D6055600006F464 /* icn_cat_breads1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads1.png; path = resources/Images/icn_cat_breads1.png; sourceTree = "<group>"; };
+		6D06C78A1D6055600006F464 /* icn_cat_breads2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads2.png; path = resources/Images/icn_cat_breads2.png; sourceTree = "<group>"; };
+		6D06C78B1D6055600006F464 /* icn_cat_breads3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads3.png; path = resources/Images/icn_cat_breads3.png; sourceTree = "<group>"; };
+		6D06C78C1D6055600006F464 /* icn_cat_breads4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads4.png; path = resources/Images/icn_cat_breads4.png; sourceTree = "<group>"; };
+		6D06C78D1D6055600006F464 /* icn_cat_breads5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads5.png; path = resources/Images/icn_cat_breads5.png; sourceTree = "<group>"; };
+		6D06C78E1D6055600006F464 /* icn_cat_breads6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads6.png; path = resources/Images/icn_cat_breads6.png; sourceTree = "<group>"; };
+		6D06C78F1D6055600006F464 /* icn_cat_breads7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_cat_breads7.png; path = resources/Images/icn_cat_breads7.png; sourceTree = "<group>"; };
+		6D06C7971D605BE20006F464 /* icn_machine1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_machine1.png; path = resources/Images/icn_machine1.png; sourceTree = "<group>"; };
+		6D06C7981D605BE20006F464 /* icn_machine2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_machine2.png; path = resources/Images/icn_machine2.png; sourceTree = "<group>"; };
+		6D06C7991D605BE20006F464 /* icn_machine3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_machine3.png; path = resources/Images/icn_machine3.png; sourceTree = "<group>"; };
+		6D06C79D1D6064340006F464 /* icn_finishParing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_finishParing.png; path = resources/Images/icn_finishParing.png; sourceTree = "<group>"; };
+		6D06C79F1D6067730006F464 /* icn_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_done.png; path = resources/Images/icn_done.png; sourceTree = "<group>"; };
 		6D0BCA1C1D3A52420072D86B /* icn_preference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_preference.png; sourceTree = "<group>"; };
 		6D0BCA2E1D3A58DA0072D86B /* YLColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLColorButton.h; path = YLViews/YLColorButton.h; sourceTree = "<group>"; };
 		6D0BCA2F1D3A58DA0072D86B /* YLColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLColorButton.m; path = YLViews/YLColorButton.m; sourceTree = "<group>"; };
@@ -699,6 +723,18 @@
 		6D866F591C4237FC00CC2D43 = {
 			isa = PBXGroup;
 			children = (
+				6D06C79F1D6067730006F464 /* icn_done.png */,
+				6D06C79D1D6064340006F464 /* icn_finishParing.png */,
+				6D06C7971D605BE20006F464 /* icn_machine1.png */,
+				6D06C7981D605BE20006F464 /* icn_machine2.png */,
+				6D06C7991D605BE20006F464 /* icn_machine3.png */,
+				6D06C7891D6055600006F464 /* icn_cat_breads1.png */,
+				6D06C78A1D6055600006F464 /* icn_cat_breads2.png */,
+				6D06C78B1D6055600006F464 /* icn_cat_breads3.png */,
+				6D06C78C1D6055600006F464 /* icn_cat_breads4.png */,
+				6D06C78D1D6055600006F464 /* icn_cat_breads5.png */,
+				6D06C78E1D6055600006F464 /* icn_cat_breads6.png */,
+				6D06C78F1D6055600006F464 /* icn_cat_breads7.png */,
 				6D06C7851D5F9DBF0006F464 /* icn_cat.png */,
 				6D06C7861D5F9DBF0006F464 /* icn_dog.png */,
 				6D866F641C4237FC00CC2D43 /* PatPet */,
@@ -924,6 +960,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D06C7A01D6067730006F464 /* icn_done.png in Resources */,
+				6D06C79E1D6064340006F464 /* icn_finishParing.png in Resources */,
+				6D06C79A1D605BE20006F464 /* icn_machine1.png in Resources */,
+				6D06C79B1D605BE20006F464 /* icn_machine2.png in Resources */,
+				6D06C79C1D605BE20006F464 /* icn_machine3.png in Resources */,
+				6D06C7901D6055600006F464 /* icn_cat_breads1.png in Resources */,
+				6D06C7911D6055600006F464 /* icn_cat_breads2.png in Resources */,
+				6D06C7921D6055600006F464 /* icn_cat_breads3.png in Resources */,
+				6D06C7931D6055600006F464 /* icn_cat_breads4.png in Resources */,
+				6D06C7941D6055600006F464 /* icn_cat_breads5.png in Resources */,
+				6D06C7951D6055600006F464 /* icn_cat_breads6.png in Resources */,
+				6D06C7961D6055600006F464 /* icn_cat_breads7.png in Resources */,
 				6D06C7871D5F9DBF0006F464 /* icn_cat.png in Resources */,
 				6D06C7881D5F9DBF0006F464 /* icn_dog.png in Resources */,
 				6D06C7811D5F2B8B0006F464 /* OpenSans-Bold.otf in Resources */,

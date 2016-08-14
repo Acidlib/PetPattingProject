@@ -17,6 +17,8 @@
 @interface PreferenceViewController ()<UITextFieldDelegate>
 
 @property (strong, nonatomic) UIView *line;
+@property (strong, nonatomic) UIButton *carousel;
+@property int carouselInt;
 
 @end
 
@@ -190,14 +192,14 @@ static NSString * const reuseIdentifier = @"BreedsCell";
     [self.scrollView addSubview:_line];
 
     // Text of scrollDown
-    UILabel *nextText = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 3 - 130, 50, 50)];
-    nextText.text = @"next";;
-    nextText.font = [UIFont fontWithName:@"Helvetica" size:16];
-    nextText.textAlignment = NSTextAlignmentCenter;
-    nextText.adjustsFontSizeToFitWidth = YES;
-    nextText.backgroundColor = [UIColor clearColor];
-    nextText.textColor = [PetColor lemonDarkColor];
-    [self.scrollView addSubview:nextText];
+//    UILabel *nextText = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 3 - 130, 50, 50)];
+//    nextText.text = @"next";;
+//    nextText.font = [UIFont fontWithName:@"Helvetica" size:16];
+//    nextText.textAlignment = NSTextAlignmentCenter;
+//    nextText.adjustsFontSizeToFitWidth = YES;
+//    nextText.backgroundColor = [UIColor clearColor];
+//    nextText.textColor = [PetColor lemonDarkColor];
+//    [self.scrollView addSubview:nextText];
 
     // scrollDown
     UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 3 - 80, 50, 50)];
@@ -238,7 +240,156 @@ static NSString * const reuseIdentifier = @"BreedsCell";
 
 - (void)setupAttributeAppearance
 {
+    // Title
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 260)/2, VIEW_HEIGHT * 3 + 15, 260, 70)];
+    titleLabel.text = @"Check the Look!";;
+    titleLabel.font = [UIFont fontWithName:@"Helvetica" size:35];
+    titleLabel.numberOfLines = 0;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.adjustsFontSizeToFitWidth = YES;
+    titleLabel.minimumScaleFactor = 10.0f/12.0f;
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:titleLabel];
 
+    // Subtitle
+    UILabel *subTitle = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 240)/2, VIEW_HEIGHT * 3 + 90, 240, 50)];
+    subTitle.text = @"Tap the image to change the fur color!";;
+    subTitle.font = [UIFont fontWithName:@"Helvetica" size:16];
+    subTitle.numberOfLines = 2;
+    subTitle.textAlignment = NSTextAlignmentCenter;
+    subTitle.adjustsFontSizeToFitWidth = YES;
+    subTitle.backgroundColor = [UIColor clearColor];
+    subTitle.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:subTitle];
+
+    // Imagetton
+    _carouselInt = 0;
+    _carousel = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 141)/2, VIEW_HEIGHT * 3 + 90 + 100, 141, 195)];
+    [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads1"] forState:UIControlStateNormal];
+    [_carousel addTarget:self action:@selector(changeAvatar) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:_carousel];
+
+
+    // scrollDown
+    UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 4 - 80, 50, 50)];
+    [next setBackgroundImage:[UIImage imageNamed:@"icn_scrollDown"] forState:UIControlStateNormal];
+    [next addTarget:self action:@selector(finishPreference) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:next];
+}
+
+- (void)changeAvatar
+{
+    if (_carouselInt < 6)
+        _carouselInt += 1;
+    else
+        _carouselInt = 0;
+
+    switch (_carouselInt) {
+        case 0:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads1"] forState:UIControlStateNormal];
+            break;
+        case 1:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads2"] forState:UIControlStateNormal];
+            break;
+        case 2:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads6"] forState:UIControlStateNormal];
+            break;
+
+        case 3:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads5"] forState:UIControlStateNormal];
+            break;
+        case 4:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads4"] forState:UIControlStateNormal];
+            break;
+        case 5:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads7"] forState:UIControlStateNormal];
+            break;
+        case 6:
+            [_carousel setBackgroundImage:[UIImage imageNamed:@"icn_cat_breads3"] forState:UIControlStateNormal];
+            break;
+        default:
+            break;
+    }
+
+    [self.scrollView addSubview:_carousel];
+}
+
+- (void)finishPreference
+{
+    CGRect frame = CGRectMake(0, (VIEW_HEIGHT) * 4 , VIEW_WIDTH, VIEW_HEIGHT);
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+    [self setupAttributeFinish];
+}
+
+- (void)setupAttributeFinish
+{
+    // Title
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 260)/2, VIEW_HEIGHT * 4 + 25, 260, 70)];
+    titleLabel.text = @"Start Pairnig...";;
+    titleLabel.font = [UIFont fontWithName:@"Helvetica" size:35];
+    titleLabel.numberOfLines = 0;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.adjustsFontSizeToFitWidth = YES;
+    titleLabel.minimumScaleFactor = 10.0f/12.0f;
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:titleLabel];
+
+    // Subtitle
+    UILabel *subTitle = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 120)/2, VIEW_HEIGHT * 4 + 100, 120, 50)];
+    subTitle.text = @"Hmmm....Please wait a second";;
+    subTitle.font = [UIFont fontWithName:@"Helvetica" size:16];
+    subTitle.numberOfLines = 2;
+    subTitle.textAlignment = NSTextAlignmentCenter;
+    subTitle.adjustsFontSizeToFitWidth = YES;
+    subTitle.backgroundColor = [UIColor clearColor];
+    subTitle.textColor = [UIColor blackColor];
+    [self.scrollView addSubview:subTitle];
+
+    // mahcine button
+    UIButton *machine = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 141)/2, VIEW_HEIGHT * 4 + 90 + 100, 141, 195)];
+    [machine setBackgroundImage:[UIImage animatedImageNamed:@"icn_machine" duration:1.0f] forState:UIControlStateNormal];
+    [self.scrollView addSubview:machine];
+
+    // delay
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 3.0 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+        // title
+        titleLabel.text = @"Pairing Machine Done!";;
+        titleLabel.font = [UIFont fontWithName:@"Helvetica" size:35];
+        titleLabel.numberOfLines = 0;
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        titleLabel.adjustsFontSizeToFitWidth = YES;
+        titleLabel.minimumScaleFactor = 10.0f/12.0f;
+        titleLabel.backgroundColor = [UIColor clearColor];
+        titleLabel.textColor = [UIColor blackColor];
+        [self.scrollView addSubview:titleLabel];
+
+        subTitle.text = @"Lets go!";;
+        subTitle.font = [UIFont fontWithName:@"Helvetica" size:16];
+        subTitle.numberOfLines = 2;
+        subTitle.textAlignment = NSTextAlignmentCenter;
+        subTitle.adjustsFontSizeToFitWidth = YES;
+        subTitle.backgroundColor = [UIColor clearColor];
+        subTitle.textColor = [UIColor blackColor];
+        [self.scrollView addSubview:subTitle];
+
+        // machin
+        [machine setBackgroundImage:[UIImage imageNamed:@"icn_finishParing"] forState:UIControlStateNormal];
+        [self.scrollView addSubview:machine];
+
+        // scrollDown
+        UIButton *next = [[UIButton alloc]initWithFrame:CGRectMake((VIEW_WIDTH - 60)/2, VIEW_HEIGHT * 5 - 80, 50, 50)];
+        [next setBackgroundImage:[UIImage imageNamed:@"icn_done"] forState:UIControlStateNormal];
+        [next addTarget:self action:@selector(didFinish) forControlEvents:UIControlEventTouchUpInside];
+        [self.scrollView addSubview:next];
+    });
+}
+
+- (void)didFinish
+{
+    [self.revealViewController revealToggle:nil];
 }
 
 @end

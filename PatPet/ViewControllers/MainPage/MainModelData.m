@@ -181,6 +181,13 @@
                       [[JSQMessage alloc] initWithSenderId:userId_6 senderDisplayName:user6 date:[NSDate distantPast] text:NSLocalizedString(@"Yes, see you @3 pm", nil)],
                       [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"How's goin?", nil)],
                       nil];
+
+    JSQPhotoMediaItem *photoItem = [[JSQPhotoMediaItem alloc] initWithImage:[UIImage imageNamed:@"dudu1.jpg"]];
+    JSQMessage *photoMessage = [JSQMessage messageWithSenderId:OwnerId
+                                                   displayName:Owner
+                                                         media:photoItem];
+    [self.messages6 addObject:photoMessage];
+
     self.messages7 = [[NSMutableArray alloc] initWithObjects:
                       [[JSQMessage alloc] initWithSenderId:userId_7 senderDisplayName:user7 date:[NSDate distantPast] text:NSLocalizedString(@"Sorry, I have been busy lately. untimely reply.", nil)],
                       [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"That's okay, bro. you okay?", nil)],
@@ -208,9 +215,8 @@
                       [[JSQMessage alloc] initWithSenderId:OwnerId senderDisplayName:Owner date:[NSDate distantPast] text:NSLocalizedString(@"Oui", nil)],
                       [[JSQMessage alloc] initWithSenderId:userId_10 senderDisplayName:user10 date:[NSDate distantPast] text:NSLocalizedString(@"Good.", nil)],
                       nil];
-    
-    //[self addPhotoMediaMessage];
-    //[self addAudioMediaMessage];
+    [self addPhotoMediaMessage];
+    [self addAudioMediaMessage];
 }
 
 - (void)addLocationMediaMessageCompletion:(JSQLocationMediaItemCompletionBlock)completion
@@ -228,7 +234,7 @@
 
 - (void)addPhotoMediaMessage
 {
-    JSQPhotoMediaItem *photoItem = [[JSQPhotoMediaItem alloc] initWithImage:[UIImage imageNamed:@"scenery.jpg"]];
+    JSQPhotoMediaItem *photoItem = [[JSQPhotoMediaItem alloc] initWithImage:[UIImage imageNamed:@"dudu2.jpg"]];
     JSQMessage *photoMessage = [JSQMessage messageWithSenderId:OwnerId
                                                    displayName:Owner
                                                          media:photoItem];

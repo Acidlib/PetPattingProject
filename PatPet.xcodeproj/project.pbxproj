@@ -158,6 +158,8 @@
 		6DE293E91D7DBD8700288CA6 /* 1_redar_bf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE293E81D7DBD8700288CA6 /* 1_redar_bf.png */; };
 		6DE293EB1D7DBF1200288CA6 /* Prof_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE293EA1D7DBF1200288CA6 /* Prof_11.png */; };
 		6DE293ED1D7DBF5E00288CA6 /* Prof_s11.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE293EC1D7DBF5E00288CA6 /* Prof_s11.png */; };
+		6DE293F21D7DC9A100288CA6 /* dudu1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DE293F01D7DC9A100288CA6 /* dudu1.jpg */; };
+		6DE293F31D7DC9A100288CA6 /* dudu2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6DE293F11D7DC9A100288CA6 /* dudu2.JPG */; };
 		6DF4A3FF1D433D9100370031 /* MainModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4A3FE1D433D9100370031 /* MainModelData.m */; };
 		6DF4A4021D434AFC00370031 /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4A4011D434AFC00370031 /* NSUserDefaults+DemoSettings.m */; };
 		6DF5DA281C53F4F2000A2892 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5DA271C53F4F2000A2892 /* MessageViewController.m */; };
@@ -413,6 +415,8 @@
 		6DE293E81D7DBD8700288CA6 /* 1_redar_bf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1_redar_bf.png; path = ../resources/Images/1_redar_bf.png; sourceTree = "<group>"; };
 		6DE293EA1D7DBF1200288CA6 /* Prof_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Prof_11.png; path = ../resources/ProfileImage_circle/Prof_11.png; sourceTree = "<group>"; };
 		6DE293EC1D7DBF5E00288CA6 /* Prof_s11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Prof_s11.png; path = ../resources/ProfileImage_circle/Prof_s11.png; sourceTree = "<group>"; };
+		6DE293F01D7DC9A100288CA6 /* dudu1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dudu1.jpg; path = resources/Images/dudu1.jpg; sourceTree = "<group>"; };
+		6DE293F11D7DC9A100288CA6 /* dudu2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dudu2.JPG; path = resources/Images/dudu2.JPG; sourceTree = "<group>"; };
 		6DF4A3FD1D433D9100370031 /* MainModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainModelData.h; path = ViewControllers/MainPage/MainModelData.h; sourceTree = "<group>"; };
 		6DF4A3FE1D433D9100370031 /* MainModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainModelData.m; path = ViewControllers/MainPage/MainModelData.m; sourceTree = "<group>"; };
 		6DF4A4001D434AFC00370031 /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
@@ -716,6 +720,8 @@
 		6D866F591C4237FC00CC2D43 = {
 			isa = PBXGroup;
 			children = (
+				6DE293F01D7DC9A100288CA6 /* dudu1.jpg */,
+				6DE293F11D7DC9A100288CA6 /* dudu2.JPG */,
 				6D866F641C4237FC00CC2D43 /* PatPet */,
 				6D866F811C4237FC00CC2D43 /* PatPetTests */,
 				6D866F8C1C4237FC00CC2D43 /* PatPetUITests */,
@@ -975,6 +981,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE293F21D7DC9A100288CA6 /* dudu1.jpg in Resources */,
+				6DE293F31D7DC9A100288CA6 /* dudu2.JPG in Resources */,
 				6DE293ED1D7DBF5E00288CA6 /* Prof_s11.png in Resources */,
 				6DE293EB1D7DBF1200288CA6 /* Prof_11.png in Resources */,
 				6DE293E91D7DBD8700288CA6 /* 1_redar_bf.png in Resources */,

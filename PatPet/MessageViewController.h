@@ -26,6 +26,5 @@ typedef NS_ENUM(NSInteger, messageSource) {
 -(IBAction)done:(id)sender;
 
 @property (strong, nonatomic) MainModelData *demoData;
-//- (void)receiveMessagePressed:(UIBarButtonItem *)sender;
 
 @end

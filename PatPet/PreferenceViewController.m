@@ -8,7 +8,6 @@
 
 #import "PreferenceViewController.h"
 #import "SWRevealViewController.h"
-#import "BreedsCell.h"
 #import "PetColor.h"
 
 #define VIEW_HEIGHT (self.view.frame.size.height - 65)

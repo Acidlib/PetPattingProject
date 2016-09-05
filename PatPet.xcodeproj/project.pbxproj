@@ -55,7 +55,6 @@
 		6D46999E1D4BC343009D8F92 /* img_060.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699911D4BC343009D8F92 /* img_060.png */; };
 		6D46999F1D4BC343009D8F92 /* img_061.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699921D4BC343009D8F92 /* img_061.png */; };
 		6D4699A61D510A0F009D8F92 /* icn-like.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4699A51D510A0F009D8F92 /* icn-like.png */; };
-		6D5B27FF1C480355004CE54B /* ChatCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */; };
 		6D6942C71D4A760900216B67 /* img_001.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6942971D4A760800216B67 /* img_001.png */; };
 		6D6942C81D4A760900216B67 /* img_002.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6942981D4A760800216B67 /* img_002.png */; };
 		6D6942C91D4A760900216B67 /* img_003.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6942991D4A760800216B67 /* img_003.png */; };
@@ -104,10 +103,7 @@
 		6D6942F41D4A760900216B67 /* img_046.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6942C41D4A760900216B67 /* img_046.png */; };
 		6D6942F51D4A760900216B67 /* img_047.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6942C51D4A760900216B67 /* img_047.png */; };
 		6D6942F61D4A760900216B67 /* img_048.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6942C61D4A760900216B67 /* img_048.png */; };
-		6D6AB8831C4FFDF7005F3CD7 /* InfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AB8821C4FFDF7005F3CD7 /* InfoCollectionViewCell.m */; };
 		6D6AB88A1C52788F005F3CD7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AB8891C52788F005F3CD7 /* ProfileViewController.m */; };
-		6D7BF29D1C54800800BE7F4A /* FavChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BF29C1C54800800BE7F4A /* FavChatViewController.m */; };
-		6D7BF2A01C54840000BE7F4A /* chatMainContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BF29F1C54840000BE7F4A /* chatMainContentViewController.m */; };
 		6D866F671C4237FC00CC2D43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D866F661C4237FC00CC2D43 /* main.m */; };
 		6D866F6A1C4237FC00CC2D43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D866F691C4237FC00CC2D43 /* AppDelegate.m */; };
 		6D866F701C4237FC00CC2D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D866F6E1C4237FC00CC2D43 /* Main.storyboard */; };
@@ -119,13 +115,9 @@
 		6D9C42331C48EEE9007C05A2 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42321C48EEE9007C05A2 /* ChatCell.m */; };
 		6D9C42E11C49D975007C05A2 /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */; };
 		6D9C42E41C49E300007C05A2 /* InfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C42E31C49E300007C05A2 /* InfomationViewController.m */; };
-		6D9C432C1C4A1614007C05A2 /* BreedsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C432B1C4A1614007C05A2 /* BreedsCell.m */; };
-		6D9C43411C4B413D007C05A2 /* FavCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C43401C4B413D007C05A2 /* FavCell.m */; };
 		6DA3F1981D3A217000609E7D /* PetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA3F1971D3A217000609E7D /* PetColor.m */; };
 		6DA3F19D1D3A21FD00609E7D /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA3F19C1D3A21FD00609E7D /* UIColor+Hex.m */; };
 		6DB4A2841C9D060000F604EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4A2831C9D060000F604EC /* ViewController.m */; };
-		6DCB09E11C4651A3003FBE23 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCB09E01C4651A3003FBE23 /* FavoriteViewController.m */; };
-		6DCEF2971C53B2DF00B2A7B1 /* ProfileFavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */; };
 		6DCFA1D81D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1D61D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a */; };
 		6DCFA1D91D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */; };
 		6DCFA1DB1D3B930B00A6DB67 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCFA1DA1D3B930B00A6DB67 /* AVFoundation.framework */; };
@@ -262,8 +254,6 @@
 		6D4699A51D510A0F009D8F92 /* icn-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icn-like.png"; path = "../resources/Images/icn-like.png"; sourceTree = "<group>"; };
 		6D5B27E11C47C9A7004CE54B /* back0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back0.png; sourceTree = "<group>"; };
 		6D5B27F81C47F48D004CE54B /* 1_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_chat.png; sourceTree = "<group>"; };
-		6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCollectionViewController.h; sourceTree = "<group>"; };
-		6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCollectionViewController.m; sourceTree = "<group>"; };
 		6D6942971D4A760800216B67 /* img_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_001.png; path = ../resources/ProfileImage/img_001.png; sourceTree = "<group>"; };
 		6D6942981D4A760800216B67 /* img_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_002.png; path = ../resources/ProfileImage/img_002.png; sourceTree = "<group>"; };
 		6D6942991D4A760800216B67 /* img_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_003.png; path = ../resources/ProfileImage/img_003.png; sourceTree = "<group>"; };
@@ -314,8 +304,6 @@
 		6D6942C61D4A760900216B67 /* img_048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_048.png; path = ../resources/ProfileImage/img_048.png; sourceTree = "<group>"; };
 		6D6AB8771C4E8FBE005F3CD7 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
 		6D6AB8781C4E8FBE005F3CD7 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
-		6D6AB8811C4FFDF7005F3CD7 /* InfoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCollectionViewCell.h; sourceTree = "<group>"; };
-		6D6AB8821C4FFDF7005F3CD7 /* InfoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCollectionViewCell.m; sourceTree = "<group>"; };
 		6D6AB8841C5265C9005F3CD7 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		6D6AB8851C5265C9005F3CD7 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		6D6AB8881C52788F005F3CD7 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -323,10 +311,6 @@
 		6D6AEB491D469DFA00D9DE6D /* icn-fur-y-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-fur-y-3.png"; sourceTree = "<group>"; };
 		6D6AEB4A1D469DFA00D9DE6D /* icn-fur-y-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-fur-y-1.png"; sourceTree = "<group>"; };
 		6D6AEB4B1D469DFA00D9DE6D /* icn-fur-y-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-fur-y-2.png"; sourceTree = "<group>"; };
-		6D7BF29B1C54800800BE7F4A /* FavChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavChatViewController.h; sourceTree = "<group>"; };
-		6D7BF29C1C54800800BE7F4A /* FavChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavChatViewController.m; sourceTree = "<group>"; };
-		6D7BF29E1C54840000BE7F4A /* chatMainContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatMainContentViewController.h; sourceTree = "<group>"; };
-		6D7BF29F1C54840000BE7F4A /* chatMainContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatMainContentViewController.m; sourceTree = "<group>"; };
 		6D866F621C4237FC00CC2D43 /* PatPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D866F661C4237FC00CC2D43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D866F681C4237FC00CC2D43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -360,10 +344,6 @@
 		6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
 		6D9C42E21C49E300007C05A2 /* InfomationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfomationViewController.h; sourceTree = "<group>"; };
 		6D9C42E31C49E300007C05A2 /* InfomationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfomationViewController.m; sourceTree = "<group>"; };
-		6D9C432A1C4A1614007C05A2 /* BreedsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreedsCell.h; sourceTree = "<group>"; };
-		6D9C432B1C4A1614007C05A2 /* BreedsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreedsCell.m; sourceTree = "<group>"; };
-		6D9C433F1C4B413D007C05A2 /* FavCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavCell.h; sourceTree = "<group>"; };
-		6D9C43401C4B413D007C05A2 /* FavCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavCell.m; sourceTree = "<group>"; };
 		6DA3F1961D3A217000609E7D /* PetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetColor.h; path = Model/PetColor.h; sourceTree = "<group>"; };
 		6DA3F1971D3A217000609E7D /* PetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetColor.m; path = Model/PetColor.m; sourceTree = "<group>"; };
 		6DA3F19B1D3A21FD00609E7D /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -373,8 +353,6 @@
 		6DC3512E1D47B30A0027A94A /* icn-cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-cancel@2x.png"; sourceTree = "<group>"; };
 		6DC3512F1D47B30A0027A94A /* icn-cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-cancel@3x.png"; sourceTree = "<group>"; };
 		6DCB09CD1C457B54003FBE23 /* Prof_s12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prof_s12.png; sourceTree = "<group>"; };
-		6DCB09DF1C4651A3003FBE23 /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
-		6DCB09E01C4651A3003FBE23 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		6DCB09ED1C46BE48003FBE23 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		6DCB09EF1C46BE74003FBE23 /* 1_char_af3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_char_af3.png; sourceTree = "<group>"; };
 		6DCB09F01C46BE74003FBE23 /* 1_char_bf3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_char_bf3.png; sourceTree = "<group>"; };
@@ -389,8 +367,6 @@
 		6DCB0A031C46BF22003FBE23 /* more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@3x.png"; sourceTree = "<group>"; };
 		6DCB0A051C46BFC1003FBE23 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
 		6DCB0A071C46C3CE003FBE23 /* line2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line2.png; sourceTree = "<group>"; };
-		6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileFavViewController.h; sourceTree = "<group>"; };
-		6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileFavViewController.m; sourceTree = "<group>"; };
 		6DCFA1CD1D3B869100A6DB67 /* icn_chat_bf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_chat_bf.png; sourceTree = "<group>"; };
 		6DCFA1D61D3B8E9A00A6DB67 /* CAT_SoundEffect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = CAT_SoundEffect.m4a; sourceTree = "<group>"; };
 		6DCFA1D71D3B8E9A00A6DB67 /* Dog_SoundEffect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dog_SoundEffect.m4a; sourceTree = "<group>"; };
@@ -508,32 +484,13 @@
 			name = YLViews;
 			sourceTree = "<group>";
 		};
-		6D0BCA361D3B55630072D86B /* Favorite */ = {
-			isa = PBXGroup;
-			children = (
-				6DCB09DF1C4651A3003FBE23 /* FavoriteViewController.h */,
-				6DCB09E01C4651A3003FBE23 /* FavoriteViewController.m */,
-				6DCEF2951C53B2DF00B2A7B1 /* ProfileFavViewController.h */,
-				6DCEF2961C53B2DF00B2A7B1 /* ProfileFavViewController.m */,
-				6D9C433F1C4B413D007C05A2 /* FavCell.h */,
-				6D9C43401C4B413D007C05A2 /* FavCell.m */,
-				6D7BF29B1C54800800BE7F4A /* FavChatViewController.h */,
-				6D7BF29C1C54800800BE7F4A /* FavChatViewController.m */,
-			);
-			name = Favorite;
-			sourceTree = "<group>";
-		};
 		6D0BCA371D3B57650072D86B /* Portal */ = {
 			isa = PBXGroup;
 			children = (
 				6D9C42DF1C49D975007C05A2 /* PreferenceViewController.h */,
 				6D9C42E01C49D975007C05A2 /* PreferenceViewController.m */,
-				6D9C432A1C4A1614007C05A2 /* BreedsCell.h */,
-				6D9C432B1C4A1614007C05A2 /* BreedsCell.m */,
 				6D9C42E21C49E300007C05A2 /* InfomationViewController.h */,
 				6D9C42E31C49E300007C05A2 /* InfomationViewController.m */,
-				6D6AB8811C4FFDF7005F3CD7 /* InfoCollectionViewCell.h */,
-				6D6AB8821C4FFDF7005F3CD7 /* InfoCollectionViewCell.m */,
 				6D1D896F1C42A369001B9983 /* NavigationViewController.h */,
 				6D1D89701C42A369001B9983 /* NavigationViewController.m */,
 				6D0BCA3B1D3B5B2C0072D86B /* BaseViewController.h */,
@@ -542,22 +499,10 @@
 			name = Portal;
 			sourceTree = "<group>";
 		};
-		6D0BCA381D3B58020072D86B /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				6D7BF29E1C54840000BE7F4A /* chatMainContentViewController.h */,
-				6D7BF29F1C54840000BE7F4A /* chatMainContentViewController.m */,
-				6D5B27FD1C480355004CE54B /* ChatCollectionViewController.h */,
-				6D5B27FE1C480355004CE54B /* ChatCollectionViewController.m */,
-				6D9C42311C48EEE9007C05A2 /* ChatCell.h */,
-				6D9C42321C48EEE9007C05A2 /* ChatCell.m */,
-			);
-			name = Chat;
-			sourceTree = "<group>";
-		};
 		6D0BCA391D3B583F0072D86B /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				6DE293EF1D7DC7F700288CA6 /* Cells */,
 				6D866F6B1C4237FC00CC2D43 /* ViewController.h */,
 				6DB4A2831C9D060000F604EC /* ViewController.m */,
 				6D6AB8881C52788F005F3CD7 /* ProfileViewController.h */,
@@ -568,8 +513,6 @@
 				6DF4A3FE1D433D9100370031 /* MainModelData.m */,
 				6DF4A4001D434AFC00370031 /* NSUserDefaults+DemoSettings.h */,
 				6DF4A4011D434AFC00370031 /* NSUserDefaults+DemoSettings.m */,
-				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
-				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
@@ -873,8 +816,6 @@
 			isa = PBXGroup;
 			children = (
 				6D0BCA371D3B57650072D86B /* Portal */,
-				6D0BCA361D3B55630072D86B /* Favorite */,
-				6D0BCA381D3B58020072D86B /* Chat */,
 				6D0BCA391D3B583F0072D86B /* MainPage */,
 			);
 			name = ViewControllers;
@@ -914,6 +855,17 @@
 				6DE293CC1D7DBC6D00288CA6 /* Prof_c11.png */,
 			);
 			name = Profiles_circles;
+			sourceTree = "<group>";
+		};
+		6DE293EF1D7DC7F700288CA6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6D1D897F1C43DFEF001B9983 /* CustomCell.h */,
+				6D1D89801C43DFEF001B9983 /* CustomCell.m */,
+				6D9C42311C48EEE9007C05A2 /* ChatCell.h */,
+				6D9C42321C48EEE9007C05A2 /* ChatCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1224,27 +1176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DCEF2971C53B2DF00B2A7B1 /* ProfileFavViewController.m in Sources */,
-				6D9C43411C4B413D007C05A2 /* FavCell.m in Sources */,
-				6D7BF2A01C54840000BE7F4A /* chatMainContentViewController.m in Sources */,
-				6D5B27FF1C480355004CE54B /* ChatCollectionViewController.m in Sources */,
 				6DF4A3FF1D433D9100370031 /* MainModelData.m in Sources */,
 				6D9C42E41C49E300007C05A2 /* InfomationViewController.m in Sources */,
-				6D7BF29D1C54800800BE7F4A /* FavChatViewController.m in Sources */,
 				6DF5DA281C53F4F2000A2892 /* MessageViewController.m in Sources */,
 				6DF4A4021D434AFC00370031 /* NSUserDefaults+DemoSettings.m in Sources */,
 				6D866F731C4237FC00CC2D43 /* PatPet.xcdatamodeld in Sources */,
 				6D9C42E11C49D975007C05A2 /* PreferenceViewController.m in Sources */,
-				6D6AB8831C4FFDF7005F3CD7 /* InfoCollectionViewCell.m in Sources */,
 				6D9C42331C48EEE9007C05A2 /* ChatCell.m in Sources */,
 				6D0BCA3D1D3B5B2C0072D86B /* BaseViewController.m in Sources */,
 				6D0BCA331D3A59370072D86B /* YLCircle.m in Sources */,
 				6DA3F19D1D3A21FD00609E7D /* UIColor+Hex.m in Sources */,
 				6D6AB88A1C52788F005F3CD7 /* ProfileViewController.m in Sources */,
 				6D0BCA301D3A58DA0072D86B /* YLColorButton.m in Sources */,
-				6DCB09E11C4651A3003FBE23 /* FavoriteViewController.m in Sources */,
 				6D1D89711C42A369001B9983 /* NavigationViewController.m in Sources */,
-				6D9C432C1C4A1614007C05A2 /* BreedsCell.m in Sources */,
 				6D1D896E1C429E40001B9983 /* SWRevealViewController.m in Sources */,
 				6D1D89811C43DFEF001B9983 /* CustomCell.m in Sources */,
 				6DB4A2841C9D060000F604EC /* ViewController.m in Sources */,

@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfomationViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface InfomationViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButtonOfInfo;
-
-@property (weak, nonatomic) IBOutlet UICollectionView *infoCollectionView;
 
 @end

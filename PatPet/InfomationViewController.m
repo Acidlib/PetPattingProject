@@ -8,7 +8,6 @@
 
 #import "InfomationViewController.h"
 #import "SWRevealViewController.h"
-#import "InfoCollectionViewCell.h"
 
 @interface InfomationViewController ()
 
@@ -18,7 +17,6 @@
 {
     NSArray *arrayOfInfoImage;
 }
-static NSString * const reuseIdentifier1 = @"InfoCell";
 
 - (void)viewDidLoad {
 
@@ -28,29 +26,8 @@ static NSString * const reuseIdentifier1 = @"InfoCell";
     _backButtonOfInfo.action = @selector(revealToggle:);
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
-    // images
-    [[self infoCollectionView]setDataSource:self];
-    [[self infoCollectionView]setDelegate:self];
-
     // array
     arrayOfInfoImage = [[NSArray alloc]initWithObjects:@"sasa2.png",@"sasa3.png", nil];
-}
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-
-    return 1;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-
-    return [arrayOfInfoImage count];
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-
-    InfoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier1 forIndexPath:indexPath];
-    [[cell sasaImage]setImage:[UIImage imageNamed:[arrayOfInfoImage objectAtIndex:indexPath.item]]];
-    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
